@@ -48,7 +48,7 @@ function App() {
             </div>
             <div className="number_of_questions_container">
                 <h3>Koliko pitanja zelis da vidis:</h3>
-                <select value={numberOfQuestions} onChange={handleNumberOfQuestionsChange} autoFocus={false}>
+                <select className="drop_down" value={numberOfQuestions} onChange={handleNumberOfQuestionsChange} autoFocus={false}>
                     <option key="10" value="10">10</option>
                     <option key="20" value="20">20</option>
                     <option key="30" value="30">30</option>

@@ -25,15 +25,16 @@ const QuestionComponent = ({question}) => {
                 {Object.entries(question.options).map(([key, value]) => (
                     <li
                         key={key}
-                        className={`cursor_hand option-item ${(key === question.answer && isAnswered) ? "correct-answer" : ""} ${selectedOption === key ? "selected-answer" : ""}`}
+                        className={`cursor_hand option-item ${(key === question.answer && isAnswered) ? "correct-answer" : ""} ${(selectedOption === key) ? "selected-answer" : ""}`}
                         onClick={() => handleOptionClick(key)}
                     >
-                        <strong>{key}:</strong> {value}
+                        <span className="left">{key}</span>
+                        <span className="right">{value}</span>
                     </li>
                 ))}
             </ul>
             <button
-                className="cursor_hand"
+                className="cursor_hand check_answer"
                 onClick={handleAnswerQuestionClick}
             >
                 Proveri odgovor
