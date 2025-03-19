@@ -1,7 +1,7 @@
 import './App.css';
 import {generateSetOfQuestionsForCategory} from "./questionsService";
 import QuestionComponent from "./QuestionComponent";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import { v4 as uuidv4 } from "uuid";
 
 function App() {
@@ -10,7 +10,11 @@ function App() {
     const [selectedCategory, setSelectedCategory] = useState("Fischkunde");
 
     const categories = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];
-
+    useEffect(()=>{
+        if(questions.length === 0){
+            refreshQuestions(selectedCategory, numberOfQuestions);
+        }
+    })
     function refreshQuestions(selectedCategory, numberOfQuestions) {
         setQuestions(generateSetOfQuestionsForCategory(selectedCategory, numberOfQuestions))
     }
