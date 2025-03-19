@@ -85,3 +85,7 @@
 .selected-answer {
   border: 2px solid #e53131;
 }
+
+.cursor_hand{
+  cursor: pointer;
+}

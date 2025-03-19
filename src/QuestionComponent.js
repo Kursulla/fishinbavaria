@@ -25,7 +25,7 @@ const QuestionComponent = ({question}) => {
                 {Object.entries(question.options).map(([key, value]) => (
                     <li
                         key={key}
-                        className={`option-item ${(key === question.answer && isAnswered) ? "correct-answer" : ""} ${selectedOption === key ? "selected-answer" : ""}`}
+                        className={`cursor_hand option-item ${(key === question.answer && isAnswered) ? "correct-answer" : ""} ${selectedOption === key ? "selected-answer" : ""}`}
                         onClick={() => handleOptionClick(key)}
                     >
                         <strong>{key}:</strong> {value}
@@ -33,7 +33,7 @@ const QuestionComponent = ({question}) => {
                 ))}
             </ul>
             <button
-                className="px-4 py-2 bg-blue-500 text-white rounded m-xl"
+                className="cursor_hand"
                 onClick={handleAnswerQuestionClick}
             >
                 Proveri odgovor
