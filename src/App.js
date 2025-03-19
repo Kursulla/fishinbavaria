@@ -34,7 +34,7 @@ function App() {
         <div className="App">
             <div className="categories_container">
                 <h3>Koju kategoriju zelis da vezbas:</h3>
-                <select className="drop_down" value={numberOfQuestions} onChange={handleCategorySelection}>
+                <select className="drop_down" value={selectedCategory} onChange={handleCategorySelection}>
                     <option key={categories[0]} value={categories[0]}>{categories[0]}</option>
                     <option key={categories[1]} value={categories[1]}>{categories[1]}</option>
                     <option key={categories[2]} value={categories[2]}>{categories[2]}</option>
@@ -53,8 +53,11 @@ function App() {
                 </select>
             </div>
             <div className="p-6">
-                {selectedCategory && questions && questions.map(question => (
-                    <QuestionComponent key={uuidv4()} question={question}/>))}
+                {selectedCategory && questions && questions.map((question, index) => (
+                    <div>
+                        <QuestionComponent key={uuidv4()} index = {index} question={question}/>
+                    </div>
+                ))}
             </div>
         </div>
     );

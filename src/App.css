@@ -136,3 +136,9 @@
 .selected-answer {
     border: 2px solid #e53131;
 }
+
+.mistake {
+    color: #e53131;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
