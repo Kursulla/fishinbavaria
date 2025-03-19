@@ -20,9 +20,9 @@ function App() {
         setQuestions(generateSetOfQuestionsForCategory(selectedCategory, numberOfQuestions))
     }
 
-    const handleCategorySelection = (category) => {
-        setSelectedCategory(category);
-        refreshQuestions(category, numberOfQuestions);
+    const handleCategorySelection = (event) => {
+        setSelectedCategory(event.target.value);
+        refreshQuestions(event.target.value, numberOfQuestions);
     };
 
     const handleNumberOfQuestionsChange = (event) => {
@@ -34,17 +34,13 @@ function App() {
         <div className="App">
             <div className="categories_container">
                 <h3>Koju kategoriju zelis da vezbas:</h3>
-                {categories.map((category) => (
-                    <label key={category} className="checkbox-label">
-                        <input
-                            type="radio"
-                            value={category}
-                            checked={selectedCategory.includes(category)}
-                            onChange={() => handleCategorySelection(category)}
-                        />
-                        {category}
-                    </label>
-                ))}
+                <select className="drop_down" value={numberOfQuestions} onChange={handleCategorySelection}>
+                    <option key={categories[0]} value={categories[0]}>{categories[0]}</option>
+                    <option key={categories[1]} value={categories[1]}>{categories[1]}</option>
+                    <option key={categories[2]} value={categories[2]}>{categories[2]}</option>
+                    <option key={categories[3]} value={categories[3]}>{categories[3]}</option>
+                    <option key={categories[4]} value={categories[4]}>{categories[4]}</option>
+                </select>
             </div>
             <div className="number_of_questions_container">
                 <h3>Koliko pitanja zelis da vidis:</h3>

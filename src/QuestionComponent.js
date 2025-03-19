@@ -5,10 +5,6 @@ const QuestionComponent = ({question}) => {
     const [isAnswered, setIsAnswered] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
 
-    useEffect(() => {
-        window.scrollTo(0, window.scrollY);
-    });
-
     const handleOptionClick = (key) => {
         if(isAnswered) return
         setSelectedOption(key);
