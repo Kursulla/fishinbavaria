@@ -60,7 +60,7 @@
 .question-title {
   font-size: 1.125rem;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 35px;
 }
 
 .question-options {
@@ -75,6 +75,7 @@
   border-radius: 4px;
   background-color: white;
   margin-bottom: 4px;
+  text-align: left;
 }
 
 .correct-answer {

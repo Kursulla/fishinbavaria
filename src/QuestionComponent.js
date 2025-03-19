@@ -1,13 +1,22 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./App.css";
 
 const QuestionComponent = ({question}) => {
     const [isAnswered, setIsAnswered] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
 
+    useEffect(() => {
+        window.scrollTo(0, window.scrollY);
+    });
+
     const handleOptionClick = (key) => {
+        if(isAnswered) return
         setSelectedOption(key);
     };
+    const handleAnswerQuestionClick = () =>{
+        if(isAnswered) return
+        setIsAnswered(true);
+    }
 
     return (
         <div className="question-container">
@@ -25,7 +34,7 @@ const QuestionComponent = ({question}) => {
             </ul>
             <button
                 className="px-4 py-2 bg-blue-500 text-white rounded m-xl"
-                onClick={() => setIsAnswered(true)}
+                onClick={handleAnswerQuestionClick}
             >
                 Proveri odgovor
             </button>

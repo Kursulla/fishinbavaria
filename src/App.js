@@ -1,20 +1,21 @@
 import './App.css';
 import {generateSetOfQuestionsForCategory} from "./questionsService";
 import QuestionComponent from "./QuestionComponent";
-import {useEffect, useState} from "react";
-import { v4 as uuidv4 } from "uuid";
+import React, {useEffect, useState} from "react";
+import {v4 as uuidv4} from "uuid";
 
 function App() {
     const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(20);
     const [questions, setQuestions] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("Fischkunde");
-
     const categories = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];
-    useEffect(()=>{
-        if(questions.length === 0){
+
+    useEffect(() => {
+        if (questions.length === 0) {
             refreshQuestions(selectedCategory, numberOfQuestions);
         }
     })
+
     function refreshQuestions(selectedCategory, numberOfQuestions) {
         setQuestions(generateSetOfQuestionsForCategory(selectedCategory, numberOfQuestions))
     }
@@ -47,7 +48,7 @@ function App() {
             </div>
             <div className="number_of_questions_container">
                 <h3>Koliko pitanja zelis da vidis:</h3>
-                <select value={numberOfQuestions} onChange={handleNumberOfQuestionsChange}>
+                <select value={numberOfQuestions} onChange={handleNumberOfQuestionsChange} autoFocus={false}>
                     <option key="10" value="10">10</option>
                     <option key="20" value="20">20</option>
                     <option key="30" value="30">30</option>
@@ -56,7 +57,8 @@ function App() {
                 </select>
             </div>
             <div className="p-6">
-                {selectedCategory && questions && questions.map(question => (<QuestionComponent key={uuidv4()} question={question}/>))}
+                {selectedCategory && questions && questions.map(question => (
+                    <QuestionComponent key={uuidv4()} question={question}/>))}
             </div>
         </div>
     );
