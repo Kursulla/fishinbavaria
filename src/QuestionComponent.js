@@ -8,11 +8,8 @@ const QuestionComponent = ({question}) => {
     const handleOptionClick = (key) => {
         if(isAnswered) return
         setSelectedOption(key);
-    };
-    const handleAnswerQuestionClick = () =>{
-        if(isAnswered) return
         setIsAnswered(true);
-    }
+    };
 
     return (
         <div className="question-container">
@@ -29,12 +26,6 @@ const QuestionComponent = ({question}) => {
                     </li>
                 ))}
             </ul>
-            <button
-                className="cursor_hand check_answer"
-                onClick={handleAnswerQuestionClick}
-            >
-                Proveri odgovor
-            </button>
         </div>
     );
 };
