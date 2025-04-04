@@ -5,9 +5,4 @@
     background-color: white;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.toggle-button:hover {
-    transform: scale(1.5);
 }
