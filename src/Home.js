@@ -22,19 +22,19 @@ const Home = () => {
                     className={`cursor_hand option-item`}
                     onClick={() => navigate('/categories')}
                 >
-                    Vezbaj kategorije
+                    Po kategorijama
                 </li>
                 <li
                     className={`cursor_hand option-item`}
                     onClick={() => navigate('/tests')}
                 >
-                    Vezbaj testove
+                    Simulacija testova
                 </li>
                 <li
                     className={`cursor_hand option-item`}
                     onClick={() => navigate('/marked')}
                 >
-                    Vezbaj obelezene
+                    Vežbaj obeležena pitanja
                 </li>
             </ul>
             {showDeleteButton && <button className="purge_local_storage" onClick={handleCleaningMarketQuestionsClick}>Obrisi sva markirana pitanja</button>}

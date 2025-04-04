@@ -28,10 +28,11 @@ const LearnFromTests = () => {
 
     return (
         <div className="App">
+            <img className="logo" src="logo_300.png" alt="Some alt tag" width="100"/>
             <div className="p-6">
                 {categories.map((category, index) => (
                     <div>
-                        <hr/>
+
                         <h2>{category}</h2>
                         {questions && questions[index] && questions[index].map((question, index) => (
                             <div>

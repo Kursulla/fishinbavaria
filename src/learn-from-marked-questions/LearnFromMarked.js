@@ -34,8 +34,7 @@ const LearnFromMarked = () => {
     }
     return (
         <div className="App">
-            <br/>
-            <br/>
+            <img className="logo" src="logo_300.png" alt="Some alt tag" width="100"/>
             {noMarkedQuestions && <h3>Nema sačuvanih pitanja!</h3>}
             <div className="p-6">
                 {questions && questions.map((question, index) => (

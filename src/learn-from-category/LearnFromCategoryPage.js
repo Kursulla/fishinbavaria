@@ -36,8 +36,9 @@ const LearnFromCategoryPage = () => {
     }
     return (
         <div className="App">
+            <img className="logo" src="logo_300.png" alt="Some alt tag" width="100"/>
             <div className="categories_container">
-                <h3>Koju kategoriju zelis da vezbas:</h3>
+                <h3>Koju kategoriju želiš da vežbaš:</h3>
                 <select className="drop_down" value={selectedCategory} onChange={handleCategorySelection}>
                     <option key={categories[0]} value={categories[0]}>{categories[0]}</option>
                     <option key={categories[1]} value={categories[1]}>{categories[1]}</option>
@@ -47,7 +48,7 @@ const LearnFromCategoryPage = () => {
                 </select>
             </div>
             <div className="number_of_questions_container">
-                <h3>Koliko pitanja zelis da vidis:</h3>
+                <h3>Koliko pitanja želiš da vidiš:</h3>
                 <select className="drop_down" value={numberOfQuestions} onChange={handleNumberOfQuestionsChange}
                         autoFocus={false}>
                     <option key="10" value="10">10</option>
