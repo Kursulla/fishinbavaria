@@ -36,6 +36,7 @@ const LearnFromMarked = () => {
         <div className="App">
             <br/>
             <br/>
+            {noMarkedQuestions && <h3>Nema sačuvanih pitanja!</h3>}
             <div className="p-6">
                 {questions && questions.map((question, index) => (
                     <div>

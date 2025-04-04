@@ -1,4 +1,4 @@
-import {storageManager} from "../common/data/SavedQuestionsManager";
+import {savedQuestionsManager} from "../common/data/SavedQuestionsManager";
 
 
 /**
@@ -7,7 +7,7 @@ import {storageManager} from "../common/data/SavedQuestionsManager";
  * @return {*[]}
  */
 const fetch = function () {
-    return Array.from(storageManager.fetchQuestionsAsSet());
+    return Array.from(savedQuestionsManager.fetchQuestionsAsSet());
 }
 
 export const questionsService = {

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './QuestionsComponent.css';
 import RememberButton from "./remember-button-component/RememberButton";
-import {storageManager} from "../../data/SavedQuestionsManager";
+import {savedQuestionsManager} from "../../data/SavedQuestionsManager";
 
 const QuestionComponent = ({index, question, rightAnswer}) => {
     const [isAnswered, setIsAnswered] = useState(false);
@@ -21,14 +21,14 @@ const QuestionComponent = ({index, question, rightAnswer}) => {
 
     const handleMarkForLaterOnClick = (question, state) => {
         if(state){
-            storageManager.saveQuestion(question)
+            savedQuestionsManager.saveQuestion(question)
         }else{
-            storageManager.deleteQuestion(question)
+            savedQuestionsManager.deleteQuestion(question)
         }
     }
 
     const isQuestionMarked = (questionNumber)=>{
-        const markedQuestions = storageManager.fetchQuestionsAsSet()
+        const markedQuestions = savedQuestionsManager.fetchQuestionsAsSet()
         for(const item of markedQuestions){
             if(item.number === questionNumber){
                 return true

@@ -51,7 +51,6 @@ function deleteQuestion(question) {
     removeFromSet(question)
 }
 
-
 /**
  * Fetch all questions from a storage
  *
@@ -62,8 +61,17 @@ function fetchQuestionsAsSet() {
     return stored ? stored : new Set();
 }
 
-export const storageManager = {
+/**
+ * Use it to purge all saved questions from a storage.
+ * Use it wisely, it is irreversible action!!!
+ */
+function purgeSavedQuestions(){
+    localStorage.removeItem(LOCAL_STORAGE_KEY)
+}
+
+export const savedQuestionsManager = {
     saveQuestion,
     deleteQuestion,
-    fetchQuestionsAsSet
+    fetchQuestionsAsSet,
+    purgeSavedQuestions
 }
