@@ -6,7 +6,7 @@ import {v4 as uuidv4} from "uuid";
 
 const LearnFromTests = () => {
     const [questions, setQuestions] = useState([]);
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const categories = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];
 
     useEffect(() => {

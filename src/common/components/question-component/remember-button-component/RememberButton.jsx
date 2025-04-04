@@ -11,12 +11,11 @@ const RememberButton = ({ alreadyMarked, question, onClick }) => {
     };
 
     return (
-        <button
-            className={`toggle-button ${isMarked ? 'on' : 'off'}`}
-            onClick={handleClick}
-        >
-            {isMarked ? 'Zapamtio' : 'Zapamti'}
-        </button>
+        <div>
+            <button className={`toggle-button ${isMarked ? 'on' : 'off'}`} onClick={handleClick}>
+                {isMarked ? '❤️' : '🤍'}
+            </button>
+        </div>
     );
 };
 

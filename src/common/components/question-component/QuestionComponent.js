@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "../../../App.css";
+import './QuestionsComponent.css';
 import RememberButton from "./remember-button-component/RememberButton";
 import {storageManager} from "../../data/SavedQuestionsManager";
 
@@ -40,9 +40,9 @@ const QuestionComponent = ({index, question, rightAnswer}) => {
     return (
         <div className="question-container">
             <h2 className="question-title">{index + 1}: {question.question} <br/></h2>
-
-            <RememberButton alreadyMarked={isQuestionMarked(question.number)} question={question} onClick={handleMarkForLaterOnClick}/>
-
+            <div className="remember-button">
+                <RememberButton  alreadyMarked={isQuestionMarked(question.number)} question={question} onClick={handleMarkForLaterOnClick}/>
+            </div>
             <ul className="question-options">
                 {Object.entries(question.options).map(([key, index]) => (
                     <li
