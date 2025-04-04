@@ -1,10 +1,8 @@
-const LOCAL_STORAGE_KEY = "DO_DOZVOLE_KEY"
+const LOCAL_STORAGE_KEY = "LETS_GO_FISHING"
 
 function fetchDataFromStorage() {
     const storedValue = localStorage.getItem(LOCAL_STORAGE_KEY)
-    const tmp = storedValue ? new Set(JSON.parse(storedValue)) : new Set();
-    console.log(tmp)
-    return tmp
+    return storedValue ? new Set(JSON.parse(storedValue)) : new Set();
 }
 
 function updateStorageWith(setObject){
