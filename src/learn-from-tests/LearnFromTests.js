@@ -1,27 +1,26 @@
 import React, {useEffect, useState} from "react";
-import {generateQuestions} from "./questionsService";
-import QuestionComponent from "../common/components/QuestionComponent";
+import {questionsService} from "./questionsService";
+import QuestionComponent from "../common/components/question-component/QuestionComponent";
 import {v4 as uuidv4} from "uuid";
 
 
-const LearnTests = () => {
-
+const LearnFromTests = () => {
     const [questions, setQuestions] = useState([]);
+
     const categories = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];
-    // const [score, setScore] = useState(0);
 
     useEffect(() => {
         if (questions.length === 0) {
             const newQuestions = [];
-            newQuestions.push(generateQuestions(categories[0], 12))
-            newQuestions.push(generateQuestions(categories[1], 12))
-            newQuestions.push(generateQuestions(categories[2], 12))
-            newQuestions.push(generateQuestions(categories[3], 12))
-            newQuestions.push(generateQuestions(categories[4], 12))
+            newQuestions.push(questionsService.generateFromCategory(categories[0], 12))
+            newQuestions.push(questionsService.generateFromCategory(categories[1], 12))
+            newQuestions.push(questionsService.generateFromCategory(categories[2], 12))
+            newQuestions.push(questionsService.generateFromCategory(categories[3], 12))
+            newQuestions.push(questionsService.generateFromCategory(categories[4], 12))
 
             setQuestions(newQuestions);
         }
-    })
+    }, [questions.length, categories])
 
     const rightAnswer = (status) => {
         console.log(status)
@@ -46,4 +45,4 @@ const LearnTests = () => {
     );
 };
 
-export default LearnTests;
+export default LearnFromTests;

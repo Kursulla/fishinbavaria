@@ -5,14 +5,6 @@ import {useNavigate} from "react-router-dom";
 const Home = () => {
     const navigate = useNavigate();
 
-    function handleClickOnCategories() {
-        navigate('/categories');
-    }
-
-    function handleClickOnTests() {
-        navigate('/tests');
-    }
-
     return (
         <div className="App">
             <img className="logo" src="logo192.png" alt="Some alt tag"/>
@@ -20,15 +12,21 @@ const Home = () => {
             <ul className="question-options">
                 <li
                     className={`cursor_hand option-item`}
-                    onClick={() => handleClickOnCategories()}
+                    onClick={() => navigate('/categories')}
                 >
                     Vezbaj kategorije
                 </li>
                 <li
                     className={`cursor_hand option-item`}
-                    onClick={() => handleClickOnTests()}
+                    onClick={() => navigate('/tests')}
                 >
                     Vezbaj testove
+                </li>
+                <li
+                    className={`cursor_hand option-item`}
+                    onClick={() => navigate('/marked')}
+                >
+                    Vezbaj obelezene
                 </li>
             </ul>
         </div>

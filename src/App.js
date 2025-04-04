@@ -1,9 +1,10 @@
 import './App.css';
 import React from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import LearnCategory from "./learn_category/LearnCategory";
-import LearnTests from "./learn_tests/LearnTests";
+import LearnFromCategoryPage from "./learn-from-category/LearnFromCategoryPage";
+import LearnFromTests from "./learn-from-tests/LearnFromTests";
 import Home from "./Home";
+import LearnFromMarked from "./learn-from-marked-questions/LearnFromMarked";
 
 
 
@@ -12,8 +13,9 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>} />
-                <Route path="/categories" element={<LearnCategory />} />
-                <Route path="/tests" element={<LearnTests/>} />
+                <Route path="/categories" element={<LearnFromCategoryPage />} />
+                <Route path="/tests" element={<LearnFromTests/>} />
+                <Route path="/marked" element={<LearnFromMarked/>} />
             </Routes>
         </BrowserRouter>
     );
