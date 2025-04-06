@@ -64,7 +64,7 @@ const LearnFromCategoryPage = () => {
             <div className="p-6">
                 {selectedCategory && questions && questions.map((question, index) => (
                     <div>
-                        <QuestionComponent key={uuidv4()} index={index} question={question} rightAnswer={rightAnswer}/>
+                        <QuestionComponent key={uuidv4()} orderNumber={index} question={question} rightAnswer={rightAnswer}/>
                     </div>
                 ))}
             </div>

@@ -36,7 +36,7 @@ const LearnFromTests = () => {
                         <h2>{category}</h2>
                         {questions && questions[index] && questions[index].map((question, index) => (
                             <div>
-                                <QuestionComponent key={uuidv4()} index={index} question={question} rightAnswer={rightAnswer}/>
+                                <QuestionComponent key={uuidv4()} orderNumber={index} question={question} rightAnswer={rightAnswer}/>
                             </div>
                         ))}
                     </div>
