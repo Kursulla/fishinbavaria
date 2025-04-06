@@ -31,7 +31,6 @@
     display: flex;
     align-items: center;     /* vertikalno centriranje */
     justify-content: center; /* horizontalno centriranje */
-
 }
 .remember-button {
     position: absolute;
@@ -75,4 +74,7 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 5px;
+}
+.selected-answer {
+    border: 1px solid #e53131;
 }

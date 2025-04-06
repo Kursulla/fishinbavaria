@@ -80,9 +80,7 @@
     text-align: left;
 }
 
-.selected-answer {
-    border: 2px solid #e53131;
-}
+
 
 .mistake {
     color: #e53131;
