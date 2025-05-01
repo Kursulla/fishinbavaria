@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {questionsService} from "./questionsService";
+
 import QuestionComponent from "../common/components/question-component/QuestionComponent";
 import {v4 as uuidv4} from "uuid";
+import {questionsService} from "./questionsService";
 
 
 const LearnFromTests = () => {
@@ -29,6 +30,7 @@ const LearnFromTests = () => {
     return (
         <div className="App">
             <img className="logo" src="logo_300.png" alt="Some alt tag" width="100"/>
+            <h5>Ukupan broj pitanja sa testova: {questionsService.totalNumberOfQuestionsFromTests()}</h5>
             <div className="p-6">
                 {categories.map((category, index) => (
                     <div>

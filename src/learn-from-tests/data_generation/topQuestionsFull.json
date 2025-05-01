@@ -23,6 +23,700 @@
   },
   {
     "category": "Fischkunde",
+    "number": "1.014",
+    "answer": "C",
+    "question": "Wie hat man sich die Urform des Karpfens vorzustellen?",
+    "options": {
+      "A": "hochrückig und wenig Schuppen",
+      "B": "hochrückig und ohne Schuppen",
+      "C": "langgestreckt und voll beschuppt"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.104",
+    "answer": "A",
+    "question": "Was kann man bei den Fischen mit Hilfe der Schuppen feststellen?",
+    "options": {
+      "A": "das Alter",
+      "B": "das Geschlecht",
+      "C": "den Kalkgehalt des Gewässers"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.142",
+    "answer": "A",
+    "question": "Welche Aussage ist richtig?",
+    "options": {
+      "A": "Zwergwels und Blaufelchen haben eine Fettflosse",
+      "B": "Zwergwels und Mairenke (Seelaube) haben eine Fettflosse",
+      "C": "Zwergwels und Wels (Waller) haben eine Fettflosse"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.151",
+    "answer": "A",
+    "question": "Wie unterscheidet man Rotfeder und Rotauge?",
+    "options": {
+      "A": "Bei der Rotfeder beginnt der Ansatz der Rückenflosse deutlich hinter dem Ansatz der Bauchflossen.",
+      "B": "Beim Rotauge beginnt der Ansatz der Rückenflosse deutlich hinter dem Ansatz der Bauchflossen.",
+      "C": "Das Rotauge hat einen kielförmigen Bauch, die Rotfeder einen gleichmäßig gerundeten Bauch."
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.178",
+    "answer": "A",
+    "question": "Welche Aussage ist richtig?",
+    "options": {
+      "A": "Zobel und Zope haben eine auffallend lange Afterflosse",
+      "B": "bei Zobel und Zope ist der obere Lappen der Schwanzflosse deutlich länger als der untere",
+      "C": "Zobel und Zope haben eine auffallend verkürzte Afterflosse"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.188",
+    "answer": "B",
+    "question": "Welche Aussage ist richtig?",
+    "options": {
+      "A": "Der Huchen hat große x-förmige Tupfen am Körper.",
+      "B": "Die Bachforelle hat rote Tupfen am Körper.",
+      "C": "Der Huchen hat rote Tupfen am Körper."
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.208",
+    "answer": "A",
+    "question": "Welche Fische haben im erwachsenen Stadium eine Schwimmblase ohne Schwimmblasengang?",
+    "options": {
+      "A": "Flussbarsch und Zander",
+      "B": "Karpfenartige (Cypriniden)",
+      "C": "Forellenartige (Salmoniden)"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.255",
+    "answer": "B",
+    "question": "Wann laicht der Zander?",
+    "options": {
+      "A": "Juli – August",
+      "B": "März – Mai",
+      "C": "Januar – Februar"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.278",
+    "answer": "C",
+    "question": "Was ist an den Schalen der Flussperlmuschel besonders auffallend?",
+    "options": {
+      "A": "die dünne Schale mit unversehrter Oberfläche",
+      "B": "die dünne Schale mit äußerer, wachsartiger Schutzschicht",
+      "C": "die dicke Schale mit zerklüfteter Oberfläche"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.283",
+    "answer": "C",
+    "question": "Welche Aussage ist richtig?",
+    "options": {
+      "A": "Die Teichmuschel ist für ihre Fortpflanzung auf den Bitterling angewiesen.",
+      "B": "Der Bitterling ist ein Krautlaicher.",
+      "C": "Der Bitterling benötigt zur Fortpflanzung Muscheln (z.B. die Teichmuschel)."
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.298",
+    "answer": "A",
+    "question": "Welche Fische haben besonders lange und feine Kiemenreusendornen?",
+    "options": {
+      "A": "Felchen-, Renkenartige (Coregoniden)",
+      "B": "Schmerlenartige (Cobitiden)",
+      "C": "Barschartige (Perciden)"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.300",
+    "answer": "A",
+    "question": "Wo nehmen Fische mit unterständigem Maul hauptsächlich Nahrung auf?",
+    "options": {
+      "A": "in der Bodenzone",
+      "B": "an der Wasseroberfläche",
+      "C": "in der Freiwasserzone"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.004",
+    "answer": "A",
+    "question": "Was ist zu befürchten, wenn in unmittelbarer Nähe eines kleinen stehenden Gewässers intensiv mit Gülle gedüngt wird?",
+    "options": {
+      "A": "Die Gülle kann leicht in das Gewässer eingeschwemmt werden und zu einem Fischsterben führen.",
+      "B": "Durch die vom Wind verwehten Faulgase werden die Schwimmblattpflanzen geschädigt.",
+      "C": "Eingeschwemmte Gülle kann die Angelschnüre beim Fischen angreifen."
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.006",
+    "answer": "C",
+    "question": "Bei welcher Wassertemperatur hat das Wasser die größte Dichte (höchstes spezifisches Gewicht)?",
+    "options": {
+      "A": "bei 0 °C",
+      "B": "bei – 1 °C",
+      "C": "bei +4 °C"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.011",
+    "answer": "B",
+    "question": "Welche pH-Werte sind für die meisten heimischen Fischarten am besten geeignet?",
+    "options": {
+      "A": "pH-Werte über 9",
+      "B": "pH-Werte um 7",
+      "C": "pH-Werte unter 5"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.015",
+    "answer": "B",
+    "question": "Was wird für die Selbstreinigung des Gewässers benötigt?",
+    "options": {
+      "A": "Stickstoff",
+      "B": "Sauerstoff",
+      "C": "Kohlendioxid"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.033",
+    "answer": "A",
+    "question": "Welches Kriterium wird für die Bestimmung der biologischen Gewässergüte in einem Fließgewässer herangezogen?",
+    "options": {
+      "A": "die Artenzusammensetzung der Kleintiere",
+      "B": "die Fließgeschwindigkeit",
+      "C": "der pH-Wert"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.052",
+    "answer": "A",
+    "question": "Welche Aussage ist richtig?",
+    "options": {
+      "A": "Die Strömungsgeschwindigkeit nimmt von der Forellen- bis zur Brachsenregion ab.",
+      "B": "Die Gewässertrübung nimmt von der Äschen- bis zur Brachsenregion ab.",
+      "C": "Der Sauerstoffgehalt ist in der Regel in der Forellenregion geringer als in der Barbenregion."
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.053",
+    "answer": "A",
+    "question": "Welche Eigenschaften kennzeichnen u.a. die Brachsenregion der Fließgewässer?",
+    "options": {
+      "A": "schlammiger Untergrund und langsam fließendes Wasser",
+      "B": "felsiger Untergrund und reißende Strömung",
+      "C": "sandiger und kiesiger Untergrund sowie schnell fließendes Wasser"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.055",
+    "answer": "B",
+    "question": "Welche Fischarten leben hauptsächlich in der Brachsenregion?",
+    "options": {
+      "A": "Huchen und Äschen",
+      "B": "Waller (Wels) und Flussbarsch",
+      "C": "Mühlkoppe und Nase"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.056",
+    "answer": "C",
+    "question": "Welche Fischarten leben hauptsächlich in der Brachsenregion?",
+    "options": {
+      "A": "Mühlkoppe und Elritze",
+      "B": "Barbe und Nase",
+      "C": "Rotauge und Schleie"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.071",
+    "answer": "C",
+    "question": "Was ist charakteristisch für nährstoffarme Seen?",
+    "options": {
+      "A": "Am Grund befinden sich regelmäßig große Ablagerungen an fäulnisfähigen, organischen Stoffen.",
+      "B": "Das Tiefenwasser ist sehr sauerstoffarm.",
+      "C": "Das Tiefenwasser hat einen hohen Sauerstoffgehalt."
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.089",
+    "answer": "A",
+    "question": "Zum pflanzlichen Plankton (Phytoplankton) gehören",
+    "options": {
+      "A": "im Freiwasser eines Sees schwebende mikroskopisch kleine Pflanzen (Schwebalgen)",
+      "B": "die auf Steinen und Pflanzen im Gewässer wachsenden Algen (Aufwuchs)",
+      "C": "auf der Wasseroberfläche schwimmende höhere Wasserpflanzen, z. B. Wasserlinsen"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.098",
+    "answer": "B",
+    "question": "Welche Fischnährtiere leben in der Freiwasserzone?",
+    "options": {
+      "A": "Steinfliegenlarven",
+      "B": "Wasserflöhe",
+      "C": "Schlammröhrenwürmer"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.105",
+    "answer": "A",
+    "question": "Der Biber ernährt sich von",
+    "options": {
+      "A": "Pflanzen und Baumrinde",
+      "B": "Kleintieren",
+      "C": "Fischen"
+    }
+  },
+  {
+    "category": "Gewässerkunde",
+    "number": "2.108",
+    "answer": "B",
+    "question": "Welche Vogelart kann aufgrund ihres Ernährungsverhaltens den Fischbestand in Fließgewässern der Äschen- und Forellenregion nachhaltig reduzieren?",
+    "options": {
+      "A": "Wasseramsel",
+      "B": "Kormoran",
+      "C": "Haubentaucher"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.011",
+    "answer": "C",
+    "question": "Wann ist ein dem Gewässer angepasster Fischbesatz erforderlich?",
+    "options": {
+      "A": "wenn zu wenig kapitale Fische vorhanden sind",
+      "B": "wenn eine ausreichende, natürliche Vermehrung der Fische stattfindet",
+      "C": "wenn die natürlichen Laich- und Aufwuchsplätze fehlen"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.022",
+    "answer": "B",
+    "question": "Welche Krankheitserscheinungen (Symptome) stellen sich besonders leicht nach Verletzung der Fischhaut ein?",
+    "options": {
+      "A": "Wurmbefall",
+      "B": "Verpilzung der Wunde",
+      "C": "Hornhauttrübung"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.040",
+    "answer": "B",
+    "question": "Welche Fischarten soll man nicht zusammen in einen Baggersee einsetzen?",
+    "options": {
+      "A": "Hechte und Rotaugen",
+      "B": "Hechte und Forellen",
+      "C": "Karpfen und Schleien"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.050",
+    "answer": "C",
+    "question": "Welche Fischart ist gemäß der „Roten Liste gefährdeter Tiere Bayerns“ vom Aussterben bedroht?",
+    "options": {
+      "A": "Moderlieschen",
+      "B": "Rutte (Quappe, Trüsche)",
+      "C": "Perlfisch"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.051",
+    "answer": "A",
+    "question": "Welcher Faktor fördert die Entwicklung von pflanzlichem Plankton (Phytoplankton) in einem See wesentlich?",
+    "options": {
+      "A": "Eintrag von Phosphaten",
+      "B": "hoher Sauerstoffgehalt des Wassers",
+      "C": "saurer Regen"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.056",
+    "answer": "C",
+    "question": "Eine Brachse mit Laichausschlag",
+    "options": {
+      "A": "muss sofort abgeschlagen werden, da eine Krankheit zu vermuten ist.",
+      "B": "zeigt eine Reaktion auf schlechte Wasserqualität.",
+      "C": "zeigt eine natürliche, entwicklungsbedingte Hautveränderung."
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.069",
+    "answer": "B",
+    "question": "Die Krebspest wird hervorgerufen durch",
+    "options": {
+      "A": "ein Virus",
+      "B": "einen Pilz",
+      "C": "ein Bakterium"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.084",
+    "answer": "A",
+    "question": "Welche Einrichtung ist befähigt krankheitsverdächtige Fische zu untersuchen?",
+    "options": {
+      "A": "Fischgesundheitsdienst",
+      "B": "Polizei",
+      "C": "Institut für Fischerei"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.090",
+    "answer": "B",
+    "question": "Zur Ausübung der Elektrofischerei benötigt man",
+    "options": {
+      "A": "einen Fischereierlaubnisschein sowie den Nachweis einer Berufsausbildung im technischen Bereich.",
+      "B": "eine Genehmigung der Kreisverwaltungsbehörde, einen Bedienungsschein sowie den staatlichen Fischereischein.",
+      "C": "keine besondere Qualifikation."
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.098",
+    "answer": "C",
+    "question": "Was wirkt sich auf den Fischbestand eines Flusses nachteilig aus?",
+    "options": {
+      "A": "natürliche Uferbeschaffenheit",
+      "B": "Pflanzenbewuchs",
+      "C": "Flussbegradigung"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.118",
+    "answer": "B",
+    "question": "Sind Altarme eines Gewässers ökologisch besonders wertvoll?",
+    "options": {
+      "A": "Altarme sind ökologisch weder positiv noch negativ zu bewerten",
+      "B": "ja, weil sie Fischen, Amphibien und Vögeln geeignete Lebensbedingungen bieten",
+      "C": "nein, weil sie zur Verlandung neigen und nur noch wenigen Tieren und Pflanzen geeigneten Lebensraum bieten"
+    }
+  },
+  {
+    "category": "Schutz und Pflege",
+    "number": "3.125",
+    "answer": "C",
+    "question": "Sind flache Ufer aus Sicht der Fischbiologie positiv zu beurteilen?",
+    "options": {
+      "A": "ja, weil sich die Fische hier gerne aufhalten, um zu überwintern",
+      "B": "nein, weil die Fische dort besonders leicht von fischfressenden Vögeln erbeutet werden können",
+      "C": "ja, weil sie Lebensraum, Fortpflanzungs- und Aufwuchsareal für viele Fisch- und Kleintierarten bieten"
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.026",
+    "answer": "A",
+    "question": "Wie muss ein Schnurknoten vor allem beschaffen sein?",
+    "options": {
+      "A": "er darf sich nicht aufziehen lassen (Zugprobe)",
+      "B": "er muss eingefettet sein, damit er sich nicht abwürgen lässt",
+      "C": "er muss so unauffällig wie möglich sein"
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.056",
+    "answer": "C",
+    "question": "Wie hoch soll das Wurfgewicht für die leichte Spinnangel auf Salmonide oder Barsche sein?",
+    "options": {
+      "A": "60 bis 80 g",
+      "B": "40 bis 50 g",
+      "C": "bis ca. 30 g"
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.061",
+    "answer": "A",
+    "question": "Bei welcher Angelmethode werden kleine Wobbler verwendet?",
+    "options": {
+      "A": "beim leichten Spinnfischen",
+      "B": "beim leichten Grundangeln",
+      "C": "beim leichten Fliegenfischen"
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.086",
+    "answer": "B",
+    "question": "Welche Angelmethode ist fischwaidgerecht?",
+    "options": {
+      "A": "das Reißangeln",
+      "B": "das Angeln mit Blinker auf Hechte",
+      "C": "das Angeln mit Wurm als Köder an einem gut zugänglichen Forellenbach"
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.095",
+    "answer": "B",
+    "question": "Was ist die Hauptaufgabe der Fliegenrolle?",
+    "options": {
+      "A": "Sie sorgt automatisch für schnelle und schonende Einholung der Schnur.",
+      "B": "Sie hat die Fliegenschnur geordnet und abrufbar zu halten (Magazinfunktion).",
+      "C": "Sie erlaubt ein störungsfreies Auswerfen der Schnur."
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.119",
+    "answer": "C",
+    "question": "Was ist ein Fischgreifer?",
+    "options": {
+      "A": "ein Gerätekasten kombiniert mit Anglersitz",
+      "B": "ein Suchgerät zur Ortung von Fischschwärmen",
+      "C": "ein Gerät zum Landen großer Fische"
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.128",
+    "answer": "A",
+    "question": "Wie wird ein untermaßiger, lebensfähiger Fisch nach dem Drill behandelt?",
+    "options": {
+      "A": "man ködert ihn im Wasser oder mit nassen Händen ab und lässt ihn unverzüglich ins Wasser zurückgleiten",
+      "B": "er wird mit einem trockenen Tuch gehalten und nach dem Abködern wieder ins Wasser geworfen",
+      "C": "er wird betäubt und getötet"
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.179",
+    "answer": "A",
+    "question": "Was drückt die Bezeichnung „F” bei einer Fliegenschnur aus?",
+    "options": {
+      "A": "Die Schnur schwimmt auf der Wasseroberfläche (Trockenschnur).",
+      "B": "Die Schnur schwimmt unter der Wasseroberfläche (Nassschnur).",
+      "C": "Sie drückt das Herstellungsmaterial aus."
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.183",
+    "answer": "A",
+    "question": "Was ist eine Rachensperre?",
+    "options": {
+      "A": "Hilfsgerät zum Abködern von Raubfischen",
+      "B": "eine Spezialrolle für den Hechtfang",
+      "C": "Infektionskrankheit bei Forellen"
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.188",
+    "answer": "B",
+    "question": "Welche Aussage ist richtig?",
+    "options": {
+      "A": "Einzelhaken werden beim Kunstköderangeln leicht verschluckt.",
+      "B": "Kunstköder mit Einzelhaken sind fischschonender als Kunstköder mit Drillingen.",
+      "C": "Drillingshaken verletzen den Fisch nicht."
+    }
+  },
+  {
+    "category": "Fanggeräte",
+    "number": "4.189",
+    "answer": "C",
+    "question": "Wie verhalten Sie sich, wenn Sie feststellen, dass bei Ihrem gefangenen, untermaßigen Fisch der Haken tief im Schlundbereich sitzt und dort massive Blutungen verursacht hat und jegliche Agilität und Fluchtversuche ausbleiben?",
+    "options": {
+      "A": "Der Fisch wird unter allen Umständen zurückgesetzt, um den gesetzlichen Bestimmungen zu folgen.",
+      "B": "Ein Fisch ohne Überlebenschance kann bedenkenlos entnommen werden, zudem kann aufgrund der ohnehin starken Blutungen auf den Kiemenschnitt verzichtet werden.",
+      "C": "Unter dem Aspekt der Waidgerechtigkeit wird dem Fisch mittels Betäubung und Kiemenschnitt weiteres Leid erspart, das Vorfach verbleibt als Nachweis samt Köderhaken im Schlund, die Blutungen werden hierzu nicht entfernt bzw. ausgespült."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.012",
+    "answer": "C",
+    "question": "Darf der Fischereiausübungsberechtigte dem Gewässer Fischnährtiere mit Ausnahme bestandsgefährdeter Arten entnehmen?",
+    "options": {
+      "A": "nur mit Erlaubnis der Regierung",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.016",
+    "answer": "B",
+    "question": "Was bedeutet „aneignen“ im Fischereirecht?",
+    "options": {
+      "A": "die Übernahme angelieferter Satzfische",
+      "B": "den Eigentumserwerb an herrenlosen Fischen",
+      "C": "den Eigentumserwerb an Fischereirechten"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.036",
+    "answer": "A",
+    "question": "Was ist bei Unterverpachtung eines Fischereirechts zu beachten?",
+    "options": {
+      "A": "Unterverpachtung ist nur zulässig mit Genehmigung des Verpächters",
+      "B": "überhaupt nichts",
+      "C": "im Gegensatz zum Pachtvertrag kann die Unterverpachtung auch auf den Fang einzelner Fischarten beschränkt werden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.062",
+    "answer": "B",
+    "question": "Wer kann als Fischereiaufseher bestellt werden?",
+    "options": {
+      "A": "jeder Inhaber eines gültigen Fischereischeins",
+      "B": "volljährige und zuverlässige Personen mit gültigem Fischereischein, die ausreichende Kenntnisse durch Bestehen eines Eignungstests nachgewiesen haben",
+      "C": "jeder Inhaber eines Waffenscheins mit Genehmigung der Kreisverwaltungsbehörde"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.098",
+    "answer": "A",
+    "question": "Wie wird das Schonmaß eines Fisches nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) festgestellt?",
+    "options": {
+      "A": "Der Fisch wird von der Kopfspitze bis zum Ende des Körpers einschließlich der zusammengelegten Schwanzflosse gemessen.",
+      "B": "Es wird Kopf- und Rumpflänge gemessen.",
+      "C": "Es wird die Rumpflänge bis zum Ende der ausgebreiteten Schwanzflosse gemessen."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.123",
+    "answer": "B",
+    "question": "Welches Schonmaß und welche Schonzeit sind in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) für die Barbe festgesetzt?",
+    "options": {
+      "A": "35 cm und 1. April bis 15. Mai",
+      "B": "40 cm und 1. Mai bis 30. Juni",
+      "C": "45 cm und 1. Mai bis 31. Mai"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.136",
+    "answer": "B",
+    "question": "Welche Angelmethode ist in Bayern verboten?",
+    "options": {
+      "A": "das Fischen mit einer Handangel versehen mit fünf Anbissstellen",
+      "B": "das Fischen mit einem lebenden Fisch als Köder",
+      "C": "das Fischen mit Tauwürmern"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.153",
+    "answer": "A",
+    "question": "Welche Fische dürfen in einem Fließgewässer mit einem sich selbst erhaltenden Bestand an Bachforellen oder Äschen gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ausgesetzt werden?",
+    "options": {
+      "A": "Elritzen",
+      "B": "Forellenbarsche",
+      "C": "Bachsaiblinge"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.197",
+    "answer": "B",
+    "question": "Aus welchem Grund muss ein gefangenes Bachneunauge schonend und unverzüglich in das Herkunftsgewässer zurückgesetzt werden?",
+    "options": {
+      "A": "Es unterliegt nicht dem Fischereirecht.",
+      "B": "Es zählt zu den ganzjährig geschonten Arten.",
+      "C": "Es ist ungenießbar."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.203",
+    "answer": "B",
+    "question": "Darf jemand ohne Fischereischein mit der Handangel in seinem Gartenteich angeln?",
+    "options": {
+      "A": "Nur, wenn das Grundstück eingezäunt ist.",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.207",
+    "answer": "B",
+    "question": "Silagesickersaft",
+    "options": {
+      "A": "ist wertvoller Dünger und gehört ins Gewässer.",
+      "B": "\"gefährdet das Gewässer",
+      "C": " der Eintrag muss verhindert werden.\""
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.218",
+    "answer": "B",
+    "question": "Dürfen elektrische Köder und Drohnen zum Fischen verwendet werden?",
+    "options": {
+      "A": "Ja, ohne Einschränkung.",
+      "B": "Nein.",
+      "C": "Ja, aber nur in geschlossenen Gewässern."
+    }
+  },
+
+  {
+    "category": "Fischkunde",
+    "number": "1.001",
+    "answer": "C",
+    "question": "Welche ist die artenreichste Gruppe der einheimischen Süßwasserfische?",
+    "options": {
+      "A": "die Gruppe der Lachsartigen (Salmoniden)",
+      "B": "die Gruppe der Barschartigen (Perciden)",
+      "C": "die Gruppe der Karpfenartigen (Cypriniden)"
+    }
+  },
+  {
+    "category": "Fischkunde",
+    "number": "1.002",
+    "answer": "A",
+    "question": "Welche Aussage ist richtig?",
+    "options": {
+      "A": "Der Sterlet gehört zu den störartigen Fischen.",
+      "B": "Der Steinbeißer gehört zu den barschartigen Fischen.",
+      "C": "Der Perlfisch gehört zu den dorschartigen Fischen."
+    }
+  },
+  {
+    "category": "Fischkunde",
     "number": "1.005",
     "answer": "A",
     "question": "Zu welcher Tiergruppe gehören die Neunaugen?",
@@ -5235,7 +5929,7 @@
       "C": "Es handelt sich um eine gebührenpflichtige Ordnungswidrigkeit mit Geldbuße."
     }
   }
-  ,
+,
 
   {
     "category": "Fischkunde",
@@ -10066,5 +10760,6 @@
       "C": "Karausche"
     }
   }
+
 
 ]
