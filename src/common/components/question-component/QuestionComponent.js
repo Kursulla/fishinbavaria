@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './QuestionsComponent.css';
 import RememberButton from "./remember-button-component/RememberButton";
 import {savedQuestionsManager} from "../../data/SavedQuestionsManager";
@@ -8,7 +8,13 @@ const QuestionComponent = ({orderNumber, question, rightAnswer}) => {
     const [isAnswered, setIsAnswered] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
     const [error, setError] = useState(false);
-    const options = Object.fromEntries(shuffleElementsInArray(Object.entries(question.options)))
+    const [options, setOptions] = useState([]);
+
+    useEffect(() => {
+        if (options.length === 0) {
+            setOptions(Object.fromEntries(shuffleElementsInArray(Object.entries(question.options))));
+        }
+    }, [options.length, question.options]);
 
     const handleAnswerClick = (key) => {
         if (isAnswered) return
@@ -55,7 +61,6 @@ const QuestionComponent = ({orderNumber, question, rightAnswer}) => {
                         className={`cursor_hand option-item ${(key === question.answer && isAnswered) ? "correct-answer" : ""} ${(selectedOption === key) ? "selected-answer" : ""}`}
                         onClick={() => handleAnswerClick(key)}
                     >
-                        {/*<span className="left">{key}</span>*/}
                         <span className="right">{value}</span>
                     </li>
                 ))}
