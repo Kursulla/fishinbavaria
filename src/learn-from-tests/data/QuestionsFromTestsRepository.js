@@ -11,4 +11,6 @@ export const questionsFromTestsRepository = {
         TEST_CATEGORIES.map((category) =>
             generationQuestionsUtil.setOfQuestionsForCategory(category, QUESTIONS_PER_CATEGORY, questionsFromTests)
         ),
+    getRandomSetForCategory: (category, numberOfQuestions) =>
+        generationQuestionsUtil.setOfQuestionsForCategory(category, numberOfQuestions, questionsFromTests),
 };

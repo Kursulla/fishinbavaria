@@ -5,6 +5,7 @@ import "./Header.css";
 
 const navItems = [
   { path: "/categories", label: "Po kategorijama" },
+  { path: "/test-categories", label: "Pitanja sa testova po kategorijama" },
   { path: "/tests", label: "Simulacija testova" },
   { path: "/marked", label: "Vežbaj obeležena pitanja" },
 ];
