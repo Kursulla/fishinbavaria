@@ -2,9 +2,10 @@
 .question-container {
     position: relative;
     padding: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--card-border);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--shadow);
+    background-color: var(--card-bg);
     width: 90%;
     max-width: 500px;
     margin: auto;
@@ -15,6 +16,7 @@
     font-size: 1.125rem;
     font-weight: bold;
     margin-bottom: 35px;
+    padding-right: 52px;
 }
 .questionCategoryTitle{
     text-align: right;
@@ -42,12 +44,12 @@
 
 .option-item {
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--option-border);
     border-radius: 4px;
-    background-color: white;
+    background-color: var(--option-bg);
     margin-bottom: 4px;
     font-family: "Inter", Arial, sans-serif;
-    color: rgb(89, 89, 89);
+    color: var(--option-text);
     text-align: center;
 }
 
@@ -61,8 +63,8 @@
 
 .check_answer {
     margin: 20px 20px 10px;
-    background-color: #fdfdfd;
-    border: 1px solid #d9d9d9;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
     padding: 8px;
     border-radius: 8px;
 }

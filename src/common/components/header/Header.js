@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTheme } from "../../../context/ThemeContext";
 import "./Header.css";
 
 const navItems = [
@@ -10,6 +11,7 @@ const navItems = [
 
 const Header = () => {
   const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="app-header">
@@ -28,6 +30,17 @@ const Header = () => {
               </Link>
             </li>
           ))}
+          <li>
+            <button
+              type="button"
+              className="header-theme-toggle"
+              onClick={toggleTheme}
+              title={theme === "light" ? "Uključi tamni režim" : "Uključi svetli režim"}
+              aria-label={theme === "light" ? "Tamni režim" : "Svetli režim"}
+            >
+              {theme === "light" ? "Tamni režim" : "Svetli režim"}
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
