@@ -1,0 +1,124 @@
+.App {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.logo{
+    margin: 5px;
+}
+.checkbox-label {
+    margin: 10px;
+    background-color: #fdfdfd;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.number_of_questions_container {
+    margin-top: 20px;
+}
+
+.categories_container {
+    margin: 20px;
+}
+
+.drop_down {
+    width: 200px;
+    background-color: #fdfdfd;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+
+.left {
+    font-weight: bold;
+    width: 30px; /* Fixed width for alignment */
+    text-align: left; /* Center the single character */
+}
+
+.right {
+    flex-grow: 1; /* Takes remaining space */
+    text-align: left;
+}
+
+
+
+.mistake {
+    color: #e53131;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+/*Mark For Later*/
+.toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.toggle.on {
+    background-color: green;
+}
+
+.toggle.off {
+    background-color: red;
+}
+
+.purge_local_storage{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background-color: rgba(217, 217, 217, 0.92);
+    color: #808080;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 999;
+}
