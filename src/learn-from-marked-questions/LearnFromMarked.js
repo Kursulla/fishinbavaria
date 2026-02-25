@@ -1,22 +1,20 @@
 import React, {useEffect, useState} from "react";
 import QuestionComponent from "../common/components/question-item/QuestionComponent";
 import {v4 as uuidv4} from "uuid";
-import {questionsService} from "./questionsService";
-
+import { markedQuestionsRepository } from "./data/MarkedQuestionsRepository";
 
 const LearnFromMarked = () => {
     const [questions, setQuestions] = useState([]);
-    const [noMarkedQuestions, setNoMarkedQuestions] = useState(false)
+    const [noMarkedQuestions, setNoMarkedQuestions] = useState(false);
 
     useEffect(() => {
         if (questions.length === 0 && !noMarkedQuestions) {
             refreshQuestions();
         }
-    })
+    });
 
     function refreshQuestions() {
-        const tmp = questionsService.fetch();
-        const fetchedQuestions = Array.from(tmp);
+        const fetchedQuestions = markedQuestionsRepository.getMarkedQuestions();
         if (fetchedQuestions.length === 0) {
             setNoMarkedQuestions(true)
             return

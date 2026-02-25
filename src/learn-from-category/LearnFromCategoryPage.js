@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
-import allQuestions from "../common/data/allRequiredQuestion.js";
-import {generationQuestionsUtil} from "../common/data/questionsGenerationUtil";
+import {categoryQuestionsRepository} from "./data/CategoryQuestionsRepository";
 import QuestionComponent from "../common/components/question-item/QuestionComponent";
 import {v4 as uuidv4} from "uuid";
 
@@ -8,7 +7,7 @@ const LearnFromCategoryPage = () => {
     const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(20);
     const [questions, setQuestions] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("Fischkunde");
-    const categories = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];
+    const categories = categoryQuestionsRepository.getCategories();
 
     useEffect(() => {
         if (questions.length === 0) {
@@ -17,7 +16,7 @@ const LearnFromCategoryPage = () => {
     })
 
     function refreshQuestions(selectedCategory, numberOfQuestions) {
-        setQuestions(generationQuestionsUtil.setOfQuestionsForCategory(selectedCategory, numberOfQuestions, allQuestions))
+        setQuestions(categoryQuestionsRepository.getRandomSetForCategory(selectedCategory, numberOfQuestions))
     }
 
     const handleCategorySelection = (event) => {

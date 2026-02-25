@@ -62,6 +62,14 @@ function fetchQuestionsAsSet() {
 }
 
 /**
+ * Fetch all marked questions as an array (for listing on the page).
+ * @return {unknown[]}
+ */
+function getMarkedQuestions() {
+    return Array.from(fetchQuestionsAsSet());
+}
+
+/**
  * Use it to purge all saved questions from a storage.
  * Use it wisely, it is irreversible action!!!
  */
@@ -73,5 +81,6 @@ export const markedQuestionsRepository = {
     saveQuestion,
     deleteQuestion,
     fetchQuestionsAsSet,
-    purgeSavedQuestions
-}
+    getMarkedQuestions,
+    purgeSavedQuestions,
+};
