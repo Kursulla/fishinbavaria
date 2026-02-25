@@ -17,6 +17,7 @@
   --option-text: rgb(89, 89, 89);
   --shadow: rgba(0, 0, 0, 0.1);
   --mistake: #e53131;
+  --correct-answer: #0fe13b;
   --purge-bg: rgba(217, 217, 217, 0.92);
   --purge-text: #808080;
 }
@@ -40,6 +41,7 @@
   --option-text: #d0d0d0;
   --shadow: rgba(0, 0, 0, 0.3);
   --mistake: #f06060;
+  --correct-answer: #3a7ca5;
   --purge-bg: rgba(60, 64, 72, 0.95);
   --purge-text: #b0b0b0;
 }

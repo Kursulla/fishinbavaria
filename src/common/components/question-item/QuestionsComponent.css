@@ -54,7 +54,7 @@
 }
 
 .correct-answer {
-    background-color: #0fe13b;
+    background-color: var(--correct-answer);
 }
 
 .cursor_hand {
