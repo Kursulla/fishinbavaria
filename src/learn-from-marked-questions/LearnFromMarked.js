@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import QuestionComponent from "../common/components/question-component/QuestionComponent";
+import QuestionComponent from "../common/components/question-item/QuestionComponent";
 import {v4 as uuidv4} from "uuid";
 import {questionsService} from "./questionsService";
 

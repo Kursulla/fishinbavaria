@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {questionsService} from "./questionsService";
-import QuestionComponent from "../common/components/question-component/QuestionComponent";
+import allQuestions from "../common/data/allRequiredQuestion.js";
+import {generationQuestionsUtil} from "../common/data/questionsGenerationUtil";
+import QuestionComponent from "../common/components/question-item/QuestionComponent";
 import {v4 as uuidv4} from "uuid";
 
 const LearnFromCategoryPage = () => {
@@ -16,7 +17,7 @@ const LearnFromCategoryPage = () => {
     })
 
     function refreshQuestions(selectedCategory, numberOfQuestions) {
-        setQuestions(questionsService.generateQuestions(selectedCategory, numberOfQuestions))
+        setQuestions(generationQuestionsUtil.setOfQuestionsForCategory(selectedCategory, numberOfQuestions, allQuestions))
     }
 
     const handleCategorySelection = (event) => {

@@ -69,7 +69,7 @@ function purgeSavedQuestions(){
     localStorage.removeItem(LOCAL_STORAGE_KEY)
 }
 
-export const savedQuestionsManager = {
+export const markedQuestionsRepository = {
     saveQuestion,
     deleteQuestion,
     fetchQuestionsAsSet,

@@ -1,12 +1,12 @@
 import React from "react";
-import { savedQuestionsManager } from "./common/data/SavedQuestionsManager";
+import { markedQuestionsRepository } from "./learn-from-marked-questions/data/MarkedQuestionsRepository";
 
 const Home = () => {
   const URLParams = new URLSearchParams(window.location.search);
   const showDeleteButton = URLParams.get("reset");
 
   function handleCleaningMarketQuestionsClick() {
-    savedQuestionsManager.purgeSavedQuestions();
+    markedQuestionsRepository.purgeSavedQuestions();
   }
 
   return (

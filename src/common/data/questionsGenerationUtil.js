@@ -1,13 +1,13 @@
 
 
-const generateSetOfQuestionsForCategory = (category, numberOfQuestions, source) => {
+const generateSetOfQuestionsForCategory = (categoryName, numberOfQuestions, source) => {
     const getRandomQuestionFrom = (questions) => {
         return questions[Math.floor(Math.random() * questions.length)];
     };
 
     const selectedQuestions = new Set();
 
-    const questionsBasedOnCategory = source.filter(question => question.category === category);
+    const questionsBasedOnCategory = source.filter((question) => question.category === categoryName);
     const randomlySelectedQuestions = [];
     for (let i = 0; i <= numberOfQuestions - 1; i++) {
         let question = getRandomQuestionFrom(questionsBasedOnCategory);

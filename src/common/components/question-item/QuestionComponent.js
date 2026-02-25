@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from "react";
 import './QuestionsComponent.css';
-import RememberButton from "./remember-button-component/RememberButton";
-import {savedQuestionsManager} from "../../data/SavedQuestionsManager";
-import {shuffleElementsInArray} from "../../util/utilFunction";
+import MarkQuestionButton from "./remember-button-component/MarkQuestionButton";
+import {markedQuestionsRepository} from "../../../learn-from-marked-questions/data/MarkedQuestionsRepository";
+
+function shuffleElementsInArray(array) {
+    return array.sort(() => Math.random() - 0.5);
+}
 
 const QuestionComponent = ({orderNumber, question, rightAnswer}) => {
     const [isAnswered, setIsAnswered] = useState(false);
@@ -29,14 +32,14 @@ const QuestionComponent = ({orderNumber, question, rightAnswer}) => {
 
     const handleMarkForLaterOnClick = (question, state) => {
         if (state) {
-            savedQuestionsManager.saveQuestion(question)
+            markedQuestionsRepository.saveQuestion(question)
         } else {
-            savedQuestionsManager.deleteQuestion(question)
+            markedQuestionsRepository.deleteQuestion(question)
         }
     }
 
     const isQuestionMarked = (questionNumber) => {
-        const markedQuestions = savedQuestionsManager.fetchQuestionsAsSet()
+        const markedQuestions = markedQuestionsRepository.fetchQuestionsAsSet()
         for (const item of markedQuestions) {
             if (item.number === questionNumber) {
                 return true
@@ -48,8 +51,8 @@ const QuestionComponent = ({orderNumber, question, rightAnswer}) => {
     return (
         <div className="question-container">
             <h2 className="question-title">{orderNumber + 1}: {question.question} <br/></h2>
-            <div className="remember-button">
-                <RememberButton
+            <div className="mark-question-button">
+                <MarkQuestionButton
                     alreadyMarked={isQuestionMarked(question.number)}
                     question={question}
                     onClick={handleMarkForLaterOnClick}/>

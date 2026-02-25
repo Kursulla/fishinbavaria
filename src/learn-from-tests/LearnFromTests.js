@@ -1,27 +1,18 @@
 import React, {useEffect, useState} from "react";
-
-import QuestionComponent from "../common/components/question-component/QuestionComponent";
+import {questionsFromTestsRepository} from "./data/QuestionsFromTestsRepository";
+import QuestionComponent from "../common/components/question-item/QuestionComponent";
 import {v4 as uuidv4} from "uuid";
-import {questionsService} from "./questionsService";
 
 
 const LearnFromTests = () => {
     const [questions, setQuestions] = useState([]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    const categories = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];
+    const categories = questionsFromTestsRepository.getTestCategories();
 
     useEffect(() => {
         if (questions.length === 0) {
-            const newQuestions = [];
-            newQuestions.push(questionsService.generateFromCategory(categories[0], 12))
-            newQuestions.push(questionsService.generateFromCategory(categories[1], 12))
-            newQuestions.push(questionsService.generateFromCategory(categories[2], 12))
-            newQuestions.push(questionsService.generateFromCategory(categories[3], 12))
-            newQuestions.push(questionsService.generateFromCategory(categories[4], 12))
-
-            setQuestions(newQuestions);
+            setQuestions(questionsFromTestsRepository.getRandomTestSet());
         }
-    }, [questions.length, categories])
+    }, [questions.length])
 
     const rightAnswer = (status) => {
         console.log(status)
@@ -29,7 +20,7 @@ const LearnFromTests = () => {
 
     return (
         <div className="App">
-            <h5>Ukupan broj pitanja sa testova: {questionsService.totalNumberOfQuestionsFromTests()}</h5>
+            <h5>Ukupan broj pitanja sa testova: {questionsFromTestsRepository.getTotalCount()}</h5>
             <div className="p-6">
                 {categories.map((category, index) => (
                     <div>

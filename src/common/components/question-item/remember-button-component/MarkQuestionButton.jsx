@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './RememberButton.css';
+import './MarkQuestionButton.css';
 
-const RememberButton = ({ alreadyMarked, question, onClick }) => {
+const MarkQuestionButton = ({ alreadyMarked, question, onClick }) => {
     const [isMarked, setIsMarked] = useState(alreadyMarked);
 
     const handleClick = () => {
@@ -19,4 +19,4 @@ const RememberButton = ({ alreadyMarked, question, onClick }) => {
     );
 };
 
-export default RememberButton;
+export default MarkQuestionButton;
