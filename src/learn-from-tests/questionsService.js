@@ -1,4 +1,4 @@
-import fileWithTopQuestions from "./questionsFromTests.json";
+import fileWithTopQuestions from "./data/questionsFromTests.json";
 import {generationQuestionsUtil} from "../common/data/questionsGenerationUtil";
 
 

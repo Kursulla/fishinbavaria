@@ -27,10 +27,10 @@ U ovom folderu se kreira fajl sa datumom i vremenom u imenu, npr.:
 
 Aplikacija učitava master fajl:
 
-`src/learn-from-tests/questionsFromTests.json`
+`src/learn-from-tests/data/questionsFromTests.json`
 
 Kada želiš da ažuriraš pitanja u aplikaciji, ručno kopiraj željeni generisani fajl (npr. `questionsFromTests_24-02-2025_14-30.json`) u taj master fajl, npr.:
 
 ```bash
-cp questionsFromTests_24-02-2025_14-30.json ../src/learn-from-tests/questionsFromTests.json
+cp questionsFromTests_24-02-2025_14-30.json ../src/learn-from-tests/data/questionsFromTests.json
 ```
