@@ -1,0 +1,111 @@
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+  padding: 0.75rem 16px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.header-logo-link {
+  display: block;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.header-logo {
+  height: 48px;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  display: block;
+}
+
+.header-nav {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav-link {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  min-height: 44px;
+  box-sizing: border-box;
+  line-height: 1.4;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.header-nav-link:hover {
+  background: #e8e8e8;
+  color: #111;
+}
+
+.header-nav-link--active {
+  background: #282c34;
+  color: white;
+}
+
+.header-nav-link--active:hover {
+  background: #1a1d23;
+  color: white;
+}
+
+@media (min-width: 480px) {
+  .app-header {
+    gap: 1rem 2rem;
+    padding: 1rem 20px;
+  }
+
+  .header-logo {
+    height: 56px;
+  }
+
+  .header-nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .app-header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1rem 24px;
+  }
+
+  .header-nav {
+    width: auto;
+    overflow-x: visible;
+  }
+
+  .header-nav-list {
+    justify-content: flex-end;
+    gap: 0.5rem 1rem;
+  }
+
+  .header-logo {
+    height: 60px;
+  }
+}

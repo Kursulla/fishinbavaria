@@ -36,7 +36,6 @@ const LearnFromCategoryPage = () => {
     }
     return (
         <div className="App">
-            <img className="logo" src="logo_300.png" alt="Some alt tag" width="100"/>
             <div className="categories_container">
                 <h3>Koju kategoriju želiš da vežbaš:</h3>
                 <select className="drop_down" value={selectedCategory} onChange={handleCategorySelection}>

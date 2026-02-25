@@ -1,0 +1,76 @@
+# RoadmapIt - Cursor Rules
+
+## Tech Stack
+- React 18 + TypeScript + Vite
+- date-fns, lucide-react
+- CSS modules / co-located styles
+
+## Architecture
+- **Feature-based structure**: Each feature in `src/features/<feature>/` with its own components and barrel export (`index.ts`)
+- **Shared resources** in `src/shared/`: components, context, types, styles, utils, repositories
+- **Data flow**: RoadmapContext (useReducer) → useRoadmap() hook → components
+
+## Import Conventions
+- Features import from `../../shared/context`, `../../shared/types`, etc.
+- Feature modals import `../../shared/styles/modal.css`
+- Use barrel exports: `import { X } from '../feature'` not `from '../feature/X'`
+
+
+
+## Patterns
+- Functional components only
+- Context + useReducer for state; dispatch actions for CRUD
+- Co-locate feature styles (e.g. `gantt.css` in gantt-chart/). Colocate utils, helpers... keep them as close to the feature as possible
+- Modal components: InitiativeDetailModal, MilestoneDetailModal, TaskDetailModal
+
+## Repositories
+- `SomeDataRepository` interface for data source abstraction
+- `SampleRepository` and `JRealRepositoryDump` implementations
+- Jira config in `jira.env`, field mapping in `jiraFieldMapping.json`
+
+## Code Style
+- Prefer explicit types over inference for public APIs
+- Use `date-fns` for date formatting
+- Keep components focused; extract logic to hooks when reusable
+
+---
+
+# Architecture & Design Philosophy
+
+## 1. Core Philosophy: Code as Prose
+* **Narrative Flow:** Code must be written to be read from top to bottom like a story. High-level abstractions come first, followed by lower-level implementation details.
+* **Intent-Revealing Code:** The "What" and "Why" should be so clear from the code itself that comments become almost unnecessary.
+* **Minimal Cognitive Load:** Avoid complex one-liners or "clever" tricks. Clarity is the ultimate sophistication.
+
+## 2. Architecture & SOLID Principles
+* **Clean Architecture:** Maintain a strict separation between domain logic and infrastructure. Business rules should never know about filesystems, APIs, or databases.
+* **SOLID Rigor:**
+    * **Single Responsibility (SRP):** Each function/component must have exactly one reason to change.
+    * **Dependency Inversion (DIP):** Depend on abstractions (interfaces, types). Never hard-code dependencies.
+* **Design Patterns:** Actively implement patterns like **Strategy** for varying algorithms, **Factory** for object creation, and **Command** for complex operations.
+* **Composition:** Always favor composition over inheritance to keep the system flexible.
+
+## 3. TypeScript Implementation & Signatures
+* **Strict Typing:** Every function signature must be fully typed. Use `interface`, `type`, and `Optional` for flexible yet safe interfaces.
+* **The 15-Line Rule:** Functions should not exceed 15 lines. If a function is too long, extract logical steps into descriptive helper functions.
+* **Flat Logic:** Use **Guard Clauses** (early returns) to avoid nested `if` statements. Maximum nesting depth allowed: 2 levels.
+* **Explicit Signatures:** Use clear parameter names; consider object parameters for functions with more than 3 arguments.
+
+## 4. Naming & Ubiquitous Language
+* **No Technical Jargon:** Use domain-specific names (e.g., `loadInitiatives` instead of `fetchFromDb`).
+* **Zero Abbreviations:** Use `request` instead of `req`, `response` instead of `res`, `configuration` instead of `config`. Full words only.
+* **Boolean Clarity:** Boolean variables must answer a question (e.g., `isActive`, `hasExpired`, `shouldRecalculate`).
+* **Descriptive Variables:** A variable name should describe its content perfectly (e.g., `unpaidInvoicesTotal` instead of `total`).
+
+## 5. Visual Structure & Formatting
+* **Vertical Separation:** Use double line breaks to separate different logical sections of a file.
+* **Logical Grouping:** Group related functions/components together. Keep private/helper functions directly below the public ones that invoke them.
+* **Linting:** Follow ESLint and Prettier configuration in the project.
+
+## Custom Commands & Automation
+
+* **Command: "new feature {name of the feature}"**
+    1. **Create Branch:** When user says "new feature {name}", create a new git branch with the name `feature/{name}` (convert spaces to hyphens, lowercase).
+    2. **Checkout:** Automatically checkout the new branch.
+    3. **Confirmation:** Inform the user: "Created and switched to branch 'feature/{name}'"
+    4. **Example:** If user says "new feature product filters", create branch `feature/product-filters`
