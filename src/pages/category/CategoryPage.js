@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { testCategoriesRepository } from "./data/TestCategoriesRepository";
-import QuestionComponent from "../common/components/question-item/QuestionComponent";
+import { categoryQuestionsRepository } from "./data/CategoryQuestionsRepository";
+import QuestionComponent from "../../common/components/question-item/QuestionComponent";
 import { v4 as uuidv4 } from "uuid";
 
-const LearnFromTestCategoriesPage = () => {
+const CategoryPage = () => {
     const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(20);
     const [questions, setQuestions] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("Fischkunde");
-    const categories = testCategoriesRepository.getCategories();
+    const categories = categoryQuestionsRepository.getCategories();
 
     useEffect(() => {
         if (questions.length === 0) {
@@ -15,8 +15,8 @@ const LearnFromTestCategoriesPage = () => {
         }
     });
 
-    function refreshQuestions(category, count) {
-        setQuestions(testCategoriesRepository.getRandomSetForCategory(category, count));
+    function refreshQuestions(cat, count) {
+        setQuestions(categoryQuestionsRepository.getRandomSetForCategory(cat, count));
     }
 
     const handleCategorySelection = (event) => {
@@ -36,7 +36,7 @@ const LearnFromTestCategoriesPage = () => {
     return (
         <div className="App">
             <div className="categories_container">
-                <h3>Koju kategoriju želiš da vežbaš (samo pitanja sa testova):</h3>
+                <h3>Koju kategoriju želiš da vežbaš:</h3>
                 <select className="drop_down" value={selectedCategory} onChange={handleCategorySelection}>
                     {categories.map((category) => (
                         <option key={category} value={category}>{category}</option>
@@ -45,12 +45,7 @@ const LearnFromTestCategoriesPage = () => {
             </div>
             <div className="number_of_questions_container">
                 <h3>Koliko pitanja želiš da vidiš:</h3>
-                <select
-                    className="drop_down"
-                    value={numberOfQuestions}
-                    onChange={handleNumberOfQuestionsChange}
-                    autoFocus={false}
-                >
+                <select className="drop_down" value={numberOfQuestions} onChange={handleNumberOfQuestionsChange} autoFocus={false}>
                     <option key="10" value={10}>10</option>
                     <option key="20" value={20}>20</option>
                     <option key="30" value={30}>30</option>
@@ -63,12 +58,7 @@ const LearnFromTestCategoriesPage = () => {
             <div className="p-6">
                 {selectedCategory && questions && questions.map((question, index) => (
                     <div key={question.number ?? index}>
-                        <QuestionComponent
-                            key={uuidv4()}
-                            orderNumber={index}
-                            question={question}
-                            rightAnswer={rightAnswer}
-                        />
+                        <QuestionComponent key={uuidv4()} orderNumber={index} question={question} rightAnswer={rightAnswer} />
                     </div>
                 ))}
             </div>
@@ -76,4 +66,4 @@ const LearnFromTestCategoriesPage = () => {
     );
 };
 
-export default LearnFromTestCategoriesPage;
+export default CategoryPage;

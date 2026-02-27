@@ -1,12 +1,11 @@
-import './App.css';
 import React from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import Layout from "./Layout";
-import LearnFromCategoryPage from "./learn-from-category/LearnFromCategoryPage";
-import LearnFromTests from "./learn-from-tests/LearnFromTests";
-import Home from "./Home";
-import LearnFromMarked from "./learn-from-marked-questions/LearnFromMarked";
-import LearnFromTestCategoriesPage from "./learn-from-test-categories/LearnFromTestCategoriesPage";
+import Layout from "./pages/Layout";
+import CategoryPage from "./pages/category/CategoryPage";
+import TestsPage from "./pages/tests/TestsPage";
+import Home from "./pages/Home";
+import MarkedPage from "./pages/marked-questions/MarkedPage";
+import TestCategoriesPage from "./pages/test-categories/TestCategoriesPage";
 
 function App() {
   return (
@@ -14,10 +13,10 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/categories" element={<LearnFromCategoryPage />} />
-          <Route path="/test-categories" element={<LearnFromTestCategoriesPage />} />
-          <Route path="/tests" element={<LearnFromTests />} />
-          <Route path="/marked" element={<LearnFromMarked />} />
+          <Route path="/categories" element={<CategoryPage />} />
+          <Route path="/test-categories" element={<TestCategoriesPage />} />
+          <Route path="/tests" element={<TestsPage />} />
+          <Route path="/marked" element={<MarkedPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

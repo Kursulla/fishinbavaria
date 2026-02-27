@@ -1,5 +1,5 @@
 import questionsFromTests from "./questionsFromTests.json";
-import { generationQuestionsUtil } from "../../common/data/questionsGenerationUtil";
+import { generationQuestionsUtil } from "../../../common/data/questionsGenerationUtil";
 
 const QUESTIONS_PER_CATEGORY = 12;
 const TEST_CATEGORIES = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];

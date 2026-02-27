@@ -1,5 +1,5 @@
-import allQuestions from "../../common/data/allRequiredQuestion.js";
-import { generationQuestionsUtil } from "../../common/data/questionsGenerationUtil";
+import allQuestions from "../../../common/data/allRequiredQuestion.js";
+import { generationQuestionsUtil } from "../../../common/data/questionsGenerationUtil";
 
 const CATEGORIES = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];
 

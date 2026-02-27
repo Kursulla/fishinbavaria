@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './QuestionsComponent.css';
 import MarkQuestionButton from "./remember-button-component/MarkQuestionButton";
-import {markedQuestionsRepository} from "../../../learn-from-marked-questions/data/MarkedQuestionsRepository";
+import { markedQuestionsRepository } from "../../../pages/marked-questions/data/MarkedQuestionsRepository";
 
 function shuffleElementsInArray(array) {
     return array.sort(() => Math.random() - 0.5);

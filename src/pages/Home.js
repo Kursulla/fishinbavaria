@@ -1,5 +1,5 @@
 import React from "react";
-import { markedQuestionsRepository } from "./learn-from-marked-questions/data/MarkedQuestionsRepository";
+import { markedQuestionsRepository } from "./marked-questions/data/MarkedQuestionsRepository";
 
 const Home = () => {
   const URLParams = new URLSearchParams(window.location.search);

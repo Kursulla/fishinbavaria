@@ -61,14 +61,6 @@
     cursor: pointer;
 }
 
-.check_answer {
-    margin: 20px 20px 10px;
-    background-color: var(--input-bg);
-    border: 1px solid var(--input-border);
-    padding: 8px;
-    border-radius: 8px;
-}
-
 .question-options li {
     display: flex;
     align-items: center;
