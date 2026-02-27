@@ -67,7 +67,9 @@ const Header = () => {
   return (
     <header className="app-header">
       <Link to="/" className="header-logo-link" onClick={closeDrawer}>
-        <img className="header-logo" src="/logo_300.png" alt="Catch the License" />
+        <span className="header-logo-wrap">
+          <img className="header-logo" src="/logo_300.png" alt="Catch the License" />
+        </span>
       </Link>
       <button
         type="button"
