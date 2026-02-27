@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { testCategoriesRepository } from "./data/TestCategoriesRepository";
 import QuestionComponent from "../../common/components/question-item/QuestionComponent";
+import AnswerStatsBar from "../../common/components/answer-stats-bar/AnswerStatsBar";
 import { v4 as uuidv4 } from "uuid";
 
 const TestCategoriesPage = () => {
     const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(20);
     const [questions, setQuestions] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("Fischkunde");
+    const [answered, setAnswered] = useState(0);
+    const [wrong, setWrong] = useState(0);
     const categories = testCategoriesRepository.getCategories();
 
     useEffect(() => {
@@ -17,6 +20,8 @@ const TestCategoriesPage = () => {
 
     function refreshQuestions(category, count) {
         setQuestions(testCategoriesRepository.getRandomSetForCategory(category, count));
+        setAnswered(0);
+        setWrong(0);
     }
 
     const handleCategorySelection = (event) => {
@@ -29,12 +34,14 @@ const TestCategoriesPage = () => {
         refreshQuestions(selectedCategory, Number(event.target.value));
     };
 
-    const rightAnswer = (status) => {
-        console.log(status);
+    const handleAnswer = (isCorrect) => {
+        setAnswered((a) => a + 1);
+        if (!isCorrect) setWrong((w) => w + 1);
     };
 
     return (
         <div className="App">
+            <AnswerStatsBar answered={answered} wrong={wrong} />
             <div className="categories_container">
                 <h3>Koju kategoriju želiš da vežbaš (samo pitanja sa testova):</h3>
                 <select className="drop_down" value={selectedCategory} onChange={handleCategorySelection}>
@@ -64,10 +71,10 @@ const TestCategoriesPage = () => {
                 {selectedCategory && questions && questions.map((question, index) => (
                     <div key={question.number ?? index}>
                         <QuestionComponent
-                            key={uuidv4()}
+                            key={question.number ?? index}
                             orderNumber={index}
                             question={question}
-                            rightAnswer={rightAnswer}
+                            onAnswer={handleAnswer}
                         />
                     </div>
                 ))}

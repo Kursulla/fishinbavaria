@@ -1,0 +1,2444 @@
+[
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.001",
+    "answer": "C",
+    "question": "Was ist Inhalt und Gegenstand des Fischereirechts?",
+    "options": {
+      "A": "es gibt die Befugnis, fischereischädliche Tiere zur Erhaltung des Fischbestandes zu bekämpfen",
+      "B": "es gibt die Befugnis, unbeschränkt die Fischerei auszuüben",
+      "C": "es gibt die Befugnis, in einem Gewässer Fische, Neunaugen und Krebse sowie Fluss-, Teich- und Perlmuscheln zu hegen, zu fangen und sich anzueignen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.002",
+    "answer": "A",
+    "question": "Welche Tiere sind in Bayern Gegenstand des Fischereirechts?",
+    "options": {
+      "A": "Fische, Neunaugen, Krebse, Fluss-, Teich- und Perlmuscheln sowie Fischnährtiere",
+      "B": "Fische, Schildkröten und Frösche",
+      "C": "Fische, Krebse und Lurche"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.003",
+    "answer": "B",
+    "question": "In wessen Eigentum stehen wildlebende Fische in nicht geschlossenen Gewässern?",
+    "options": {
+      "A": "sie gehören dem Inhaber des Fischereirechts",
+      "B": "sie sind herrenlos, an ihnen besteht überhaupt kein Eigentum",
+      "C": "sie gehören dem Staat"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.004",
+    "answer": "A",
+    "question": "Gilt in Bayern an bestimmten Gewässern das Recht des freien Fischfangs?",
+    "options": {
+      "A": "nein",
+      "B": "ja, in Bundeswasserstraßen",
+      "C": "ja, in Grenzgewässern (Bodensee)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.005",
+    "answer": "A",
+    "question": "Das Fischereirecht erstreckt sich in Bayern auch auf",
+    "options": {
+      "A": "Fischlaich und sonstige Entwicklungsformen der Fische sowie auf Fischnährtiere",
+      "B": "Wasserpflanzen",
+      "C": "die Sumpfschildkröte und Frösche"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.006",
+    "answer": "C",
+    "question": "Wer darf in Bayern Krebse fangen?",
+    "options": {
+      "A": "nur besonders bestellte Krebsfänger",
+      "B": "Der Krebsfang ist in Bayern verboten.",
+      "C": "der zur Ausübung der Fischerei Berechtigte"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.007",
+    "answer": "A",
+    "question": "Erstreckt sich das Fischereirecht auch auf Fischlaich?",
+    "options": {
+      "A": "ja, bei allen Fischen",
+      "B": "ja, aber nur auf den Laich von ganzjährig geschonten Fischen",
+      "C": "nein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.008",
+    "answer": "A",
+    "question": "Bezieht sich das Hege- und Aneignungsrecht des Fischereiberechtigten auch auf Fluss- und Teichmuscheln?",
+    "options": {
+      "A": "ja",
+      "B": "nur dann, wenn dies die Verwaltungsbehörde verfügt",
+      "C": "nein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.009",
+    "answer": "A",
+    "question": "Welche Tierart ist Gegenstand des Fischereirechts?",
+    "options": {
+      "A": "Flussperlmuschel",
+      "B": "Fischotter",
+      "C": "Sumpfbiber"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.010",
+    "answer": "B",
+    "question": "Wenn im Bayerischen Fischereigesetz der Begriff „Fische “gebraucht wird, gilt dies als Sammelbegriff für",
+    "options": {
+      "A": "Fische, Frösche, Krebse, Neunaugen",
+      "B": "Fische, Neunaugen, Krebse, Fluss-, Teich- und Perlmuscheln",
+      "C": "Fische, Schildkröten, Krebse, Neunaugen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.011",
+    "answer": "A",
+    "question": "Besteht für den Fang von Fischnährtieren eine Fischereischeinpflicht?",
+    "options": {
+      "A": "nein",
+      "B": "ja, aber nur für den Fang in nicht geschlossenen Gewässern",
+      "C": "ja, es genügt für den Fang in nicht geschlossenen Gewässern der normale Fischereischein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.012",
+    "answer": "C",
+    "question": "Darf der Fischereiausübungsberechtigte dem Gewässer Fischnährtiere mit Ausnahme bestandsgefährdeter Arten entnehmen?",
+    "options": {
+      "A": "nur mit Erlaubnis der Regierung",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.013",
+    "answer": "C",
+    "question": "Darf der Fischereiberechtigte anderen Personen gestatten, aus dem Gewässer Fischnährtiere mit Ausnahme bestandsgefährdeter Arten zu entnehmen?",
+    "options": {
+      "A": "nein",
+      "B": "Die Entnahme von Fischnährtieren kann grundsätzlich nur die Regierung genehmigen.",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.014",
+    "answer": "B",
+    "question": "Für die Entnahme von nicht bestandsgefährdeten Fischnährtieren aus einem Fischwasser wird folgendes benötigt:",
+    "options": {
+      "A": "keinerlei besondere Erlaubnis",
+      "B": "die Erlaubnis des Fischereiberechtigten",
+      "C": "ein gültiger Fischereischein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.015",
+    "answer": "B",
+    "question": "Welche Aussage gehört zum gesetzlichen Hegeziel?",
+    "options": {
+      "A": "Erhaltung und Förderung eines der Größe des Gewässers angepassten gesunden und angelfischereilich interessanten Fischbestandes",
+      "B": "Erhaltung und Förderung eines der Größe, Beschaffenheit und Ertragsfähigkeit des Gewässers angepassten artenreichen und gesunden Fischbestandes",
+      "C": "Erhaltung eines der Größe des Gewässers angepassten Fischbestandes durch Besatz mit fangreifen Fischen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.016",
+    "answer": "B",
+    "question": "Was bedeutet „aneignen“ im Fischereirecht?",
+    "options": {
+      "A": "die Übernahme angelieferter Satzfische",
+      "B": "den Eigentumserwerb an herrenlosen Fischen",
+      "C": "den Eigentumserwerb an Fischereirechten"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.017",
+    "answer": "A",
+    "question": "Was versteht man unter Hege?",
+    "options": {
+      "A": "Maßnahmen, die auf die Erhaltung und Förderung des Fischbestandes sowie auf die Pflege und Sicherung standortgerechter Lebensgemeinschaften abzielen",
+      "B": "das Halten von Fischen in Netzgehegen",
+      "C": "die Fischereiausübung in nicht geschlossenen Gewässern auf Fische und Krebse unter ihrem Schonmaß"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.018",
+    "answer": "C",
+    "question": "Ist mit dem Fischereirecht auch die Pflicht zur Hege verbunden?",
+    "options": {
+      "A": "nur in Landschafts- und Naturschutzgebieten",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.019",
+    "answer": "C",
+    "question": "Was bedeutet Hegepflicht?",
+    "options": {
+      "A": "die Pflicht, als Hegemaßnahme die Ufer zu bepflanzen, um der Tierwelt Unterschlupf zu bieten",
+      "B": "die Verpflichtung zum Einbringen von Netzgehegen in Fließgewässer, um das Abwandern der Regenbogenforellen zu verhindern",
+      "C": "die Pflicht zur Erhaltung und Förderung eines der Größe, Beschaffenheit und Ertragsfähigkeit des Gewässers angepassten artenreichen und gesunden Fischbestandes sowie die Pflege und Sicherung standortgerechter Lebensgemeinschaften"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.020",
+    "answer": "A",
+    "question": "Welche Gewässer zählt man stets zu den geschlossenen Gewässern?",
+    "options": {
+      "A": "alle künstlich angelegten, ablassbaren und während der Bespannung gegen den Wechsel der Fische ständig abgesperrten Fischteiche und Fischbehälter",
+      "B": "Baggerseen",
+      "C": "Altwasser"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.021",
+    "answer": "C",
+    "question": "Ein Angler fischt unbefugt in einem Bach, hat aber noch nichts gefangen. Liegt eine Straftat vor?",
+    "options": {
+      "A": "nein, weil er seine Fertigkeit im Fischen testen wollte",
+      "B": "nein, erst dann, wenn er einen Fisch gefangen hat",
+      "C": "ja, denn das Auswerfen der fangfertigen Angel ins Fischwasser ist bereits strafbar"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.022",
+    "answer": "A",
+    "question": "Wer sich widerrechtlich Fische aus einem geschlossenen Gewässer aneignet, begeht",
+    "options": {
+      "A": "Diebstahl.",
+      "B": "Fischwilderei.",
+      "C": "Unterschlagung."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.023",
+    "answer": "C",
+    "question": "Wer ist, soweit kein selbstständiges Fischereirecht eines anderen besteht, in einem Gewässer fischereiberechtigt?",
+    "options": {
+      "A": "der Staat",
+      "B": "die Einwohner der anliegenden Gemeinde",
+      "C": "die Eigentümer des Gewässers"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.024",
+    "answer": "B",
+    "question": "Was sind selbstständige Fischereirechte?",
+    "options": {
+      "A": "Fischereirechte, die lediglich einer Person zustehen",
+      "B": "Fischereirechte, die nicht dem Eigentümer des Gewässers zustehen",
+      "C": "Fischereirechte, die sich auf ein geschlossenes Gewässer beziehen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.025",
+    "answer": "A",
+    "question": "Ein Fischwasser tritt über die Ufer. Dürfen Vorrichtungen angebracht werden, die die Rückkehr des Wassers und der Fische in das Wasserbett verhindern?",
+    "options": {
+      "A": "nein",
+      "B": "ja",
+      "C": "nur mit Einverständnis des Grundstückseigentümers"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.026",
+    "answer": "B",
+    "question": "Wenn ein Fischwasser über seine Ufer tritt, ist dann der im Fischwasser Fischereiberechtigte befugt, auf dem überfluteten Grundstück zu fischen?",
+    "options": {
+      "A": "Es handelt sich um einen Notstand, es darf nicht gefischt werden.",
+      "B": "ja, unter Beachtung der Grenzen fremder Fischwasser",
+      "C": "Es darf erst eine Woche nach dem Rücktritt des Wassers in Wasseransammlungen auf ehemals überfluteten Grundstücken, die keine Verbindung zum Fischwasser haben, gefischt werden."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.027",
+    "answer": "C",
+    "question": "Wie lange darf sich der Fischereiberechtigte Fische aneignen, die nach Rückgang der Überflutung in Vertiefungen ohne fortdauernde Verbindung mit dem Fischwasser verblieben sind?",
+    "options": {
+      "A": "zwei Wochen",
+      "B": "überhaupt nicht",
+      "C": "eine Woche"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.028",
+    "answer": "A",
+    "question": "Ab welchem räumlichen Umfang liegt in einem Fließgewässer in der Regel ein selbstständiger Fischereibetrieb vor?",
+    "options": {
+      "A": "ab einer zusammenhängenden, die ganze Breite des Gewässers umfassenden Strecke von mindestens zwei Kilometern Uferlänge",
+      "B": "ab einer nicht zusammenhängenden Strecke von mindestens drei Kilometern Uferlänge",
+      "C": "ab einer zusammenhängenden, die ganze Breite des Gewässers umfassenden Strecke von mindestens einem Kilometer Uferlänge"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.029",
+    "answer": "C",
+    "question": "Welcher Form bedarf ein Fischereipachtvertrag zu seiner Gültigkeit?",
+    "options": {
+      "A": "es genügt ein mündlicher Vertragsabschluss mit Anzeige bei der Verwaltungsbehörde binnen acht Tagen",
+      "B": "es genügt eine mündliche Abmachung in Gegenwart von Zeugen",
+      "C": "die Schriftform ist erforderlich"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.030",
+    "answer": "A",
+    "question": "Welche Aussage ist richtig? Fischereipachtverträge sind gemäß dem Bayerischen Fischereigesetz (BayFiG) abzuschließen",
+    "options": {
+      "A": "für mindestens 10 Jahre und mit höchstens drei Personen als Pächter",
+      "B": "für höchstens 12 Jahre und mit beliebiger Pächterzahl",
+      "C": "für mindestens 8 Jahre und mit höchstens fünf Personen als Pächter"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.031",
+    "answer": "B",
+    "question": "Fischereipächter eines Fließgewässers darf nur sein, wer",
+    "options": {
+      "A": "mindestens seit drei Jahren einen gültigen Fischereischein besitzt",
+      "B": "einen gültigen Fischereischein besitzt",
+      "C": "einen Befähigungsnachweis für Fließgewässerbewirtschaftung erworben hat"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.032",
+    "answer": "C",
+    "question": "Welche Aussage zur Fischereipacht ist richtig?",
+    "options": {
+      "A": "Der Pächter darf nur mit bestimmten Geräten fischen.",
+      "B": "Der Pächter darf nur bestimmte Fischarten fangen.",
+      "C": "Die Verpachtung ist nur nach dem ganzen Inhalt des Fischereirechtes zulässig."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.033",
+    "answer": "C",
+    "question": "Welche Personen dürfen zur Fischereipacht eines Flusses nicht zugelassen werden?",
+    "options": {
+      "A": "Personen, die nicht Mitglied einer Fischereiorganisation sind",
+      "B": "Personen, die nicht mindestens drei Jahre im Besitz eines Fischereischeins sind",
+      "C": "Personen, die keinen gültigen Fischereischein besitzen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.034",
+    "answer": "C",
+    "question": "Vier Angler wollen zusammen ein Fließgewässer pachten. Welche der folgenden Aussagen ist richtig?",
+    "options": {
+      "A": "der Fischereipachtvertrag kann ohne Weiteres abgeschlossen werden, wenn alle vier Pächter im Besitz eines gültigen Fischereischeins sind.",
+      "B": "der Fischereipachtvertrag ist für mindestens 12 Jahre und mit höchstens zwei Personen als Pächter abzuschließen.",
+      "C": "der Fischereipachtvertrag ist für mindestens 10 Jahre und mit höchstens drei Personen als Pächter abzuschließen."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.035",
+    "answer": "C",
+    "question": "Was kann der Verpächter eines Fischereirechts tun, wenn dem Pächter während der Pachtzeit der Fischereischein entzogen wird?",
+    "options": {
+      "A": "nicht notwendig, da das Pachtverhältnis gemäß Fischereigesetz erlischt",
+      "B": "nichts, er ist an den Pachtvertrag gebunden",
+      "C": "er kann ohne Einhaltung einer Kündigungsfrist kündigen, sofern nicht Mitpächter die Verbindlichkeiten des ausscheidenden Pächters übernehmen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.036",
+    "answer": "A",
+    "question": "Was ist bei Unterverpachtung eines Fischereirechts zu beachten?",
+    "options": {
+      "A": "Unterverpachtung ist nur zulässig mit Genehmigung des Verpächters",
+      "B": "überhaupt nichts",
+      "C": "im Gegensatz zum Pachtvertrag kann die Unterverpachtung auch auf den Fang einzelner Fischarten beschränkt werden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.037",
+    "answer": "C",
+    "question": "Wozu dient die Fischereiabgabe?",
+    "options": {
+      "A": "zum Bau von Fischerhütten",
+      "B": "als Prämie für Fischereiaufseher",
+      "C": "zur Förderung der Fischerei"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.038",
+    "answer": "C",
+    "question": "Wer stellt einen Fischereierlaubnisschein aus?",
+    "options": {
+      "A": "die Gemeindeverwaltung",
+      "B": "die Kreisverwaltungsbehörde",
+      "C": "der Fischereiberechtigte oder mit dessen Einwilligung der Pächter"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.039",
+    "answer": "C",
+    "question": "Dürfen für mehrere Fischwasser gemeinsam Erlaubnisscheine (Sammelerlaubnisscheine) ausgestellt werden?",
+    "options": {
+      "A": "in Ausnahmefällen, wenn zu viel oder falscher Besatz eingebracht wurde",
+      "B": "nein, weil die ordnungsgemäße Bewirtschaftung dadurch in jedem Fall beeinträchtigt wird",
+      "C": "ja, wenn Nachteile für die Fischwasser nicht zu befürchten sind"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.040",
+    "answer": "C",
+    "question": "Welche Behörde ist für die Genehmigung von Fischereierlaubnisscheinen zuständig?",
+    "options": {
+      "A": "Regierung",
+      "B": "Gemeindeverwaltung",
+      "C": "Kreisverwaltungsbehörde"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.041",
+    "answer": "A",
+    "question": "Welche Fischereierlaubnisscheine bedürfen keiner Genehmigung der Kreisverwaltungsbehörde?",
+    "options": {
+      "A": "Erlaubnisscheine für Inhaber von Jugendfischereischeinen",
+      "B": "Erlaubnisscheine für Be- und Entwässerungsgräben",
+      "C": "Erlaubnisscheine für Rinnsale und kleinere Abzweigungen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.042",
+    "answer": "C",
+    "question": "Benötigt der Inhaber eines Jugendfischereischeins zum Fischen einen Erlaubnisschein?",
+    "options": {
+      "A": "nein",
+      "B": "nein, es gilt der Erlaubnisschein des ihn begleitenden, volljährigen Inhabers eines Fischereischeins",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.043",
+    "answer": "C",
+    "question": "In welchem Fall benötigt der Fischer zur Ausübung der Fischerei keinen Fischereierlaubnisschein?",
+    "options": {
+      "A": "wenn er Mitglied eines Fischereivereins ist",
+      "B": "wenn er die Fischerprüfung abgelegt hat",
+      "C": "wenn er selbst Inhaber des Fischereirechts oder Pächter des Fischwassers ist"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.044",
+    "answer": "B",
+    "question": "Unter welchen Voraussetzungen genehmigt die Kreisverwaltungsbehörde die Ausstellung von Fischereierlaubnisscheinen?",
+    "options": {
+      "A": "wenn der Fischereiberechtigte seit mindestens drei Jahren Inhaber eines Fischereischeines ist",
+      "B": "wenn dadurch keine Nachteile für das Fischwasser und für die mit ihm zusammenhängenden Fischwasser zu befürchten sind",
+      "C": "wenn der Erlaubnisschein einer Person erteilt werden soll, die Inhaber eines Jugendfischereischeines ist"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.045",
+    "answer": "A",
+    "question": "Wie viele Fischereischeininhaber dürfen maximal in Begleitung des Fischereiberechtigten oder des Fischereipächters den Fischfang mit der Handangel ohne Erlaubnisschein ausüben?",
+    "options": {
+      "A": "drei",
+      "B": "fünf",
+      "C": "zwei"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.046",
+    "answer": "A",
+    "question": "Müssen Erlaubnisscheine für Inhaber von Jugendfischereischeinen durch die Kreisverwaltungsbehörde genehmigt und bestätigt werden?",
+    "options": {
+      "A": "nein",
+      "B": "nur, wenn die Inhaber der Jugendfischereischeine älter als 16 Jahre sind",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.047",
+    "answer": "A",
+    "question": "Wer ist in Bayern für die Erteilung der Fischereischeine zuständig?",
+    "options": {
+      "A": "die Gemeindeverwaltung",
+      "B": "die Kreisverwaltungsbehörde",
+      "C": "die Landesanstalt für Landwirtschaft – Institut für Fischerei"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.048",
+    "answer": "B",
+    "question": "Kann ein Fischereischein auch Personen versagt werden, welche die bayerische Fischerprüfung bestanden haben?",
+    "options": {
+      "A": "ja, wenn sie nicht die deutsche Staatsangehörigkeit haben",
+      "B": "ja, wenn Tatsachen vorliegen, die die Annahme rechtfertigen, dass sie zur ordnungsgemäßen Ausübung des Fischfangs ungeeignet sind",
+      "C": "nein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.049",
+    "answer": "B",
+    "question": "Ist für das Fischen mit der Handangel in einem künstlich angelegten Fischteich ein Fischereischein erforderlich?",
+    "options": {
+      "A": "nur, wenn der Angler nicht in Begleitung des Fischereiberechtigten oder Pächters angelt",
+      "B": "ja",
+      "C": "nein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.050",
+    "answer": "C",
+    "question": "Darf der Helfer eines Fischereischeininhabers den Köderfischfang mit der Handangel ohne Fischereischein ausüben?",
+    "options": {
+      "A": "ja",
+      "B": "nur dann, wenn er über 18 Jahre alt ist",
+      "C": "nein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.051",
+    "answer": "C",
+    "question": "Ein Fischereischein für Jugendliche (Jugendfischereischein) kann frühestens ausgestellt werden",
+    "options": {
+      "A": "an Personen, die das 8. Lebensjahr vollendet haben",
+      "B": "an Personen, die das 14. Lebensjahr vollendet haben",
+      "C": "an Personen, die das 10. Lebensjahr vollendet haben"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.052",
+    "answer": "B",
+    "question": "Welche Besonderheit hat der Jugendfischereischein gegenüber einem vollgültigen Fischereischein?",
+    "options": {
+      "A": "Er gilt nur in Begleitung eines Erziehungsberechtigten.",
+      "B": "Er berechtigt zur Ausübung des Fischfanges nur in verantwortlicher Begleitung eines volljährigen Fischereischeininhabers.",
+      "C": "Er berechtigt nicht zum Fischfang mit der Handangel."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.053",
+    "answer": "A",
+    "question": "Für welchen Zeitraum gilt der Jugendfischereischein?",
+    "options": {
+      "A": "vom Tag der Ausstellung bis zum vollendeten 18. Lebensjahr",
+      "B": "vom Tag der Ausstellung bis zum vollendeten 14. Lebensjahr",
+      "C": "vom Tag der Ausstellung jeweils für ein Jahr"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.054",
+    "answer": "A",
+    "question": "Welche Nachweise muss man beim Angeln mit sich führen?",
+    "options": {
+      "A": "den Fischereischein und den Erlaubnisschein (sofern nicht befreit von der Erlaubnisscheinpflicht)",
+      "B": "das Zeugnis über die bestandene Fischerprüfung",
+      "C": "den Bundespersonalausweis"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.055",
+    "answer": "C",
+    "question": "Wem steht das Uferbetretungsrecht an einem bestimmten Gewässer zu?",
+    "options": {
+      "A": "nur dem zur Ausübung der Fischerei Berechtigten",
+      "B": "jedem Inhaber eines gültigen Fischereischeines",
+      "C": "dem zur Ausübung der Fischerei Berechtigten und dessen Hilfs- und Aufsichtspersonal"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.056",
+    "answer": "C",
+    "question": "Beim Befahren von Wegen am Gewässer mit Kraftfahrzeugen",
+    "options": {
+      "A": "kann das Uferbetretungsrecht geltend gemacht werden.",
+      "B": "kann sich der Angler auf den Gemeingebrauch berufen.",
+      "C": "gelten die Verkehrszeichen der Straßenverkehrsordnung."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.057",
+    "answer": "C",
+    "question": "Darf ein Angler ein Ufergrundstück, das außer auf der Uferseite mit einem stabilen Holzlattenzaun eingefriedet ist, zum Angeln betreten?",
+    "options": {
+      "A": "nur mit Genehmigung eines Fischereiaufsehers",
+      "B": "ja",
+      "C": "nur mit Genehmigung des Grundstückbesitzers"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.058",
+    "answer": "A",
+    "question": "Sie wollen sich im Frühjahr an einem See einen Angelplatz schaffen. Dürfen Sie zu diesem Zweck im April eine Schneise im Schilfbestand freischneiden?",
+    "options": {
+      "A": "nein",
+      "B": "ja, da Sie als zur Ausübung der Fischerei Berechtigter das Uferbetretungsrecht haben",
+      "C": "nur außerhalb von Natur- und Landschaftsschutzgebieten"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.059",
+    "answer": "C",
+    "question": "Was kann in Fischschonbezirken während der von der Verwaltungsbehörde bestimmten Zeit beschränkt oder verboten werden?",
+    "options": {
+      "A": "die Jagd auf fischfressende Vögel",
+      "B": "die Ausübung der Fischereiaufsicht",
+      "C": "Handlungen, die den Wechsel, die Fortpflanzung oder den Bestand der Fische gefährden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.060",
+    "answer": "A",
+    "question": "Welche Behörde kann eine Fischwasserstrecke in nicht geschlossenen Gewässern und in naturnahen geschlossenen Gewässern von erheblicher Größe zum Laichschonbezirk erklären?",
+    "options": {
+      "A": "Kreisverwaltungsbehörde",
+      "B": "Gemeindeverwaltung",
+      "C": "Landesanstalt für Landwirtschaft – Institut für Fischerei"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.061",
+    "answer": "C",
+    "question": "Welche Arten von Schonbezirken kann die Kreisverwaltungsbehörde zur Erhaltung und Förderung der Fischerei in nicht geschlossenen Gewässern und in naturnahen geschlossenen Gewässern von erheblicher Größe durch Rechtsverordnung bestimmen?",
+    "options": {
+      "A": "Schonbezirke für Ufer und Gehölze",
+      "B": "Pflanzen- und Vogelschonbezirke",
+      "C": "Fisch- und Laichschonbezirke sowie Winterlager"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.062",
+    "answer": "B",
+    "question": "Wer kann als Fischereiaufseher bestellt werden?",
+    "options": {
+      "A": "jeder Inhaber eines gültigen Fischereischeins",
+      "B": "volljährige und zuverlässige Personen mit gültigem Fischereischein, die ausreichende Kenntnisse durch Bestehen eines Eignungstests nachgewiesen haben",
+      "C": "jeder Inhaber eines Waffenscheins mit Genehmigung der Kreisverwaltungsbehörde"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.063",
+    "answer": "C",
+    "question": "Der bestellte Fischereiaufseher erhält von der Kreisverwaltungsbehörde",
+    "options": {
+      "A": "einen amtlichen Vermerk in seinem Personalausweis",
+      "B": "einen amtlichen Vermerk in seinem Fischereischein",
+      "C": "ein Dienstabzeichen und einen Dienstausweis"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.064",
+    "answer": "C",
+    "question": "Wem ist bei der Ausübung des Fischfangs der Fischereischein auf Verlangen zur Prüfung auszuhändigen?",
+    "options": {
+      "A": "den Bezirksfachberatern für das Fischereiwesen",
+      "B": "den Inhabern von Fischereierlaubnisscheinen und Mitgliedern der Naturschutzwacht",
+      "C": "den Polizeibeamten, Fischereiaufsehern, Fischereiberechtigten und Fischereipächtern"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.065",
+    "answer": "C",
+    "question": "Kann der bestellte Fischereiaufseher die Herausgabe verbotswidrig gefangener Fische verlangen?",
+    "options": {
+      "A": "nur in Gegenwart des Vereinsvorsitzenden",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.066",
+    "answer": "A",
+    "question": "Sie angeln an einem See und werden von einem bestellten Fischereiaufseher kontrolliert. Darf er die von Ihnen gefangenen Fische besichtigen?",
+    "options": {
+      "A": "Ja.",
+      "B": "Er darf die Fische nur unter Anwesenheit der Polizei besichtigen.",
+      "C": "Nur, wenn der Verdacht vorliegt, dass Sie gegen Bestimmungen zu Schonmaß und -zeit verstoßen haben."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.067",
+    "answer": "A",
+    "question": "Wer kann für Fische, Krebse und Muscheln ohne Schonmaß und Schonzeit im Einzelfall vorübergehend Schonmaße und Schonzeiten festsetzen?",
+    "options": {
+      "A": "die Kreisverwaltungsbehörde durch befristete Anordnung",
+      "B": "jede Gemeindeverwaltung",
+      "C": "die Landesanstalt für Landwirtschaft – Institut für Fischerei"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.068",
+    "answer": "C",
+    "question": "Was geschieht mit lebensfähigen Fischen, die außerhalb eines Fischnotstandes unter dem Schonmaß oder während der Schonzeit gefangen werden?",
+    "options": {
+      "A": "sie sind zu töten und zu verfüttern",
+      "B": "sie können für den menschlichen Verzehr verwendet werden",
+      "C": "sie sind unverzüglich in dieselbe Gewässerstrecke zurückzusetzen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.069",
+    "answer": "B",
+    "question": "Welcher Fisch ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Kaulbarsch",
+      "B": "Steingressling",
+      "C": "Dreistachliger Stichling"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.070",
+    "answer": "B",
+    "question": "Welcher Fisch ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Kaulbarsch",
+      "B": "Bitterling",
+      "C": "Waller (Wels)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.071",
+    "answer": "A",
+    "question": "Welcher Fisch ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Schlammpeitzger",
+      "B": "Elritze",
+      "C": "Rotfeder"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.072",
+    "answer": "B",
+    "question": "Welcher Fisch ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Moderlieschen",
+      "B": "Steinbeißer (Dorngrundel)",
+      "C": "Giebel"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.073",
+    "answer": "B",
+    "question": "Welche Schonzeit ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) für den Frauennerfling festgesetzt?",
+    "options": {
+      "A": "1. März bis 30. Juni",
+      "B": "ganzjährig",
+      "C": "1. Februar bis 15. Mai"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.074",
+    "answer": "C",
+    "question": "Welche Schonzeit hat die Malermuschel nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "sie hat keine gesetzliche Schonzeit",
+      "B": "vom 1. August bis 31. Mai",
+      "C": "sie ist ganzjährig geschont"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.075",
+    "answer": "B",
+    "question": "Welche Schonzeit hat die Barbe nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "sie hat keine gesetzliche Schonzeit",
+      "B": "vom 1. Mai bis 30. Juni",
+      "C": "vom 15. Oktober bis 31. Dezember"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.076",
+    "answer": "B",
+    "question": "Welche Schonzeit hat die Mairenke (Seelaube) nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "vom 15. Oktober bis 31. Dezember",
+      "B": "vom 1. Mai bis 30. Juni",
+      "C": "sie hat keine gesetzliche Schonzeit"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.077",
+    "answer": "B",
+    "question": "Welche Fischart hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) vom 1. Oktober bis 15. März Schonzeit?",
+    "options": {
+      "A": "Zander",
+      "B": "Seeforelle",
+      "C": "Regenbogenforelle"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.078",
+    "answer": "A",
+    "question": "Ist in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) für die Brachse eine Schonzeit festgesetzt?",
+    "options": {
+      "A": "nein",
+      "B": "ja, vom 15. Februar mit 30. April",
+      "C": "ja, vom 1. Oktober mit 31. Dezember"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.079",
+    "answer": "C",
+    "question": "Welche Art ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) nicht ganzjährig geschont?",
+    "options": {
+      "A": "Perlfisch",
+      "B": "Bachneunauge",
+      "C": "weiblicher Edelkrebs"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.080",
+    "answer": "B",
+    "question": "Welche Art ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) nicht ganzjährig geschont?",
+    "options": {
+      "A": "Schrätzer",
+      "B": "Laube (Ukelei)",
+      "C": "Schneider"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.081",
+    "answer": "A",
+    "question": "Welche Art ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) nicht ganzjährig geschont?",
+    "options": {
+      "A": "Hasel",
+      "B": "Zope",
+      "C": "Sichling"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.082",
+    "answer": "C",
+    "question": "Welche Art ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) nicht ganzjährig geschont?",
+    "options": {
+      "A": "Neunstachliger Stichling",
+      "B": "Flussperlmuschel",
+      "C": "Giebel"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.083",
+    "answer": "C",
+    "question": "Welche Arten sind nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Dreistachliger Stichling und Kaulbarsch",
+      "B": "Nerfling und Mairenke (Seelaube)",
+      "C": "Maifisch und Atlantischer Lachs"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.084",
+    "answer": "B",
+    "question": "Darf die Malermuschel als Köder für den Fang von Karpfen verwendet werden?",
+    "options": {
+      "A": "Ja, sie ist dafür hervorragend geeignet.",
+      "B": "Nein, sie ist gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont.",
+      "C": "Ja, aber nur dann, wenn sie aus demselben Gewässer stammt, in dem geangelt wird."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.085",
+    "answer": "B",
+    "question": "Welche Art ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Edelkrebs",
+      "B": "Große Flussmuschel",
+      "C": "Waller (Wels)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.086",
+    "answer": "C",
+    "question": "Welche karpfenartigen Fische (Cypriniden) sind nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Nerfling (Aland), Schied (Rapfen)",
+      "B": "Mairenke (Seelaube), Zährte (Seerüßling)",
+      "C": "Strömer, Schneider"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.087",
+    "answer": "A",
+    "question": "Welche Barscharten sind nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Zingel, Streber",
+      "B": "Flussbarsch, Kaulbarsch",
+      "C": "Zander, Forellenbarsch"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.088",
+    "answer": "A",
+    "question": "Welche Tierart darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) in nicht geschlossenen Gewässern ausgesetzt werden?",
+    "options": {
+      "A": "Edelkrebs",
+      "B": "Forellenbarsch",
+      "C": "Grasfisch"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.089",
+    "answer": "C",
+    "question": "Wann hat die Äsche nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) Schonzeit?",
+    "options": {
+      "A": "vom 1. Mai bis zum 15. Juni",
+      "B": "vom 1. Oktober bis zum 28. Februar",
+      "C": "vom 1. Januar bis zum 30. April"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.090",
+    "answer": "B",
+    "question": "Welche Schonzeit haben Renken (Felchen) nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "vom 15. März bis zum 30. April",
+      "B": "vom 15. Oktober bis zum 31. Dezember",
+      "C": "vom 1. Mai bis zum 15. Juni"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.091",
+    "answer": "B",
+    "question": "Wann hat der Hecht nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) Schonzeit?",
+    "options": {
+      "A": "vom 1. Mai bis zum 15. Juni",
+      "B": "vom 15. Februar bis zum 30. April",
+      "C": "vom 1. Juni bis zum 1. August"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.092",
+    "answer": "C",
+    "question": "Wie ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) die Schonzeit für Zander festgelegt?",
+    "options": {
+      "A": "vom 15. März bis zum 30. April",
+      "B": "vom 1. März bis zum 30. April",
+      "C": "vom 15. Februar bis zum 30. April"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.093",
+    "answer": "C",
+    "question": "Welche Fischart ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Schied (Rapfen)",
+      "B": "Dreistachliger Stichling",
+      "C": "Schneider"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.094",
+    "answer": "B",
+    "question": "Welche Fischart ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Kaulbarsch",
+      "B": "Schrätzer",
+      "C": "Zährte (Seerüßling)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.095",
+    "answer": "A",
+    "question": "Welche Fischart ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Zope",
+      "B": "Güster",
+      "C": "Zährte (Seerüßling)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.096",
+    "answer": "A",
+    "question": "Welche Fischart ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Strömer",
+      "B": "Laube (Ukelei)",
+      "C": "Moderlieschen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.097",
+    "answer": "B",
+    "question": "Welche Schonzeit hat der männliche Edelkrebs nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "vom 1. Oktober bis zum 31. Juli",
+      "B": "er hat keine gesetzliche Schonzeit",
+      "C": "vom 1. August bis zum 31. Juli"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.098",
+    "answer": "A",
+    "question": "Wie wird das Schonmaß eines Fisches nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) festgestellt?",
+    "options": {
+      "A": "Der Fisch wird von der Kopfspitze bis zum Ende des Körpers einschließlich der zusammengelegten Schwanzflosse gemessen.",
+      "B": "Es wird Kopf- und Rumpflänge gemessen.",
+      "C": "Es wird die Rumpflänge bis zum Ende der ausgebreiteten Schwanzflosse gemessen."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.099",
+    "answer": "A",
+    "question": "Wie wird das Schonmaß bei Krebsen nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) festgestellt?",
+    "options": {
+      "A": "Es wird von der Kopfspitze bis zum Körperende einschließlich des Schwanzfächers gemessen.",
+      "B": "Eine Feststellung ist nicht erforderlich, da für Krebse nur Schonzeiten, nicht aber Schonmaße festgesetzt sind.",
+      "C": "Bei Krebsen gibt es im Gegensatz zu Fischen keine vorgeschriebene Messmethode."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.100",
+    "answer": "C",
+    "question": "Welches Schonmaß hat der Schied (Rapfen) nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "45 cm",
+      "B": "35 cm",
+      "C": "40 cm"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.101",
+    "answer": "A",
+    "question": "Welches Schonmaß hat die Nase nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "30 cm",
+      "B": "40 cm",
+      "C": "35 cm"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.102",
+    "answer": "A",
+    "question": "Welches Schonmaß hat der Hecht nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "50 cm",
+      "B": "45 cm",
+      "C": "40 cm"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.103",
+    "answer": "C",
+    "question": "Welche Fischart hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ein Schonmaß von 50 cm?",
+    "options": {
+      "A": "Äsche",
+      "B": "Barbe",
+      "C": "Hecht"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.104",
+    "answer": "A",
+    "question": "Welche Fischart hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ein Schonmaß von 60 cm?",
+    "options": {
+      "A": "Seeforelle",
+      "B": "Hecht",
+      "C": "Zander"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.105",
+    "answer": "A",
+    "question": "Welche Fischarten haben nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) dasselbe Schonmaß?",
+    "options": {
+      "A": "Bachforelle und Regenbogenforelle",
+      "B": "Bachsaibling und Seesaibling",
+      "C": "Seeforelle und Bachforelle"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.106",
+    "answer": "B",
+    "question": "Welche der genannten Fischarten hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) das höchste Schonmaß?",
+    "options": {
+      "A": "Hecht",
+      "B": "Huchen",
+      "C": "Seeforelle"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.107",
+    "answer": "A",
+    "question": "Welche der genannten Fischarten hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) das höchste Schonmaß?",
+    "options": {
+      "A": "Zander",
+      "B": "Waller (Wels)",
+      "C": "Barbe"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.108",
+    "answer": "B",
+    "question": "Welche der genannten Fischarten hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) das höchste Schonmaß?",
+    "options": {
+      "A": "Nerfling (Aland)",
+      "B": "Rutte (Quappe, Trüsche)",
+      "C": "Karpfen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.109",
+    "answer": "B",
+    "question": "Welches Schonmaß hat der Karpfen nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "keines",
+      "B": "35 cm",
+      "C": "45 cm"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.110",
+    "answer": "B",
+    "question": "Welches Schonmaß hat der Seesaibling nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "35 cm",
+      "B": "30 cm",
+      "C": "40 cm"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.111",
+    "answer": "A",
+    "question": "Was hat mit einem untermaßigen oder während der Schonzeit unbeabsichtigt gefangenen Fisch, der nicht mehr lebensfähig ist, zu geschehen?",
+    "options": {
+      "A": "er kann dem Eigenverbrauch zugeführt werden",
+      "B": "er ist zerkleinert als Fischfutter in das Fischwasser einzubringen",
+      "C": "er ist vorsorglich ins Gewässer zurückzusetzen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.112",
+    "answer": "B",
+    "question": "Welches Schonmaß hat der Nerfling (Aland) nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "35 cm",
+      "B": "30 cm",
+      "C": "40 cm"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.113",
+    "answer": "B",
+    "question": "Welches Schonmaß hat der Zander nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "60 cm",
+      "B": "50 cm",
+      "C": "40 cm"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.114",
+    "answer": "C",
+    "question": "Welcher Fisch hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ein Schonmaß von 30 cm?",
+    "options": {
+      "A": "Barbe",
+      "B": "Schleie",
+      "C": "Nerfling (Aland)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.115",
+    "answer": "B",
+    "question": "Welches Schonmaß hat der Edelkrebs nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)?",
+    "options": {
+      "A": "10 cm",
+      "B": "12 cm",
+      "C": "14 cm"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.116",
+    "answer": "A",
+    "question": "Welche Fischarten haben nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ein Schonmaß von 30 cm?",
+    "options": {
+      "A": "Seesaibling und Nerfling (Aland)",
+      "B": "Bachsaibling und Regenbogenforelle",
+      "C": "Äsche und Schleie"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.117",
+    "answer": "A",
+    "question": "Welche Fischart hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ein Schonmaß von 35 cm?",
+    "options": {
+      "A": "Äsche",
+      "B": "Nerfling (Aland)",
+      "C": "Bachforelle"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.118",
+    "answer": "A",
+    "question": "In welcher Rechtsvorschrift sind die Schonmaße und Schonzeiten der Fische, Krebse und Muscheln geregelt?",
+    "options": {
+      "A": "in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)",
+      "B": "in der Artenschutzverordnung",
+      "C": "im Bayerischen Fischereigesetz (BayFiG)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.119",
+    "answer": "C",
+    "question": "Die in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) festgelegten Vorschriften über Schonmaße und Schonzeiten für Fische werden nicht angewandt",
+    "options": {
+      "A": "bei nicht geschlossenen Gewässern",
+      "B": "bei allen stehenden Gewässern",
+      "C": "bei teichwirtschaftlich genutzten Gewässern"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.120",
+    "answer": "B",
+    "question": "Welches Schonmaß und welche Schonzeit sind in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) für die Bachforelle festgesetzt?",
+    "options": {
+      "A": "26 cm und 15. Oktober bis 15. April",
+      "B": "26 cm und 1. Oktober bis 15. März",
+      "C": "28 cm und 15. Oktober bis 31. Dezember"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.121",
+    "answer": "B",
+    "question": "Welches Schonmaß und welche Schonzeit sind in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) für die Äsche festgesetzt?",
+    "options": {
+      "A": "30 cm und 1. Februar bis 15. März",
+      "B": "35 cm und 1. Januar bis 30. April",
+      "C": "40 cm und 1. April bis 31. Mai"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.122",
+    "answer": "C",
+    "question": "Welches Schonmaß und welche Schonzeit sind in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) für den Huchen festgesetzt?",
+    "options": {
+      "A": "70 cm und 1. April bis 31. Mai",
+      "B": "90 cm und 1. Februar bis 13. März",
+      "C": "90 cm und 15. Februar bis 30. Juni"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.123",
+    "answer": "B",
+    "question": "Welches Schonmaß und welche Schonzeit sind in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) für die Barbe festgesetzt?",
+    "options": {
+      "A": "35 cm und 1. April bis 15. Mai",
+      "B": "40 cm und 1. Mai bis 30. Juni",
+      "C": "45 cm und 1. Mai bis 31. Mai"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.124",
+    "answer": "B",
+    "question": "Welches Schonmaß und welche Schonzeit sind in der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) für den weiblichen Edelkrebs festgesetzt?",
+    "options": {
+      "A": "ganzjährig geschont",
+      "B": "12 cm und 1. Oktober bis 31. Juli",
+      "C": "15 cm und keine Schonzeit"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.125",
+    "answer": "A",
+    "question": "Welche Fischart hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) keine Fangbeschränkung nach Schonzeit und Schonmaß?",
+    "options": {
+      "A": "Gründling",
+      "B": "Rutte (Quappe, Trüsche)",
+      "C": "Neunstachliger Stichling (Zwergstichling)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.126",
+    "answer": "B",
+    "question": "Welche Fischart hat nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) keine Fangbeschränkung nach Schonzeit und Schonmaß?",
+    "options": {
+      "A": "Frauennerfling",
+      "B": "Dreistachliger Stichling",
+      "C": "Neunstachliger Stichling (Zwergstichling)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.127",
+    "answer": "B",
+    "question": "Welcher Fisch darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) nach dem Fang in der Forellenregion auf keinen Fall zurückgesetzt werden?",
+    "options": {
+      "A": "Schmerle (Bartgrundel)",
+      "B": "Hecht",
+      "C": "Rutte (Quappe, Trüsche)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.128",
+    "answer": "B",
+    "question": "Für welche Tierart gilt in der Forellenregion der Fließgewässer keine Schonbestimmung?",
+    "options": {
+      "A": "Bachneunauge",
+      "B": "Aal",
+      "C": "Rutte (Quappe, Trüsche)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.129",
+    "answer": "C",
+    "question": "In welchen Gewässern gelten für Hechte und Aale keine Fangbeschränkungen nach Zeit und Maß?",
+    "options": {
+      "A": "in Fließgewässern der Brachsenregion",
+      "B": "in Fließgewässern der Barbenregion",
+      "C": "in Fließgewässern der Forellenregion"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.130",
+    "answer": "C",
+    "question": "In welchen Fällen sind Gemeinschaftsfischen im Sinne der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) zulässig?",
+    "options": {
+      "A": "nur zu wohltätigen Zwecken",
+      "B": "nach freier Entscheidung eines Fischereivereins, in Gemeinschaft der Mitglieder oder mit Gästen",
+      "C": "nur im Rahmen traditioneller Veranstaltungen und zur Erfüllung der Hegepflicht im Fanggewässer"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.131",
+    "answer": "C",
+    "question": "Wann sind Gemeinschaftsfischen unzulässig?",
+    "options": {
+      "A": "wenn sie nicht vorher bei der Kreisverwaltungsbehörde angezeigt worden sind",
+      "B": "bei einer Teilnehmerzahl von mehr als 200",
+      "C": "innerhalb von vier Wochen nach einer Besatzmaßnahme, sofern nicht auszuschließen ist, dass neu eingesetzte Fische gefangen werden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.132",
+    "answer": "B",
+    "question": "Ist das Fischen nach einer Besatzmaßnahme mit fangfähigen Fischen auf die eingesetzte Fischart in nicht geschlossenen Gewässern verboten?",
+    "options": {
+      "A": "nein, da die Fische zum Fang eingesetzt wurden",
+      "B": "ja, für die Dauer von zwei Wochen",
+      "C": "ja, generell"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.133",
+    "answer": "C",
+    "question": "Welche Fangarten und Fanggeräte sind erlaubt?",
+    "options": {
+      "A": "Fischgabeln, Lichtquellen, Netzfallen",
+      "B": "Sprengstoffe, Schusswaffen",
+      "C": "künstlicher Neunaugenzopf, Blinker"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.134",
+    "answer": "C",
+    "question": "Welche Fangmittel sind verboten?",
+    "options": {
+      "A": "Aalreusen, Senknetze",
+      "B": "Aalkörbe, Grundschnüre",
+      "C": "Abzugseisen, Schlingen, Reißangeln, Harpunen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.135",
+    "answer": "B",
+    "question": "Welche Fischfangmethode ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) verboten?",
+    "options": {
+      "A": "Fang mit Wurm und Maden",
+      "B": "Fang mit lebenden Köderfischen",
+      "C": "Fang mit Reusen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.136",
+    "answer": "B",
+    "question": "Welche Angelmethode ist in Bayern verboten?",
+    "options": {
+      "A": "das Fischen mit einer Handangel versehen mit fünf Anbissstellen",
+      "B": "das Fischen mit einem lebenden Fisch als Köder",
+      "C": "das Fischen mit Tauwürmern"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.137",
+    "answer": "A",
+    "question": "Welche Fischfangmethode ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) verboten?",
+    "options": {
+      "A": "Fang mit Schlingen",
+      "B": "Fang mit natürlichen Ködern",
+      "C": "Fang mit Reusen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.138",
+    "answer": "C",
+    "question": "Wie viele Angelhaken (Anbissstellen) darf eine Handangel höchstens haben?",
+    "options": {
+      "A": "eine",
+      "B": "zwei",
+      "C": "fünf"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.139",
+    "answer": "C",
+    "question": "Wie ist die Handangel zu beaufsichtigen?",
+    "options": {
+      "A": "sie muss in regelmäßigen Zeitabständen beaufsichtigt werden",
+      "B": "die Art der Beaufsichtigung entscheidet der Angler, abhängig von der Fangmethode selbst",
+      "C": "sie muss ständig beaufsichtigt werden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.140",
+    "answer": "B",
+    "question": "Wie viele Handangeln darf ein Fischer nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) gleichzeitig einsetzen?",
+    "options": {
+      "A": "drei",
+      "B": "zwei",
+      "C": "eine"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.141",
+    "answer": "A",
+    "question": "Wie viele Anbissstellen dürfen in Bayern maximal beim Fischen mit zwei Handangeln verwendet werden?",
+    "options": {
+      "A": "nicht mehr als sechs",
+      "B": "nicht mehr als vier",
+      "C": "nicht mehr als zwei"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.142",
+    "answer": "C",
+    "question": "Wie viele Anbissstellen hat gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ein mit zwei Drillingen besetzter Wobbler?",
+    "options": {
+      "A": "sechs",
+      "B": "eine",
+      "C": "zwei"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.143",
+    "answer": "B",
+    "question": "Die Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) regelt für den Einsatz einer Handangel",
+    "options": {
+      "A": "die Größe und Form der Haken.",
+      "B": "die maximal zulässige Anzahl der Anbissstellen.",
+      "C": "die maximal zulässige Schnurstärke."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.144",
+    "answer": "B",
+    "question": "Ist der Fischfang in Fischpässen nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) erlaubt?",
+    "options": {
+      "A": "nur am oberen und unteren Ende",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.145",
+    "answer": "C",
+    "question": "Welcher Fisch darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) in nicht geschlossenen Gewässern ausgesetzt werden?",
+    "options": {
+      "A": "Schwarzbarsch",
+      "B": "Forellenbarsch",
+      "C": "Flussbarsch"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.146",
+    "answer": "B",
+    "question": "Ist das Aussetzen nicht einheimischer Fischarten z.B. aus Aquarien oder Gartenteichen in einem Baggersee erlaubt?",
+    "options": {
+      "A": "ja, es erhöht die Artenvielfalt",
+      "B": "nein, es ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) verboten",
+      "C": "ja, denn die Tiere haben im Baggersee einen größeren Lebensraum zur Verfügung"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.147",
+    "answer": "A",
+    "question": "Darf der Grasfisch in nicht geschlossene Gewässer eingesetzt werden?",
+    "options": {
+      "A": "nein, er ist keine einheimische Fischart",
+      "B": "ja, als Pflanzenfresser vermindert er die unerwünschte Verkrautung stehender Gewässer",
+      "C": "nein, er darf nur in fließende Gewässer eingesetzt werden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.148",
+    "answer": "A",
+    "question": "Sind künstlich genetisch veränderte Fische als Besatzmaterial erlaubt?",
+    "options": {
+      "A": "nein, da sie sich mit den ans Gewässer angepassten Fischen vermischen oder diese verdrängen können",
+      "B": "ja, da sie besonders großwüchsig sind",
+      "C": "ja, wenn der Nachweis erbracht wird, dass sie eine hohe Vermehrungsrate aufweisen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.149",
+    "answer": "C",
+    "question": "Unter welcher Voraussetzung dürfen Fische als Besatz in nicht geschlossene Gewässer eingebracht werden?",
+    "options": {
+      "A": "es gibt keine Beschränkungen beim Fischbesatz",
+      "B": "sie dürfen nur ausgesetzt werden, wenn dadurch eine größere Menge Fische gefangen werden kann",
+      "C": "sie dürfen nur ausgesetzt werden, wenn dadurch das Leitbild der Nachhaltigkeit und das Hegeziel, vor allem der Artenreichtum und die Gesundheit des Fischbestandes nicht beeinträchtigt wird"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.150",
+    "answer": "C",
+    "question": "Welche Tierart darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) nicht in Fließgewässer der Forellen- oder Äschenregion ausgesetzt werden?",
+    "options": {
+      "A": "Mühlkoppe",
+      "B": "Edelkrebs",
+      "C": "Aal"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.151",
+    "answer": "B",
+    "question": "Welche Tierart muss gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) nach dem Fang in einem Fließgewässer der Forellen- oder Äschenregion zurückgesetzt werden?",
+    "options": {
+      "A": "Hecht",
+      "B": "Schneider",
+      "C": "Schwarzmundgrundel"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.152",
+    "answer": "A",
+    "question": "Welche Tierart darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) in nicht geschlossenen Gewässern ausgesetzt werden?",
+    "options": {
+      "A": "Steinkrebs",
+      "B": "Kamberkrebs",
+      "C": "Signalkrebs"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.153",
+    "answer": "A",
+    "question": "Welche Fische dürfen in einem Fließgewässer mit einem sich selbst erhaltenden Bestand an Bachforellen oder Äschen gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ausgesetzt werden?",
+    "options": {
+      "A": "Elritzen",
+      "B": "Forellenbarsche",
+      "C": "Bachsaiblinge"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.154",
+    "answer": "C",
+    "question": "Welche Tierart darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) in nicht geschlossenen Gewässern ausgesetzt werden, wenn dadurch das Leitbild der Nachhaltigkeit und das Hegeziel nicht beeinträchtigt werden?",
+    "options": {
+      "A": "Galizischer Sumpfkrebs",
+      "B": "Marmorierte Grundel",
+      "C": "Nase"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.155",
+    "answer": "B",
+    "question": "Welcher Fisch darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) in nicht geschlossenen Gewässern ausgesetzt werden?",
+    "options": {
+      "A": "Grasfisch",
+      "B": " Nerfling (Aland",
+      "C": "Sonnenbarsch"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.156",
+    "answer": "A",
+    "question": "Welche Tierart darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) in Baggerseen ausgesetzt werden?",
+    "options": {
+      "A": "Edelkrebs",
+      "B": "Kamberkrebs",
+      "C": "Signalkrebs"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.157",
+    "answer": "A",
+    "question": "Welche Tierart darf gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) in nicht geschlossenen Gewässern ausgesetzt werden?",
+    "options": {
+      "A": "Schleie",
+      "B": "Marmorierte Grundel",
+      "C": "Zwergwels"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.158",
+    "answer": "A",
+    "question": "Ab welchem Alter kann in Bayern für die Ausübung des Fischfangs ein Jugendfischereischein ausgestellt werden?",
+    "options": {
+      "A": "ab vollendetem 10. Lebensjahr",
+      "B": "ab vollendetem 12. Lebensjahr",
+      "C": "ab vollendetem 14. Lebensjahr"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.159",
+    "answer": "B",
+    "question": "Muss der Fischereiberechtigte Aufzeichnungen über durchgeführte Besatzmaßnahmen führen und aufbewahren?",
+    "options": {
+      "A": "Aufzeichnungen sind zu führen und mindestens ein Jahr aufzubewahren",
+      "B": "Aufzeichnungen sind zu führen und mindestens drei Jahre aufzubewahren",
+      "C": "nein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.160",
+    "answer": "B",
+    "question": "Worauf ist beim Besatz mit Coregonenarten, Seesaiblingen, Seeforellen und Bachforellen zu achten?",
+    "options": {
+      "A": "die Satzfische sollen wegen der besseren Überlebensrate mindestens zwei Jahre alt sein",
+      "B": "der Besatz muss aus Beständen oder Nachzuchten erfolgen, die dem zu besetzenden Gewässer ökologisch nahe zugeordnet werden können",
+      "C": "Alter und Herkunft der Satzfische spielen beim Besatz keine Rolle"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.161",
+    "answer": "A",
+    "question": "Dürfen Hechte in Seen ausgesetzt werden, in denen hauptsächlich Seeforellen und Seesaiblinge vorkommen?",
+    "options": {
+      "A": "nein",
+      "B": "ja",
+      "C": "nur Hechtbrut"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.162",
+    "answer": "B",
+    "question": "Frauennerfling, Schrätzer, Streber und Zingel dürfen gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) nur in ihrem natürlichen Verbreitungsgebiet ausgesetzt werden, also nur",
+    "options": {
+      "A": "im Einzugsgebiet des Mains.",
+      "B": "im Einzugsgebiet der Donau.",
+      "C": "im Einzugsgebiet der Elbe."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.163",
+    "answer": "B",
+    "question": "Welcher Grundsatz des Tierschutzgesetzes ist auch bei der Fischereiausübung zu beachten?",
+    "options": {
+      "A": "Das Gesetz verbietet grundsätzlich den Fang von Fischen mit Angelhaken und ihren Drill",
+      "B": "Niemand darf einem Tier ohne vernünftigen Grund Schmerzen, Leiden oder Schäden zufügen",
+      "C": "Da Fische keinen Schmerz empfinden, sind die Bestimmungen des Gesetzes auf sie nicht anzuwenden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.164",
+    "answer": "C",
+    "question": "Hat das Tierschutzgesetz Bedeutung für den Angelfischer?",
+    "options": {
+      "A": "ja, denn es verbietet, Fische über eine bestimmte Stückzahl hinaus zu fangen",
+      "B": "nein, es hat keine Bedeutung",
+      "C": "ja, denn es verbietet, einem Tier ohne vernünftigen Grund Schmerzen, Leiden oder Schäden zuzufügen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.165",
+    "answer": "A",
+    "question": "Wie sind Forellen unmittelbar vor dem Schlachten tierschutzgerecht zu betäuben?",
+    "options": {
+      "A": "durch ausreichend kräftigen Kopfschlag mit einem geeigneten Gegenstand",
+      "B": "durch exakt geführten Herzstich",
+      "C": "durch einen gezielten Nackenschlag"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.166",
+    "answer": "A",
+    "question": "Wer darf nach dem Tierschutzgesetz ein Wirbeltier töten?",
+    "options": {
+      "A": "nur, wer die dazu nötigen Kenntnisse und Fähigkeiten besitzt",
+      "B": "jedermann",
+      "C": "nur, wer eine entsprechende Berufsausbildung abgeschlossen hat"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.167",
+    "answer": "C",
+    "question": "Darf ein Fisch ohne vernünftigen Grund getötet werden?",
+    "options": {
+      "A": "nur, wenn der Fisch keiner Fangbeschränkung nach Schonzeit und Schonmaß unterliegt",
+      "B": "ja",
+      "C": "nein"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.168",
+    "answer": "B",
+    "question": "Wer darf einen Fisch und damit ein Wirbeltier töten?",
+    "options": {
+      "A": "wer dazu die erforderliche amtliche Genehmigung besitzt",
+      "B": "wer dazu die notwendigen Kenntnisse und Fähigkeiten hat",
+      "C": "wer das 14. Lebensjahr vollendet hat"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.169",
+    "answer": "C",
+    "question": "Müssen Fische, außer Aale und Plattfische, vor dem Schlachten betäubt werden?",
+    "options": {
+      "A": "nur wenn die Fische größer als 30 cm sind",
+      "B": "nein, da sie keinen Schmerz empfinden",
+      "C": "ja, durch wuchtig geführten Kopfschlag oberhalb der Augen mit einem genügend schweren Gegenstand"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.170",
+    "answer": "C",
+    "question": "Ein geangelter Aal kann tierschutzgerecht ohne Betäubung geschlachtet werden",
+    "options": {
+      "A": "durch tot laufen lassen in Salmiaklösung.",
+      "B": "durch einen bis auf die Wirbelsäule geführten Kehlschnitt und unmittelbar folgende Schlachtung.",
+      "C": "durch einen die Wirbelsäule durchtrennenden Stich oder Schnitt dicht hinter dem Kopf und sofortiges Herausnehmen der Eingeweide einschließlich des Herzens."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.171",
+    "answer": "A",
+    "question": "Wie muss ein gefangener, überlebensfähiger Fisch, der zu schonen ist, behandelt werden?",
+    "options": {
+      "A": "er ist schonend vom Haken zu lösen und sofort zurückzusetzen",
+      "B": "er ist im Setzkescher so lange zu hältern, bis er sich erholt hat und anschließend zurückzusetzen",
+      "C": "er ist zu töten und dem Tageshöchstfang zuzurechnen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.172",
+    "answer": "A",
+    "question": "Sie fangen am 15. Oktober beim Fliegenfischen eine Bachforelle mit 35 cm Länge. Die Forelle lässt sich problemlos vom Haken lösen. Wie verhalten Sie sich richtig?",
+    "options": {
+      "A": "Sie setzen die Forelle unverzüglich in das Gewässer zurück",
+      "B": "Sie hältern die Forelle in einem Setzkescher, um sie erst am Ende des Angeltages zu töten",
+      "C": "Sie betäuben und töten die Forelle"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.173",
+    "answer": "C",
+    "question": "Sie wollen Ende April in einem Forellenbach angeln. Welchen Fisch dürfen Sie nicht aus dem Bach fangen, um ihn als Köderfisch zu verwenden?",
+    "options": {
+      "A": "Gründling",
+      "B": "Elritze",
+      "C": "Steinbeißer (Dorngrundel)"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.174",
+    "answer": "B",
+    "question": "Sie angeln Anfang April in der Äschenregion eines Fließgewässers. Welchen gefangenen und lebensfähigen Fisch müssen Sie unverzüglich in das Gewässer zurücksetzen?",
+    "options": {
+      "A": "eine Bachforelle mit 40 cm Länge",
+      "B": "einen Huchen mit 95 cm Länge",
+      "C": "einen Bachsaibling mit 25 cm Länge"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.175",
+    "answer": "B",
+    "question": "Sie fangen am 1. Januar eine Äsche mit 35 cm Länge. Die Äsche lässt sich problemlos vom Haken lösen. Wie verhalten Sie sich richtig?",
+    "options": {
+      "A": "Sie hältern die Äsche in einem Setzkescher bis Sie das Gewässer verlassen wollen, dann töten Sie den Fisch",
+      "B": "Sie setzen die Äsche unverzüglich in das Gewässer zurück",
+      "C": "Sie betäuben und töten die Äsche sofort nach dem Fang"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.176",
+    "answer": "A",
+    "question": "Wie sind Speisekrebse tierschutzgerecht zu töten?",
+    "options": {
+      "A": "Sie müssen in stark kochendes Wasser gegeben werden, das sie vollständig bedeckt und nach ihrer Zugabe weiterhin stark kocht.",
+      "B": "Sie müssen in angewärmtes Wasser gelegt und dann zum Kochen gebracht werden.",
+      "C": "Sie müssen mit einem Schlag betäubt, dann ausgeweidet und anschließend gekocht werden."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.177",
+    "answer": "C",
+    "question": "Wie dürfen lebende Krustentiere vorübergehend aufbewahrt werden?",
+    "options": {
+      "A": "auf einer trockenen Unterlage",
+      "B": "auf Eis",
+      "C": "auf einer feuchten Unterlage"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.178",
+    "answer": "B",
+    "question": "Dürfen Seerosen in Altwässern gepflückt, ausgerissen, ausgegraben oder beschädigt werden?",
+    "options": {
+      "A": "Es darf nur eine Handvoll gepflückt werden",
+      "B": "nein, da sie vollkommen geschützt sind",
+      "C": "ja, ohne Einschränkung"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.179",
+    "answer": "C",
+    "question": "An Ihrem Angelplatz wächst die Wasserschwertlilie. Dürfen Sie einzelne Stängel abpflücken?",
+    "options": {
+      "A": "Sie dürfen nur einzelne verblühte Pflanzen zur Samengewinnung abpflücken.",
+      "B": "Sie dürfen nur einzelne Blütenstängel für einen Handstrauß abpflücken.",
+      "C": "die Wasserschwertlilie gehört zu den besonders geschützten Pflanzen und darf nicht abgepflückt werden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.180",
+    "answer": "B",
+    "question": "Hecken und Feldgehölze in der freien Natur dürfen",
+    "options": {
+      "A": "jederzeit gerodet werden.",
+      "B": "vom 01.10. bis 28.02. zurückgeschnitten werden.",
+      "C": "jederzeit abgebrannt werden."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.181",
+    "answer": "C",
+    "question": "Wer darf in Gewässern, die zur Fischerei benutzt werden, Molche, Frösche, Kröten und Unken fangen?",
+    "options": {
+      "A": "der zur Ausübung der Fischerei Berechtigte",
+      "B": "jedermann",
+      "C": "niemand, weil ihr Fang nach Naturschutzrecht verboten ist"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.182",
+    "answer": "C",
+    "question": "Ist die Wasserspitzmaus naturschutzrechtlich geschützt?",
+    "options": {
+      "A": "sie darf nur an Fließgewässern der Forellen- und Äschenregion gefangen werden",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.183",
+    "answer": "B",
+    "question": "Welche Tierart ist naturschutzrechtlich besonders geschützt?",
+    "options": {
+      "A": "Bisam",
+      "B": "Biber",
+      "C": "Schermaus"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.184",
+    "answer": "B",
+    "question": "Gehören Rohrsänger und Wasseramseln zu den einheimischen, nicht jagdbaren wildlebenden Vögeln, die besonders geschützt sind?",
+    "options": {
+      "A": "nein",
+      "B": "ja",
+      "C": "ihr Fang ist gestattet, wenn sie als Haustiere gehalten werden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.185",
+    "answer": "C",
+    "question": "Zählt die auch Fische fressende, wildlebende Ringelnatter zu den nach Naturschutzrecht geschützten Tierarten?",
+    "options": {
+      "A": "nein",
+      "B": "ja, nur in Naturschutzgebieten",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.186",
+    "answer": "B",
+    "question": "Darf der Fischereiberechtigte oder Fischereiausübungsberechtigte fischfressende Vögel (Fischadler, Eisvogel) töten oder faangen?",
+    "options": {
+      "A": "ja, wenn durch die Vögel erhebliche Schäden angerichtet werden",
+      "B": "nein",
+      "C": "ja, ohne Einschränkung"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.187",
+    "answer": "B",
+    "question": "Dürfen Sie als Fischereiausübungsberechtigter an einem Fließgewässer Tieren, die dem Jagdrecht unterliegen (Wild), nachstellen, um Fischereischäden abzuwehren?",
+    "options": {
+      "A": "ja",
+      "B": "nein",
+      "C": "nur außerhalb der Brut- und Aufzuchtzeiten der Wildtiere"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.188",
+    "answer": "B",
+    "question": "Als Fischereiausübungsberechtigter an einem kleinen See beobachten Sie im Frühjahr ein Haubentaucherpaar beim Nestbau. Wie dürfen Sie handeln?",
+    "options": {
+      "A": "aus Sorge um die Fischbrut und in Erfüllung der fischereilichen Hegepflicht zerstören Sie das Nest",
+      "B": "Sie dürfen weder das Nest zerstören, noch die Haubentaucher vertreiben",
+      "C": "Sie warten bis die Vögel brüten, dann erst vertreiben Sie das Brutpaar"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.189",
+    "answer": "C",
+    "question": "Als Pächter eines Salmonidengewässers (Fluss) stellen Sie im Mai fest, dass sich an diesem Gewässer eine Reiherkolonie etabliert hat. Wie dürfen Sie handeln?",
+    "options": {
+      "A": "aufgrund der zu erwartenden hohen Fischverluste durch die Reiher, vertreiben Sie die Vögel",
+      "B": "Sie nehmen die Gelege aus",
+      "C": "die Reiherkolonie darf nicht gestört werden"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.190",
+    "answer": "A",
+    "question": "Was kann ein Fischereiberechtigter bei Schädigung seines Fischwassers durch nicht erlaubte Abwassereinleitung tun?",
+    "options": {
+      "A": "er kann bei der zuständigen Verwaltungsbehörde verlangen, gegen die Einleitung einzuschreiten und vom Einleitenden Schadensersatz fordern",
+      "B": "er muss die Einleitung dulden",
+      "C": "er kann die Einleitung durch entsprechende Maßnahmen beseitigen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.191",
+    "answer": "A",
+    "question": "Was ist nach dem Wasserrecht Gemeingebrauch?",
+    "options": {
+      "A": "die jedermann zustehende Befugnis, Gewässer ohne besondere Erlaubnis u.a. zum Baden und Befahren mit kleinen Fahrzeugen ohne eigene Triebkraft zu benützen",
+      "B": "der Gebrauch des Wassers für gemeinnützige Zwecke",
+      "C": "das Wasser gemeinschaftlich für sanitäre Zwecke zu gebrauchen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.192",
+    "answer": "B",
+    "question": "Als Fischereiausübender (Erlaubnisscheininhaber) beobachten Sie am Gewässer eine größere Anzahl sterbender und toter Fische. Welche Maßnahmen müssen Sie unverzüglich ergreifen?",
+    "options": {
+      "A": "Feststellung des Umfangs des Fischsterbens durch zahlenmäßige Erfassung der geschädigten und toten Fische",
+      "B": "Anzeige bei der Kreisverwaltungsbehörde bzw. bei der Polizei",
+      "C": "Entnahme von Fischen zu Untersuchungszwecken"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.193",
+    "answer": "C",
+    "question": "Wem müssen gemäß Bayerischem Fischereigesetz (BayFiG) die Fischereiberechtigten, Fischereiausübenden, Fischereiaufseher und die sonstigen mit der Fischereiaufsicht beauftragten Personen unverzüglich Fischsterben anzeigen?",
+    "options": {
+      "A": "der Gemeindeverwaltung",
+      "B": "dem Bayerischen Landesamt für Wasserwirtschaft",
+      "C": "der Kreisverwaltungsbehörde, wenn diese nicht erreichbar oder Gefahr im Verzug ist, einer Polizeidienststelle"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.194",
+    "answer": "A",
+    "question": "Das Einbringen toter Fische in nicht geschlossene Gewässer ist",
+    "options": {
+      "A": "erlaubt, soweit sie als Köder verwendet werden.",
+      "B": "in jedem Fall verboten.",
+      "C": "generell erlaubt."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.195",
+    "answer": "C",
+    "question": "Darf der Angler die Eingeweide getöteter Fische in nicht geschlossene Gewässer einbringen?",
+    "options": {
+      "A": "ja, es handelt sich um Fischfutter",
+      "B": "ja, dies gehört noch zum Gemeingebrauch im Sinn der Wassergesetze",
+      "C": "nein, dies ist unzulässig"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.196",
+    "answer": "C",
+    "question": "Nach Ablauf welcher Zeitdauer darf sich der Grundstückseigentümer Fische aneignen, die nach Rückgang einer Überflutung in Vertiefungen ohne Verbindung zum Fischwasser zurückgeblieben sind?",
+    "options": {
+      "A": "nach Ablauf von zwei Wochen",
+      "B": "überhaupt nicht",
+      "C": "nach Ablauf von einer Woche"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.197",
+    "answer": "B",
+    "question": "Aus welchem Grund muss ein gefangenes Bachneunauge schonend und unverzüglich in das Herkunftsgewässer zurückgesetzt werden?",
+    "options": {
+      "A": "Es unterliegt nicht dem Fischereirecht.",
+      "B": "Es zählt zu den ganzjährig geschonten Arten.",
+      "C": "Es ist ungenießbar."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.198",
+    "answer": "B",
+    "question": "Darf ein in einem Setzkescher gehälterter Fisch in das Fanggewässer zurückgesetzt werden?",
+    "options": {
+      "A": "ja",
+      "B": "nein",
+      "C": "Ja, soweit keine Verletzung des Fisches erkennbar ist."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.199",
+    "answer": "B",
+    "question": "Darf nach dem Bayerischen Fischereigesetz ein Helfer in Begleitung des Fischereiausübungsberechtigten ohne Fischereischein mit der Handangel fischen?",
+    "options": {
+      "A": "Der Fang von Köderfischen mit der Handangel ist dem Helfer erlaubt.",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.200",
+    "answer": "C",
+    "question": "Warum ist es für die Fischerei wichtig, dass Fischereiaufseher eingesetzt werden?",
+    "options": {
+      "A": "um über die Anzahl der Angler am Gewässer Bescheid zu wissen",
+      "B": "um Informationen über gefangene Fische zu bekommen",
+      "C": "um die Gewässer und ihre Lebensgemeinschaften zu schützen und die Einhaltung der Rechtsvorschriften zu überwachen"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.201",
+    "answer": "A",
+    "question": "Wer die Ausübung der Fischerei stört, indem er trotz Abmahnung Fische verscheucht oder die sachgerechte Verwendung eines Fanggeräts verhindert,",
+    "options": {
+      "A": "verstößt gegen das Bayerische Fischereigesetz (BayFiG) und kann demzufolge wegen einer Ordnungswidrigkeit zur Anzeige gebracht werden.",
+      "B": "kann vom betroffenen Fischer des Platzes verwiesen werden.",
+      "C": "verletzt das Fischereiausübungsrecht eines andern und macht sich deshalb wegen Fischwilderei nach dem Strafgesetzbuch strafbar."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.202",
+    "answer": "A",
+    "question": "Welche Krebsart darf in Bayern keinesfalls zurückgesetzt werden?",
+    "options": {
+      "A": "Sumpfkrebs",
+      "B": "Edelkrebs",
+      "C": "Steinkrebs"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.203",
+    "answer": "B",
+    "question": "Darf jemand ohne Fischereischein mit der Handangel in seinem Gartenteich angeln?",
+    "options": {
+      "A": "Nur, wenn das Grundstück eingezäunt ist.",
+      "B": "nein",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.204",
+    "answer": "C",
+    "question": "Welche Aussage ist für die Handhabung der Handangel richtig?",
+    "options": {
+      "A": "Für die Handhabung der Handangel gibt es keine Vorschriften.",
+      "B": "Das Heben und Senken mit der Handangel ist untersagt.",
+      "C": "Die Handangel darf nicht als Reißangel verwendet werden."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.205",
+    "answer": "C",
+    "question": "Der Angler fängt einen Waller mit 50 cm. Er muss",
+    "options": {
+      "A": "den Vorgang mit der Kreisverwaltungsbehörde klären.",
+      "B": "den Fisch zurücksetzen, da er noch nicht geschlechtsreif ist.",
+      "C": "den Fisch entnehmen und sinnvoll verwerten."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.206",
+    "answer": "B",
+    "question": "Feuer machen am Gewässer",
+    "options": {
+      "A": "gehört zum Gemeingebrauch.",
+      "B": "erfordert die Zustimmung des Grundstücksberechtigten und darf nicht gegen öffentlich-rechtliche Vorschriften verstoßen.",
+      "C": "ist verboten."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.207",
+    "answer": "B",
+    "question": "Silagesickersaft",
+    "options": {
+      "A": "ist wertvoller Dünger und gehört ins Gewässer.",
+      "B": "\"gefährdet das Gewässer",
+      "C": " der Eintrag muss verhindert werden.\""
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.208",
+    "answer": "B",
+    "question": "Welcher Fisch unterliegt gemäß der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) keiner Schonbestimmung?",
+    "options": {
+      "A": "Sichling",
+      "B": "Moderlieschen",
+      "C": "Donaukaulbarsch"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.209",
+    "answer": "C",
+    "question": "Darf ein Angler, der im Besitz einer gültigen Fischereierlaubnis ist, selbstständig Besatzmaßnahmen vornehmen?",
+    "options": {
+      "A": "Ja, aber nur wenn es sich um einheimische Fische handelt.",
+      "B": "Ja, denn damit verbessert er die Fangmöglichkeiten.",
+      "C": "Nein, das darf nur der unbeschränkt Fischereiausübungsberechtigte."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.210",
+    "answer": "A",
+    "question": "Kann ein Erlaubnisscheininhaber ohne Funktion als Fischereiaufseher eine unbefugt fischende Person („Schwarzfischer“) zur Anzeige bringen?",
+    "options": {
+      "A": "Ja, er kann eine Anzeige bei einer Polizeidienststelle vornehmen.",
+      "B": "Schwarzfischer können nur durch den Fischereiaufseher angezeigt werden.",
+      "C": "Nein, dazu wird die schriftliche Erlaubnis durch den Gewässereigentümer benötigt."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.211",
+    "answer": "B",
+    "question": "Ein Angler hat einen Erlaubnisschein erworben, in dem keine Schonbestimmungen aufgeführt sind.",
+    "options": {
+      "A": "Der Fischer kann nach eigenem Ermessen Fische fangen, sich aneignen oder schonend zurücksetzen.",
+      "B": "Es gelten für alle Fische die gesetzlichen Schonzeiten und Schonmaße.",
+      "C": "Der Erlaubnisschein ist ungültig."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.212",
+    "answer": "A",
+    "question": "Muss der verantwortliche Begleiter eines Jugendlichen mit Jugendfischereischein einen auf seinen Namen lautenden Erlaubnisschein besitzen, wenn er nicht selbst angelt?",
+    "options": {
+      "A": "nein",
+      "B": "Das Prüfungszeugnis über die bestandene Fischerprüfung reicht völlig aus.",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.213",
+    "answer": "A",
+    "question": "Darf ein 17-jähriger Inhaber eines Fischereischeins auf Lebenszeit einen Jugendlichen mit Jugendfischereischein beim Fischfang verantwortlich begleiten?",
+    "options": {
+      "A": "nein",
+      "B": "Nur, wenn er ausreichende Sachkenntnisse besitzt.",
+      "C": "ja"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.214",
+    "answer": "B",
+    "question": "Ist in einer Bundesschifffahrtsstraße (z. B. Europakanal) die Hälterung der gefangenen Fische erlaubt?",
+    "options": {
+      "A": "Die Hälterung ist zwingend geboten.",
+      "B": "Die Hälterung ist erlaubt, sofern eine Schädigung der gehälterten Fische nicht zu erwarten ist.",
+      "C": "Die Hälterung ist verboten."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.215",
+    "answer": "B",
+    "question": "Ein Landwirt holt mit einer Motorpumpe Wasser aus einem See, um damit sein angrenzendes Maisfeld zu bewässern. Ist dies im Rahmen des Gemeingebrauchs gemäß Wasserrecht zulässig?",
+    "options": {
+      "A": "Eine gesetzliche Regelung im Sinne des Gemeingebrauchs gibt es nicht.",
+      "B": "Nein, der Gemeingebrauch erlaubt nur das Schöpfen mit Handgefäßen oder das direkte Tränken von Vieh.",
+      "C": "Ja, da es seiner landwirtschaftlichen Tätigkeit dient und diese privilegiert ist."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.216",
+    "answer": "A",
+    "question": "Was kann der Fischereiberechtigte gegen Fischprädatoren wie Reiher, Kormoran und Mink unternehmen?",
+    "options": {
+      "A": "Er sollte mit dem Jagdberechtigten in Kontakt treten, damit dieser im Rahmen der rechtlichen Möglichkeiten bei der Schadensabwehr hilft.",
+      "B": "Er darf ihnen jederzeit mit Fallen nachstellen.",
+      "C": "Er kann ihre Nester bzw. ihren Bau zerstören."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.217",
+    "answer": "A",
+    "question": "Für die Schleie gilt nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG)",
+    "options": {
+      "A": "ein Schonmaß und eine Schonzeit.",
+      "B": "nur eine Schonzeit.",
+      "C": "nur ein Schonmaß."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.218",
+    "answer": "B",
+    "question": "Dürfen elektrische Köder und Drohnen zum Fischen verwendet werden?",
+    "options": {
+      "A": "Ja, ohne Einschränkung.",
+      "B": "Nein.",
+      "C": "Ja, aber nur in geschlossenen Gewässern."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.219",
+    "answer": "C",
+    "question": "Welche Fischart ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Hasel",
+      "B": "Mühlkoppe",
+      "C": "Karausche"
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.220",
+    "answer": "B",
+    "question": "Welches Vergehen liegt vor, wenn ein Angler (zur Ausübung des Fischfangs Berechtigter) die erlaubte Fangmenge überschreitet?",
+    "options": {
+      "A": "Es handelt sich um eine geringfügige Ordnungswidrigkeit.",
+      "B": "Es handelt sich um eine Straftat, die den Tatbestand der Fischwilderei oder Diebstahl erfüllt.",
+      "C": "Es handelt sich um eine gebührenpflichtige Ordnungswidrigkeit mit Geldbuße."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.221",
+    "answer": "C",
+    "question": "Darf ein Fischereiaufseher im Rahmen einer Fischereikontrolle gefangene Fische in Behältern (auch im Kraftfahrzeug) besichtigen?",
+    "options": {
+      "A": "Nein.",
+      "B": "Fische in Behältern dürfen nur von der Polizei kontrolliert werden.",
+      "C": "Ja."
+    }
+  },
+  {
+    "category": "Rechtsvorschriften",
+    "number": "5.222",
+    "answer": "B",
+    "question": "Welche Art ist nach der Verordnung zur Ausführung des Bayerischen Fischereigesetzes (AVBayFiG) ganzjährig geschont?",
+    "options": {
+      "A": "Giebel",
+      "B": "Zobel",
+      "C": "Edelkrebs"
+    }
+  }
+]

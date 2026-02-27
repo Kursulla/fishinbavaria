@@ -8,6 +8,7 @@ const navItems = [
   { path: "/test-categories", label: "Pitanja sa Testova" },
   { path: "/tests", label: "Simulacija testova" },
   { path: "/marked", label: "Vežbaj obeležena pitanja" },
+  { path: "/docs", label: "Dokumenti za učenje" },
 ];
 
 const Header = () => {

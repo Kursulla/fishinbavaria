@@ -6,6 +6,7 @@ import TestsPage from "./pages/tests/TestsPage";
 import Home from "./pages/Home";
 import MarkedPage from "./pages/marked-questions/MarkedPage";
 import TestCategoriesPage from "./pages/test-categories/TestCategoriesPage";
+import DocsPage from "./pages/docs/DocsPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/test-categories" element={<TestCategoriesPage />} />
           <Route path="/tests" element={<TestsPage />} />
           <Route path="/marked" element={<MarkedPage />} />
+          <Route path="/docs" element={<DocsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

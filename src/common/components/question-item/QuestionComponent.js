@@ -7,7 +7,7 @@ function shuffleElementsInArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
-const QuestionComponent = ({orderNumber, question, rightAnswer}) => {
+const QuestionComponent = ({ orderNumber, question, rightAnswer, onAnswer }) => {
     const [isAnswered, setIsAnswered] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
     const [error, setError] = useState(false);
@@ -20,14 +20,16 @@ const QuestionComponent = ({orderNumber, question, rightAnswer}) => {
     }, [options.length, question.options]);
 
     const handleAnswerClick = (key) => {
-        if (isAnswered) return
+        if (isAnswered) return;
         setSelectedOption(key);
         setIsAnswered(true);
-        if (key !== question.answer) {
-            setError(true)
+        const isCorrect = key === question.answer;
+        if (!isCorrect) {
+            setError(true);
         } else {
-            rightAnswer(true)
+            rightAnswer?.(true);
         }
+        onAnswer?.(isCorrect);
     };
 
     const handleMarkForLaterOnClick = (question, state) => {
