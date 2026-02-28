@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { categoryQuestionsRepository } from "./data/CategoryQuestionsRepository";
 import QuestionComponent from "../../common/components/question-item/QuestionComponent";
 import AnswerStatsBar from "../../common/components/answer-stats-bar/AnswerStatsBar";
-import { v4 as uuidv4 } from "uuid";
 
 const CategoryPage = () => {
     const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(20);
