@@ -70,7 +70,12 @@ const QuestionComponent = ({ orderNumber, question, rightAnswer, onAnswer }) => 
                     </li>
                 ))}
             </ul>
-            <p className="questionCategoryTitle">{question.category} [{question.number}]</p>
+            <p className="questionCategoryTitle">
+                {question.category} [{question.number}]
+                {question.numberOfOccurrences != null && (
+                    <span className="question-occurrence-count"> · Pojavilo se u testovima: {question.numberOfOccurrences}×</span>
+                )}
+            </p>
             {error && <p className="mistake">Pogresno!</p>}
         </div>
     );

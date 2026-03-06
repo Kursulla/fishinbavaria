@@ -5,7 +5,7 @@ import { questionsFromTestsRepository } from "../../tests/data/QuestionsFromTest
  * Delegates to questionsFromTestsRepository; keeps this feature's scope isolated.
  */
 export const testCategoriesRepository = {
-    getCategories: () => questionsFromTestsRepository.getTestCategories(),
+    getCategories: () => questionsFromTestsRepository.getQuestionsCategories(),
     getRandomSetForCategory: (category, numberOfQuestions) =>
         questionsFromTestsRepository.getRandomSetForCategory(category, numberOfQuestions),
 };

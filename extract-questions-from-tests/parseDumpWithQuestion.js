@@ -15,8 +15,12 @@ const fs = require('fs');
 const path = require('path');
 const { JSDOM } = require('jsdom');
 
-// 1. Učitaj HTML iz txt fajla
+function normalizeText(text) {
+    if (typeof text !== 'string') return '';
+    return text.replace(/\s+/g, ' ').trim();
+}
 
+// 1. Učitaj HTML iz txt fajla
 const htmlPath = path.resolve(__dirname, pathToHtmlDump);
 const htmlContent = fs.readFileSync(htmlPath, 'utf-8');
 
@@ -24,32 +28,72 @@ const htmlContent = fs.readFileSync(htmlPath, 'utf-8');
 const dom = new JSDOM(htmlContent);
 const document = dom.window.document;
 
-// 3. Izvuci sve <strong> tagove
-const strongElements = document.querySelectorAll('strong');
-const rawSentences = Array.from(strongElements)
-    .map(el => el.textContent.trim())
-    .filter(text => text.length > 0);
+// 3. Izvuci sve redove rezultata (svaki red = jedna pojava pitanja; pitanje + tačan odgovor)
+const resultRows = document.querySelectorAll('table.rf-dt tbody tr');
+const COL_QUESTION = 0;
+const COL_CORRECT_ANSWER = 3;
 
-// 4. Ukloni duplikate
-const topQuestions = [...new Set(rawSentences)];
+const occurrencesFromDump = [];
+for (const row of resultRows) {
+    const cells = row.querySelectorAll('td');
+    if (cells.length < 4) continue;
+    const strongEl = cells[COL_QUESTION].querySelector('strong');
+    const questionText = strongEl ? normalizeText(strongEl.textContent) : '';
+    const correctAnswerText = normalizeText(cells[COL_CORRECT_ANSWER].textContent);
+    if (!questionText) continue;
+    occurrencesFromDump.push({ questionText, correctAnswerText });
+}
 
-// 5. Prikaz rezultata
-console.log('✅ Pronađene jedinstvene rečenice u <strong> tagovima:\n');
-topQuestions.forEach((s, i) => console.log(`${i + 1}. ${s}`));
-
-// 6. Učitaj allQuestions (ESM fajl – čitamo kao tekst i izvlačimo niz)
+// 4. Učitaj allQuestions (referenca za number)
 const allQuestionsPath = path.resolve(__dirname, pathToAllQuestions);
 const content = fs.readFileSync(allQuestionsPath, 'utf-8');
 const match = content.match(/const allRequiredQuestions = (\[[\s\S]*\]);\s*export default/);
 const allQuestions = JSON.parse(match[1]);
 
-// 7. Pronađi objekte čija se pitanja poklapaju sa topQuestions
-const matchedQuestions = allQuestions.filter(q => topQuestions.includes(q.question));
+function findQuestionNumber(questionText, correctAnswerText) {
+    const qNorm = normalizeText(questionText);
+    const aNorm = normalizeText(correctAnswerText);
+    const found = allQuestions.find((q) => {
+        if (normalizeText(q.question) !== qNorm) return false;
+        const refAnswerText = q.options && q.options[q.answer];
+        return refAnswerText && normalizeText(refAnswerText) === aNorm;
+    });
+    return found ? found.number : null;
+}
+
+// 5. Za svaku pojavu iz dump-a nađi number; null ako nema matcha
+const numbersFromDump = occurrencesFromDump.map((occ) =>
+    findQuestionNumber(occ.questionText, occ.correctAnswerText)
+);
+
+// 6. Brojanje ponavljanja po number
+const occurrenceCountByNumber = {};
+numbersFromDump.forEach((num) => {
+    if (num == null) return;
+    occurrenceCountByNumber[num] = (occurrenceCountByNumber[num] || 0) + 1;
+});
+
+const unmatchedCount = numbersFromDump.filter((n) => n == null).length;
+if (unmatchedCount > 0) {
+    console.log(`⚠️  Redova bez matcha (preskočeno): ${unmatchedCount}`);
+}
+
+// 7. Izlaz: jedinstvena pitanja po number, sa numberOfOccurrences iz brojanja po number
+const numbersSeenInDump = new Set(Object.keys(occurrenceCountByNumber));
+const matchedQuestions = allQuestions
+    .filter((q) => numbersSeenInDump.has(q.number))
+    .map((q) => ({
+        ...q,
+        numberOfOccurrences: occurrenceCountByNumber[q.number] ?? 0,
+    }));
 
 // 8. Upis u novi fajl
 const outputPath = path.resolve(__dirname, pathToOutputFile);
 fs.writeFileSync(outputPath, JSON.stringify(matchedQuestions, null, 2), 'utf-8');
-console.log(`\n💾 Sačuvano u ${pathToOutputFile} (filtrirani objekti sa punim podacima).`);
+
+console.log(`\n💾 Sačuvano u ${pathToOutputFile}`);
+console.log(`📊 Jedinstvenih pitanja (po number): ${matchedQuestions.length}`);
+console.log(`📊 Ukupno pojavljivanja u dump-u: ${numbersFromDump.filter(Boolean).length}`);
 // const fs = require('fs');
 // const path = require('path');
 // const { JSDOM } = require('jsdom');
