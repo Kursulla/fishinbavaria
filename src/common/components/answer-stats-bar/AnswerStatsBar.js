@@ -24,7 +24,7 @@ const AnswerStatsBar = ({ answered, wrong }) => {
       </span>
       {isBelowPass && (
         <span className="answer-stats-item answer-stats-bar--below-pass">
-          Verovatno pao test.
+          Pali ste!
         </span>
       )}
     </div>
