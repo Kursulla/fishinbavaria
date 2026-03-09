@@ -5,30 +5,30 @@ import "./DocsPage.css";
 
 const DocsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const categoryParam = searchParams.get("category");
-  const [selectedCategory, setSelectedCategory] = useState(categoryParam || null);
+  const docParam = searchParams.get("doc");
+  const [selectedDocId, setSelectedDocId] = useState(docParam || null);
   const [content, setContent] = useState("");
   const [toc, setToc] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const contentRef = useRef(null);
 
-  const categories = docsConfig.getCategories();
+  const documents = docsConfig.getDocuments();
 
   useEffect(() => {
-    if (categoryParam && categories.includes(categoryParam)) {
-      setSelectedCategory(categoryParam);
+    if (docParam && documents.some((d) => d.id === docParam)) {
+      setSelectedDocId(docParam);
     }
-  }, [categoryParam, categories]);
+  }, [docParam, documents]);
 
   useEffect(() => {
-    if (!selectedCategory) {
+    if (!selectedDocId) {
       setContent("");
       setToc([]);
       setError(null);
       return;
     }
-    const url = docsConfig.getDocUrl(selectedCategory);
+    const url = docsConfig.getDocUrl(selectedDocId);
     setLoading(true);
     setError(null);
     fetch(url)
@@ -45,7 +45,7 @@ const DocsPage = () => {
         setContent("");
       })
       .finally(() => setLoading(false));
-  }, [selectedCategory]);
+  }, [selectedDocId]);
 
   useEffect(() => {
     if (!content || !contentRef.current) {
@@ -61,9 +61,9 @@ const DocsPage = () => {
     setToc(items);
   }, [content]);
 
-  const handleSelectCategory = (category) => {
-    setSelectedCategory(category);
-    setSearchParams({ category });
+  const handleSelectDoc = (docId) => {
+    setSelectedDocId(docId);
+    setSearchParams({ doc: docId });
   };
 
   return (
@@ -72,14 +72,14 @@ const DocsPage = () => {
         <h2 className="docs-page-title">Materijal za učenje po kategorijama</h2>
         <p className="docs-page-intro">Izaberi kategoriju da otvoriš dokument:</p>
         <ul className="docs-category-list">
-          {categories.map((cat) => (
-            <li key={cat}>
+          {documents.map((doc) => (
+            <li key={doc.id}>
               <button
                 type="button"
-                className={`docs-category-btn ${selectedCategory === cat ? "docs-category-btn--active" : ""}`}
-                onClick={() => handleSelectCategory(cat)}
+                className={`docs-category-btn ${selectedDocId === doc.id ? "docs-category-btn--active" : ""}`}
+                onClick={() => handleSelectDoc(doc.id)}
               >
-                {cat}
+                {doc.label}
               </button>
             </li>
           ))}
@@ -111,11 +111,11 @@ const DocsPage = () => {
             />
           </article>
         )}
-        {!loading && !error && selectedCategory && !content && (
-          <p className="docs-empty">Nema sadržaja za ovu kategoriju.</p>
+        {!loading && !error && selectedDocId && !content && (
+          <p className="docs-empty">Nema sadržaja za ovaj dokument.</p>
         )}
-        {!selectedCategory && (
-          <p className="docs-hint">Izaberi kategoriju u meniju levo.</p>
+        {!selectedDocId && (
+          <p className="docs-hint">Izaberi dokument u meniju levo.</p>
         )}
       </div>
     </div>
