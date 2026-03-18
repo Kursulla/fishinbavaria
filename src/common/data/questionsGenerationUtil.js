@@ -1,31 +1,52 @@
+import { questionDisplayTtlStorage } from "./questionDisplayTtlStorage";
 
+const getUniqueQuestionsByNumber = (questions) => {
+    const uniqueQuestions = new Map();
+
+    questions.forEach((question) => {
+        if (question?.number && !uniqueQuestions.has(question.number)) {
+            uniqueQuestions.set(question.number, question);
+        }
+    });
+
+    return Array.from(uniqueQuestions.values());
+};
+
+const shuffleQuestions = (questions) => {
+    const shuffledQuestions = [...questions];
+
+    for (let i = shuffledQuestions.length - 1; i > 0; i -= 1) {
+        const swapIndex = Math.floor(Math.random() * (i + 1));
+        [shuffledQuestions[i], shuffledQuestions[swapIndex]] = [shuffledQuestions[swapIndex], shuffledQuestions[i]];
+    }
+
+    return shuffledQuestions;
+};
 
 const generateSetOfQuestionsForCategory = (categoryName, numberOfQuestions, source) => {
-    const getRandomQuestionFrom = (questions) => {
-        return questions[Math.floor(Math.random() * questions.length)];
-    };
+    const questionsBasedOnCategory = getUniqueQuestionsByNumber(
+        source.filter((question) => question.category === categoryName)
+    );
 
-    const selectedQuestions = new Set();
+    const recentlyShownNumbers = questionDisplayTtlStorage.getRecentlyShownQuestionNumbers();
+    const freshQuestions = questionsBasedOnCategory.filter(
+        (question) => !recentlyShownNumbers.has(question.number)
+    );
 
-    const questionsBasedOnCategory = source.filter((question) => question.category === categoryName);
-    const randomlySelectedQuestions = [];
-    for (let i = 0; i <= numberOfQuestions - 1; i++) {
-        let question = getRandomQuestionFrom(questionsBasedOnCategory);
-        if (isAlreadySelected(question.number, selectedQuestions)) question = getRandomQuestionFrom(questionsBasedOnCategory);
+    const limitedFreshQuestions = shuffleQuestions(freshQuestions).slice(0, numberOfQuestions);
 
-        randomlySelectedQuestions.push(question)
+    if (limitedFreshQuestions.length === numberOfQuestions) {
+        return limitedFreshQuestions;
     }
-    selectedQuestions.clear()
-    return randomlySelectedQuestions;
-}
 
+    const selectedNumbers = new Set(limitedFreshQuestions.map((question) => question.number));
+    const fallbackQuestions = shuffleQuestions(
+        questionsBasedOnCategory.filter((question) => !selectedNumbers.has(question.number))
+    ).slice(0, numberOfQuestions - limitedFreshQuestions.length);
 
+    return [...limitedFreshQuestions, ...fallbackQuestions];
+};
 
-const isAlreadySelected = (questionNumber, setToLookInto) => {
-    if (setToLookInto.has(questionNumber)) return true;
-    setToLookInto.add(questionNumber)
-}
-
-export const generationQuestionsUtil= {
-    setOfQuestionsForCategory: generateSetOfQuestionsForCategory
-}
+export const generationQuestionsUtil = {
+    setOfQuestionsForCategory: generateSetOfQuestionsForCategory,
+};

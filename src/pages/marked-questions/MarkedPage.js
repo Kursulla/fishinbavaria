@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import QuestionComponent from "../../common/components/question-item/QuestionComponent";
 import AnswerStatsBar from "../../common/components/answer-stats-bar/AnswerStatsBar";
 import { markedQuestionsRepository } from "./data/MarkedQuestionsRepository";
+import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
 
 const MarkedPage = () => {
     const [questions, setQuestions] = useState([]);
@@ -26,7 +27,8 @@ const MarkedPage = () => {
         setWrong(0);
     }
 
-    const handleAnswer = (isCorrect) => {
+    const handleAnswer = (_question, isCorrect) => {
+        questionDisplayTtlStorage.markQuestionsAsShown([_question]);
         setAnswered((a) => a + 1);
         if (!isCorrect) setWrong((w) => w + 1);
     };

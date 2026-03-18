@@ -5,11 +5,11 @@ const QUESTIONS_PER_CATEGORY = 12;
 const TEST_CATEGORIES = ["Fischkunde", "Gewässerkunde", "Schutz und Pflege", "Fanggeräte", "Rechtsvorschriften"];
 
 const MIN_OCCURRENCES_BY_CATEGORY = {
-    Fischkunde: 3,
-    Fanggeräte: 5,
-    Rechtsvorschriften: 5,
-    Gewässerkunde: 7,
-    "Schutz und Pflege": 7,
+    Fischkunde: 2,
+    Fanggeräte: 2,
+    Rechtsvorschriften: 2,
+    Gewässerkunde: 3,
+    "Schutz und Pflege": 3,
 };
 
 function getSourceForCategory(category) {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../common/components/header/Header";
+import SessionStorageDevTool from "../devtools/session-storage-inspector/SessionStorageDevTool";
 
 const Layout = () => {
   return (
@@ -9,6 +10,7 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
+      <SessionStorageDevTool />
     </div>
   );
 };

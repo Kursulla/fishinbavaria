@@ -29,7 +29,7 @@ const QuestionComponent = ({ orderNumber, question, rightAnswer, onAnswer }) => 
         } else {
             rightAnswer?.(true);
         }
-        onAnswer?.(isCorrect);
+        onAnswer?.(question, isCorrect);
     };
 
     const handleMarkForLaterOnClick = (question, state) => {

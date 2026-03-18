@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { categoryQuestionsRepository } from "./data/CategoryQuestionsRepository";
 import QuestionComponent from "../../common/components/question-item/QuestionComponent";
 import AnswerStatsBar from "../../common/components/answer-stats-bar/AnswerStatsBar";
+import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
 
 const CategoryPage = () => {
     const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(20);
@@ -33,7 +34,8 @@ const CategoryPage = () => {
         refreshQuestions(selectedCategory, Number(event.target.value));
     };
 
-    const handleAnswer = (isCorrect) => {
+    const handleAnswer = (_question, isCorrect) => {
+        questionDisplayTtlStorage.markQuestionsAsShown([_question]);
         setAnswered((a) => a + 1);
         if (!isCorrect) setWrong((w) => w + 1);
     };
