@@ -15,8 +15,16 @@
 .question-title {
     font-size: 1.125rem;
     font-weight: bold;
+    margin-top: 0;
     margin-bottom: 35px;
-    padding-right: 52px;
+}
+
+.question-top-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
 }
 .questionCategoryTitle{
     text-align: right;
@@ -39,14 +47,6 @@
     align-items: center;     /* vertikalno centriranje */
     justify-content: center; /* horizontalno centriranje */
 }
-.mark-question-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 8px;
-}
-
-
 .option-item {
     padding: 15px;
     border: 1px solid var(--option-border);

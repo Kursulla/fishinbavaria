@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import './QuestionsComponent.css';
 import MarkQuestionButton from "./remember-button-component/MarkQuestionButton";
 import { markedQuestionsRepository } from "../../../pages/marked-questions/data/MarkedQuestionsRepository";
+import QuestionExplanationButton from "./question-explanation/QuestionExplanationButton";
 
 function shuffleElementsInArray(array) {
     return array.sort(() => Math.random() - 0.5);
@@ -52,13 +53,14 @@ const QuestionComponent = ({ orderNumber, question, rightAnswer, onAnswer }) => 
 
     return (
         <div className="question-container">
-            <h2 className="question-title">{orderNumber + 1}: {question.question} <br/></h2>
-            <div className="mark-question-button">
+            <div className="question-top-actions">
+                <QuestionExplanationButton question={question} />
                 <MarkQuestionButton
                     alreadyMarked={isQuestionMarked(question.number)}
                     question={question}
                     onClick={handleMarkForLaterOnClick}/>
             </div>
+            <h2 className="question-title">{orderNumber + 1}: {question.question} <br/></h2>
             <ul className="question-options">
                 {Object.entries(options).map(([key, value]) => (
                     <li

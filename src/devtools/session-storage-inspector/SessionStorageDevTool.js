@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./SessionStorageDevTool.css";
 import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
+import { questionExplanationCacheStorage } from "../../common/components/question-item/question-explanation/questionExplanationCacheStorage";
 
 const formatDateTime = (timestamp) => {
     if (!timestamp) {
@@ -38,12 +39,51 @@ const storageInspectors = [
         getEntries: () => questionDisplayTtlStorage.getDebugEntries(),
         clear: () => questionDisplayTtlStorage.clear(),
         emptyState: "No answered questions are currently blocked by TTL.",
+        columns: ["Key", "Stored At", "Expires At", "TTL Left"],
+        renderRow: (entry) => [
+            entry.key,
+            formatDateTime(entry.storedAt),
+            formatDateTime(entry.expiresAt),
+            formatDuration(entry.ttlLeftInMs),
+        ],
+    },
+    {
+        id: "question-explanation-cache",
+        title: "Question Explanation Cache",
+        getEntries: () => questionExplanationCacheStorage.getDebugEntries(),
+        clear: () => questionExplanationCacheStorage.clear(),
+        emptyState: "No cached question explanations in localStorage.",
+        columns: ["Key", "Translated Question", "Wrong Answers", "Has Correct Reason"],
+        renderRow: (entry) => [
+            entry.key,
+            entry.translationQuestion || "N/A",
+            String(entry.wrongAnswersCount),
+            entry.hasCorrectAnswerReason ? "Yes" : "No",
+        ],
     },
 ];
 
 const SessionStorageDevTool = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [, setRefreshKey] = useState(0);
+
+    useEffect(() => {
+        if (!isOpen) {
+            return undefined;
+        }
+
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+                setIsOpen(false);
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [isOpen]);
 
     const inspectorSnapshots = storageInspectors.map((inspector) => ({
         ...inspector,
@@ -70,12 +110,21 @@ const SessionStorageDevTool = () => {
             </button>
 
             {isOpen && (
-                <div className="devtool-overlay" role="dialog" aria-modal="true">
+                <div
+                    className="devtool-overlay"
+                    role="dialog"
+                    aria-modal="true"
+                    onClick={(event) => {
+                        if (event.target === event.currentTarget) {
+                            setIsOpen(false);
+                        }
+                    }}
+                >
                     <div className="devtool-panel">
                         <div className="devtool-panel-header">
                             <div>
-                                <h2>Session Storage Dev Tool</h2>
-                                <p>Inspect feature-owned TTL/session entries.</p>
+                                <h2>Storage Dev Tool</h2>
+                                <p>Inspect feature-owned sessionStorage and localStorage entries.</p>
                             </div>
                             <div className="devtool-panel-actions">
                                 <button type="button" onClick={handleRefresh}>Refresh</button>
@@ -99,19 +148,17 @@ const SessionStorageDevTool = () => {
                                         <table className="devtool-table">
                                             <thead>
                                                 <tr>
-                                                    <th>Key</th>
-                                                    <th>Stored At</th>
-                                                    <th>Expires At</th>
-                                                    <th>TTL Left</th>
+                                                    {inspector.columns.map((column) => (
+                                                        <th key={column}>{column}</th>
+                                                    ))}
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 {inspector.entries.map((entry) => (
                                                     <tr key={entry.key}>
-                                                        <td>{entry.key}</td>
-                                                        <td>{formatDateTime(entry.storedAt)}</td>
-                                                        <td>{formatDateTime(entry.expiresAt)}</td>
-                                                        <td>{formatDuration(entry.ttlLeftInMs)}</td>
+                                                        {inspector.renderRow(entry).map((value, index) => (
+                                                            <td key={`${entry.key}-${inspector.columns[index]}`}>{value}</td>
+                                                        ))}
                                                     </tr>
                                                 ))}
                                             </tbody>
