@@ -13,8 +13,21 @@ function getModel() {
 }
 
 function buildProtectedTerms(question) {
-    const findMatchingTerms = (text) =>
-        QUESTION_PROTECTED_TERMS.filter((term) => text?.includes(term)).sort((left, right) => right.length - left.length);
+    const findMatchingTerms = (text) => {
+        const matches = QUESTION_PROTECTED_TERMS
+            .filter((term) => text?.includes(term))
+            .sort((left, right) => right.length - left.length);
+
+        const filteredMatches = [];
+        matches.forEach((term) => {
+            const isCoveredByLongerMatch = filteredMatches.some((existingTerm) => existingTerm.includes(term));
+            if (!isCoveredByLongerMatch) {
+                filteredMatches.push(term);
+            }
+        });
+
+        return filteredMatches;
+    };
 
     return {
         questionTerms: findMatchingTerms(question.question),
