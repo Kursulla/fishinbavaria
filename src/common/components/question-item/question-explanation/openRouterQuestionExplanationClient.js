@@ -1,7 +1,7 @@
 import { QUESTION_PROTECTED_TERMS } from "./questionProtectedTerms";
+import { openRouterModelDevSettingsStorage } from "../../../../devtools/open-router-models/openRouterModelDevSettingsStorage";
 
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
-const DEFAULT_MODEL = "mistralai/mistral-small-2603";
 const MAX_ATTEMPTS = 2;
 
 function getApiKey() {
@@ -9,7 +9,10 @@ function getApiKey() {
 }
 
 function getModel() {
-    return process.env.REACT_APP_OPENROUTER_MODEL?.trim() || DEFAULT_MODEL;
+    return (
+        openRouterModelDevSettingsStorage.getActiveModelOverride() ||
+        openRouterModelDevSettingsStorage.getDefaultModelId()
+    );
 }
 
 function buildProtectedTerms(question) {
@@ -56,7 +59,7 @@ function buildMessages(question, guards, violations = []) {
         {
             role: "system",
             content: [
-                "Ti si pomocnik za ucenje za bavarski ribolovacki ispit.",
+                "Ti si pomocnik za ucenje za bavarski ribolovacki ispit. Odgovaras mi ISKLJUCIVO na srbskom jeziku, ne na hrvatskom, bosanskom ili sta vec. Na Srbskom!",
                 "Vrati ISKLJUCIVO validan JSON objekat bez markdown-a i bez dodatnog teksta.",
                 "Poštuj ova pravila strogo:",
                 "1. Ne prevodi zasticene termine.",

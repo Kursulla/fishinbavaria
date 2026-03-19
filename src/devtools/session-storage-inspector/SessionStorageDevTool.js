@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./SessionStorageDevTool.css";
 import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
 import { questionExplanationCacheStorage } from "../../common/components/question-item/question-explanation/questionExplanationCacheStorage";
+import OpenRouterModelDevToolSection from "../open-router-models/OpenRouterModelDevToolSection";
 
 const formatDateTime = (timestamp) => {
     if (!timestamp) {
@@ -131,6 +132,8 @@ const SessionStorageDevTool = () => {
                                 <button type="button" onClick={() => setIsOpen(false)}>Close</button>
                             </div>
                         </div>
+
+                        <OpenRouterModelDevToolSection />
 
                         {inspectorSnapshots.map((inspector) => (
                             <section key={inspector.id} className="devtool-section">

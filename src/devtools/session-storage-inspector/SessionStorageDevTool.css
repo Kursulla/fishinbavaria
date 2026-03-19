@@ -51,19 +51,31 @@
     color: var(--app-text-muted);
 }
 
+.devtool-section-copy {
+    margin: 6px 0 0;
+    color: var(--app-text-muted);
+}
+
 .devtool-panel-actions,
 .devtool-section-header {
     flex-wrap: wrap;
 }
 
 .devtool-panel-actions button,
-.devtool-section-header button {
+.devtool-section-header button,
+.devtool-inline-actions button {
     padding: 8px 12px;
     border: 1px solid var(--input-border);
     border-radius: 10px;
     background: var(--input-bg);
     color: var(--app-text);
     cursor: pointer;
+}
+
+.devtool-inline-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .devtool-section {
@@ -101,4 +113,18 @@
 .devtool-table th {
     font-size: 13px;
     color: var(--app-text-muted);
+}
+
+.devtool-model-selector {
+    margin-top: 16px;
+}
+
+.devtool-model-selector select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 10px;
+    background: var(--card-bg);
+    color: var(--app-text);
 }
