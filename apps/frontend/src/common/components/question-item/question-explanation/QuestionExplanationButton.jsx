@@ -39,7 +39,20 @@ const QuestionExplanationButton = ({ question }) => {
                 aria-label="Prikazi prevod i objasnjenje pitanja"
                 onClick={open}
             >
-                ?
+                <svg
+                    className="question-explanation-trigger-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden
+                >
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M9.5 9.25a2.5 2.5 0 1 1 4.13 1.9c-.82.74-1.63 1.28-1.63 2.35" />
+                    <circle cx="12" cy="17" r="0.9" fill="currentColor" stroke="none" />
+                </svg>
             </button>
 
             {isOpen && (

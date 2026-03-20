@@ -1,6 +1,16 @@
 .question-explanation-trigger {
     margin-right: 4px;
-    color: #ffffff;
+    color: var(--question-action-icon-strong);
+}
+
+.question-explanation-trigger:hover {
+    color: var(--question-action-icon-strong);
+}
+
+.question-explanation-trigger-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
 .question-explanation-overlay {

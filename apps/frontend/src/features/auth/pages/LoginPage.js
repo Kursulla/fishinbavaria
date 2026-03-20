@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { useTheme } from "../../../theme/ThemeContext";
 import "./LoginPage.css";
 
 export default function LoginPage() {
+    const backgroundOptions = ["bgd_1.png", "bgd_2.png", "bgd_3.png"];
     const navigate = useNavigate();
     const location = useLocation();
     const { isAuthenticated, isBootstrapping, login } = useAuth();
+    const { theme } = useTheme();
+    const [backgroundImage] = useState(() => {
+        const randomIndex = Math.floor(Math.random() * backgroundOptions.length);
+        return backgroundOptions[randomIndex];
+    });
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -32,10 +39,12 @@ export default function LoginPage() {
     }
 
     return (
-        <div className="login-page">
+        <div
+            className="login-page"
+            style={{ "--login-page-background-image": `url(${process.env.PUBLIC_URL}/${backgroundImage})` }}
+        >
             <form className="login-card" onSubmit={handleSubmit}>
-                <img className="login-logo" src="/logo_300.png" alt="Catch the License" />
-                <h1>Prijava</h1>
+                <img className="login-logo" src={theme === "dark" ? "/logo_500_dark.png" : "/logo_500.png"} alt="Catch the License" />
                 <label className="login-field">
                     <span>Korisničko ime</span>
                     <input value={username} onChange={(event) => setUsername(event.target.value)} autoComplete="username" />
