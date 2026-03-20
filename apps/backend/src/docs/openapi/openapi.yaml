@@ -1,0 +1,85 @@
+openapi: 3.0.3
+info:
+  title: Do Dozvole Backend API
+  version: 1.0.0
+servers:
+  - url: http://localhost:4000
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service is healthy
+  /api/auth/login:
+    post:
+      summary: Login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [username, password]
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Authenticated user
+  /api/auth/logout:
+    post:
+      summary: Logout
+      responses:
+        '204':
+          description: Logged out
+  /api/auth/me:
+    get:
+      summary: Current user
+      responses:
+        '200':
+          description: Current authenticated user
+        '401':
+          description: Not authenticated
+  /api/users:
+    get:
+      summary: List users
+      responses:
+        '200':
+          description: User list
+    post:
+      summary: Create user
+      responses:
+        '201':
+          description: User created
+  /api/users/{userId}:
+    patch:
+      summary: Update user
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User updated
+    delete:
+      summary: Delete user
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: User deleted
+  /api/ai/explain:
+    post:
+      summary: Explain a question
+      responses:
+        '200':
+          description: Explanation result

@@ -57,6 +57,7 @@ Rules:
 - Each feature/domaine directory should own its relevant parts, for example `components`, `data`, `hooks`, `services`, `utils`, or similar subfolders only when they make sense for that feature.
 - Keep files scoped to the feature they belong to unless they are truly shared across the application.
 - Extract code into a shared/common location only when it is genuinely cross-feature, stable, and not just temporarily reused by two places.
+- Do not add comments where the code can be made self-explanatory through better naming, smaller functions, and clearer structure.
 - When adding new code, first ask which feature/domain owns it, then place it under that feature.
 - When refactoring, prefer moving code closer to its feature boundary instead of expanding generic top-level buckets.
 - Preserve clear boundaries between UI components, pages, repositories, services, utilities, modules, and data/storage logic.

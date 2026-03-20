@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+**/node_modules
 /.pnp
 .pnp.js
 
@@ -10,6 +11,8 @@
 
 # production
 /build
+**/build
+apps/backend/generated
 
 # misc
 .DS_Store
@@ -18,6 +21,12 @@
 .env.development.local
 .env.test.local
 .env.production.local
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+.playwright-cli
 
 npm-debug.log*
 yarn-debug.log*

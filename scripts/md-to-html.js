@@ -1,12 +1,8 @@
-/**
- * Converts docs/*.md to public/docs/*.html with slug ids on headings for TOC/anchor links.
- * Run: node scripts/md-to-html.js
- */
 const fs = require("fs");
 const path = require("path");
 
 const DOCS_DIR = path.resolve(__dirname, "../docs");
-const OUT_DIR = path.resolve(__dirname, "../public/docs");
+const OUT_DIR = path.resolve(__dirname, "../apps/frontend/public/docs");
 
 function slugify(text) {
   return text
