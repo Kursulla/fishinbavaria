@@ -164,15 +164,12 @@
 
 .header-user {
   display: flex;
+  position: relative;
   align-items: center;
-  gap: 12px;
-  font-weight: 600;
-  color: var(--header-link);
 }
 
 [data-theme="dark"] .header-nav-link,
-[data-theme="dark"] .header-theme-toggle,
-[data-theme="dark"] .header-logout-button {
+[data-theme="dark"] .header-user-trigger {
   border: 1px solid var(--header-border);
 }
 
@@ -180,27 +177,7 @@
   border-color: var(--header-link-active-bg);
 }
 
-.header-theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  box-sizing: border-box;
-  border-radius: 8px;
-  border: 1px solid var(--header-border);
-  background: var(--header-bg);
-  color: var(--header-link);
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.header-theme-toggle:hover {
-  background: var(--header-link-hover-bg);
-}
-
-.header-logout-button {
+.header-user-trigger {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -208,15 +185,35 @@
   padding: 0 14px;
   border-radius: 8px;
   border: 1px solid var(--header-border);
+  background: var(--header-bg);
+  color: var(--header-link);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.header-user-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 180px;
+  padding: 8px;
+  border: 1px solid var(--header-border);
+  border-radius: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 12px 30px var(--shadow);
+  z-index: 1002;
+}
+
+.header-user-menu-action {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 10px;
   background: #b91c1c;
   color: #fff;
   cursor: pointer;
-}
-
-.header-theme-icon {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
+  font-weight: 600;
 }
 
 @media (min-width: 480px) {
@@ -230,8 +227,7 @@
   }
 
   .header-nav-link,
-  .header-theme-toggle,
-  .header-logout-button {
+  .header-user-trigger {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
@@ -264,14 +260,16 @@
     min-height: 48px;
   }
 
-  .header-drawer-list .header-theme-toggle {
-    width: 44px;
-    align-self: flex-start;
-  }
-
   .header-user {
     width: 100%;
     justify-content: center;
+  }
+
+  .header-user-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: min(280px, calc(100vw - 32px));
   }
 }
 
