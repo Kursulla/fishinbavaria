@@ -11,12 +11,35 @@ function readRequired(name) {
     return value.trim();
 }
 
+function readOriginList(value) {
+    return value
+        .split(",")
+        .map((item) => item.trim())
+        .filter(Boolean);
+}
+
+function readFrontendOrigins() {
+    const explicitOrigins = process.env.FRONTEND_ORIGINS?.trim();
+
+    if (explicitOrigins) {
+        return readOriginList(explicitOrigins);
+    }
+
+    const singleOrigin = process.env.FRONTEND_ORIGIN?.trim();
+
+    if (singleOrigin) {
+        return [singleOrigin];
+    }
+
+    return ["http://localhost:3000"];
+}
+
 const env = {
     databaseUrl: readRequired("DATABASE_URL"),
     jwtSecret: readRequired("JWT_SECRET"),
     cookieSecret: readRequired("COOKIE_SECRET"),
     cookieName: process.env.COOKIE_NAME?.trim() || "do_dozvole_session",
-    frontendOrigin: process.env.FRONTEND_ORIGIN?.trim() || "http://localhost:3000",
+    frontendOrigins: readFrontendOrigins(),
     openRouterApiKey: process.env.OPENROUTER_API_KEY?.trim() || "",
     openRouterModel: process.env.OPENROUTER_MODEL?.trim() || "openai/gpt-4.1-mini",
     port: Number(process.env.PORT || 4000),

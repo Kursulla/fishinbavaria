@@ -1,10 +1,12 @@
 const { env } = require("../../app/config/env");
 
 function buildAuthCookieOptions() {
+    const isProduction = process.env.NODE_ENV === "production";
+
     return {
         httpOnly: true,
-        sameSite: "lax",
-        secure: process.env.NODE_ENV === "production",
+        sameSite: isProduction ? "none" : "lax",
+        secure: isProduction,
         signed: true,
         path: "/",
         maxAge: 1000 * 60 * 60 * 24 * 7,

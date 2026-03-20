@@ -13,9 +13,23 @@ const aiRoutes = require("./features/ai/routes/aiRoutes");
 const openApiDocument = YAML.load(path.join(__dirname, "docs/openapi/openapi.yaml"));
 const app = express();
 
+function resolveCorsOrigin(requestOrigin, callback) {
+    if (!requestOrigin) {
+        callback(null, true);
+        return;
+    }
+
+    if (env.frontendOrigins.includes(requestOrigin)) {
+        callback(null, true);
+        return;
+    }
+
+    callback(new Error(`Origin not allowed by CORS: ${requestOrigin}`));
+}
+
 app.use(
     cors({
-        origin: env.frontendOrigin,
+        origin: resolveCorsOrigin,
         credentials: true,
     })
 );
