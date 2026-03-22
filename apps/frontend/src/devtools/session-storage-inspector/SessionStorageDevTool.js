@@ -3,6 +3,7 @@ import "./SessionStorageDevTool.css";
 import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
 import { questionExplanationCacheStorage } from "../../common/components/question-item/question-explanation/questionExplanationCacheStorage";
 import OpenRouterModelDevToolSection from "../open-router-models/OpenRouterModelDevToolSection";
+import { useAuth } from "../../features/auth/context/AuthContext";
 
 const formatDateTime = (timestamp) => {
     if (!timestamp) {
@@ -65,11 +66,13 @@ const storageInspectors = [
 ];
 
 const SessionStorageDevTool = () => {
+    const { currentUser } = useAuth();
     const [isOpen, setIsOpen] = useState(false);
     const [, setRefreshKey] = useState(0);
+    const isAdmin = currentUser?.role === "ADMIN";
 
     useEffect(() => {
-        if (!isOpen) {
+        if (!isAdmin || !isOpen) {
             return undefined;
         }
 
@@ -84,7 +87,11 @@ const SessionStorageDevTool = () => {
         return () => {
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [isOpen]);
+    }, [isAdmin, isOpen]);
+
+    if (!isAdmin) {
+        return null;
+    }
 
     const inspectorSnapshots = storageInspectors.map((inspector) => ({
         ...inspector,
