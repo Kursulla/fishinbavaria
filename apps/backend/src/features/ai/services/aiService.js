@@ -176,7 +176,7 @@ function buildMessages(question, guards, violations) {
             content: [
                 "Ti si pomocnik za ucenje za bavarski ribolovacki ispit. Odgovaras iskljucivo na srpskom jeziku.",
                 "Vrati iskljucivo validan JSON objekat bez markdown-a i bez dodatnog teksta.",
-                "Ne prevodi zasticene termine.",
+                'Zasticene termine prevedi na srpski, ali odmah iza prevoda u zagradi zadrzi originalni nemacki termin. Primer: "pastrmka (Forelle)".',
                 '{ "translation": { "question": "...", "options": [{"key":"A","text":"..."}] }, "correctAnswerReason": "...", "wrongAnswers": [{"key":"A","reason":"..."}] }',
             ].join("\n"),
         },
@@ -184,8 +184,8 @@ function buildMessages(question, guards, violations) {
             role: "user",
             content: [
                 protectedTerms.length > 0
-                    ? `Zasticeni termini koji moraju ostati identicni originalu: ${protectedTerms.join(", ")}`
-                    : "Ako prepoznas strucne nazive, ostavi ih na nemackom.",
+                    ? `Za ove termine koristi format "srpski prevod (originalni nemacki termin)": ${protectedTerms.join(", ")}`
+                    : 'Ako prepoznas strucne nazive, koristi format "srpski prevod (originalni nemacki termin)".',
                 violations.length > 0 ? `Ispravi ove prekrsaje: ${violations.join(" | ")}` : "",
                 `Pitanje: ${question.question || ""}`,
                 `Tacan odgovor: ${question.answer || ""}`,
@@ -214,6 +214,10 @@ function parseJsonFromContent(content) {
     }
 }
 
+function containsParenthesizedTerm(text, term) {
+    return text.includes(`(${term})`);
+}
+
 function validateProtectedTerms(question, responseData, guards) {
     const violations = [];
     const translatedQuestion = responseData?.translation?.question ?? "";
@@ -222,8 +226,8 @@ function validateProtectedTerms(question, responseData, guards) {
     );
 
     guards.questionTerms.forEach((term) => {
-        if (question.question.includes(term) && !translatedQuestion.includes(term)) {
-            violations.push(`Pitanje mora zadrzati termin "${term}"`);
+        if (question.question.includes(term) && !containsParenthesizedTerm(translatedQuestion, term)) {
+            violations.push(`Pitanje mora koristiti format prevod (${term})`);
         }
     });
 
@@ -231,8 +235,8 @@ function validateProtectedTerms(question, responseData, guards) {
         const translatedOption = translatedOptions.get(key) ?? "";
 
         terms.forEach((term) => {
-            if ((question.options?.[key] || "").includes(term) && !translatedOption.includes(term)) {
-                violations.push(`Opcija ${key} mora zadrzati termin "${term}"`);
+            if ((question.options?.[key] || "").includes(term) && !containsParenthesizedTerm(translatedOption, term)) {
+                violations.push(`Opcija ${key} mora koristiti format prevod (${term})`);
             }
         });
     });
