@@ -1,38 +1,74 @@
 const { env } = require("../../../app/config/env");
 
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
-const MAX_ATTEMPTS = 2;
+const FISH_TRANSLATIONS = [
+  { de: "Aal", sr: "Jegulja", lat: "Anguilla anguilla", terms: ["Aal", "Aale"] },
+  { de: "Aitel (Döbel)", sr: "Klen", lat: "Squalius cephalus", terms: ["Aitel (Döbel)", "Aitel", "Döbel"] },
+  { de: "Aland", sr: "Ide (bolen)", lat: "Leuciscus idus", terms: ["Aland", "Nerfling", "Nerfling (Aland)"] },
+  { de: "Äsche", sr: "Lipljen", lat: "Thymallus thymallus", terms: ["Äsche", "Äschen"] },
+  { de: "Atlantischer Lachs", sr: "Atlantski losos", lat: "Salmo salar", terms: ["Atlantischer Lachs", "Atlantische Lachse"] },
+  { de: "Bachforelle", sr: "Potočna pastrmka", lat: "Salmo trutta", terms: ["Bachforelle", "Bachforellen"] },
+  { de: "Bachneunauge", sr: "Potočna lampetra", lat: "Lampetra planeri", terms: ["Bachneunauge", "Bachneunaugen", "Neunauge", "Neunaugen"] },
+  { de: "Bachsaibling", sr: "Potočni golac", lat: "Salvelinus fontinalis", terms: ["Bachsaibling", "Bachsaiblinge"] },
+  { de: "Barbe", sr: "Mrena", lat: "Barbus barbus", terms: ["Barbe", "Barben"] },
+  { de: "Bitterling", sr: "Gavčica", lat: "Rhodeus amarus", terms: ["Bitterling", "Bitterlinge"] },
+  { de: "Brachse", sr: "Deverika", lat: "Abramis brama", terms: ["Brachse", "Brachsen"] },
+  { de: "Flussbarsch", sr: "Grgeč", lat: "Perca fluviatilis", terms: ["Flussbarsch", "Flussbarsche"] },
+  { de: "Giebel", sr: "Srebrni karaš", lat: "Carassius gibelio", terms: ["Giebel"] },
+  { de: "Gründling", sr: "Krkuša", lat: "Gobio gobio", terms: ["Gründling", "Gründlinge"] },
+  { de: "Güster", sr: "Bjelica", lat: "Blicca bjoerkna", terms: ["Güster"] },
+  { de: "Hasel", sr: "Ječmenka", lat: "Leuciscus leuciscus", terms: ["Hasel"] },
+  { de: "Hecht", sr: "Štuka", lat: "Esox lucius", terms: ["Hecht", "Hechte"] },
+  { de: "Huchen", sr: "Mladica", lat: "Hucho hucho", terms: ["Huchen"] },
+  { de: "Kaulbarsch", sr: "Balavac", lat: "Gymnocephalus cernua", terms: ["Kaulbarsch", "Kaulbarsch", "Kaulbarsche"] },
+  { de: "Karausche", sr: "Karaš", lat: "Carassius carassius", terms: ["Karausche", "Karauschen"] },
+  { de: "Karpfen", sr: "Šaran", lat: "Cyprinus carpio", terms: ["Karpfen"] },
+  { de: "Laube (Ukelei)", sr: "Uklija", lat: "Alburnus alburnus", terms: ["Laube (Ukelei)", "Laube", "Lauben", "Ukelei", "Ukeleien"] },
+  { de: "Mairenke (Seelaube)", sr: "Jezerska uklija", lat: "Alburnus mento", terms: ["Mairenke (Seelaube)", "Mairenke", "Mairenken", "Seelaube", "Seelauben"] },
+  { de: "Maifisch", sr: "Atlantska haringa", lat: "Alosa alosa", terms: ["Maifisch", "Maifische"] },
+  { de: "Moderlieschen", sr: "Bezribica", lat: "Leucaspius delineatus", terms: ["Moderlieschen"] },
+  { de: "Mühlkoppe", sr: "Glavoč", lat: "Cottus gobio", terms: ["Mühlkoppe", "Mühlkoppen"] },
+  { de: "Nase", sr: "Podust", lat: "Chondrostoma nasus", terms: ["Nase", "Nasen"] },
+  { de: "Perlfisch", sr: "Perlfish", lat: "Rutilus meidingeri", terms: ["Perlfisch", "Perlfische"] },
+  { de: "Quappe", sr: "Manić", lat: "Lota lota", terms: ["Quappe", "Quappen", "Rutte", "Rutten", "Rutte (Quappe, Trüsche)", "Trüsche"] },
+  { de: "Rapfen", sr: "Bolen", lat: "Aspius aspius", terms: ["Rapfen", "Schied", "Schied (Rapfen)"] },
+  { de: "Regenbogenforelle", sr: "Kalifornijska pastrmka", lat: "Oncorhynchus mykiss", terms: ["Regenbogenforelle", "Regenbogenforellen"] },
+  { de: "Renke (Felchen)", sr: "Siga", lat: "Coregonus spp.", terms: ["Renke (Felchen)", "Renke", "Renken", "Felchen"] },
+  { de: "Rotauge", sr: "Bodorka", lat: "Rutilus rutilus", terms: ["Rotauge", "Rotaugen"] },
+  { de: "Rotfeder", sr: "Crvenperka", lat: "Scardinius erythrophthalmus", terms: ["Rotfeder", "Rotfedern"] },
+  { de: "Schlammpeitzger", sr: "Barski vijun", lat: "Misgurnus fossilis", terms: ["Schlammpeitzger"] },
+  { de: "Schmerle", sr: "Vijun", lat: "Barbatula barbatula", terms: ["Schmerle", "Schmerlen", "Schmerle (Bartgrundel)", "Bartgrundel"] },
+  { de: "Schneider", sr: "Dvopruga uklija", lat: "Alburnoides bipunctatus", terms: ["Schneider"] },
+  { de: "Seeforelle", sr: "Jezerska pastrmka", lat: "Salmo trutta", terms: ["Seeforelle", "Seeforellen"] },
+  { de: "Seesaibling", sr: "Jezerska zlatovčica", lat: "Salvelinus alpinus", terms: ["Seesaibling", "Seesaiblinge"] },
+  { de: "Steinbeißer", sr: "Vijunac", lat: "Cobitis taenia", terms: ["Steinbeißer", "Steinbeißer (Dorngrundel)", "Dorngrundel"] },
+  { de: "Sterlet", sr: "Kečiga", lat: "Acipenser ruthenus", terms: ["Sterlet"] },
+  { de: "Stichling", sr: "Trobodljikavi bodljikavac", lat: "Gasterosteus aculeatus", terms: ["Stichling", "Stichlinge"] },
+  { de: "Waller (Wels)", sr: "Som", lat: "Silurus glanis", terms: ["Waller (Wels)", "Waller", "Wels", "Welse"] },
+  { de: "Zander", sr: "Smuđ", lat: "Sander lucioperca", terms: ["Zander"] },
+  { de: "Zingel", sr: "Zingel", lat: "Zingel zingel", terms: ["Zingel"] },
+  { de: "Zope", sr: "Zlatooka", lat: "Abramis ballerus", terms: ["Zope"] },
+  { de: "Zwergwels", sr: "Patuljasti somić", lat: "Ameiurus nebulosus", terms: ["Zwergwels", "Zwergwelse"] },
+];
+
+const FISH_GLOSSARY_TERMS = new Set(FISH_TRANSLATIONS.flatMap((entry) => entry.terms || [entry.de]));
+
 const QUESTION_PROTECTED_TERMS = [
-    "Aal",
-    "Aale",
-    "Aitel (Döbel)",
-    "Aitel",
-    "Aland",
-    "Äsche",
     "Äschenregion",
-    "Atlantischer Lachs",
     "Armleuchtergewächs",
     "Armleuchtergewächse",
     "AVBayFiG",
     "Bachflohkrebs",
     "Bachflohkrebse",
-    "Bachforelle",
-    "Bachforellen",
     "Bachmuschel",
-    "Bachneunauge",
-    "Bachsaibling",
-    "Barbe",
     "Barbenregion",
     "Barschartige (Perciden)",
     "BayFiG",
-    "Bitterling",
     "Blaufelchen",
-    "Brachse",
     "Brachsenregion",
     "Dreistachliger Stichling",
     "Donaukaulbarsch",
     "Dorngrundel",
-    "Döbel",
     "Edelkrebs",
     "Elritze",
     "Europakanal",
@@ -45,101 +81,50 @@ const QUESTION_PROTECTED_TERMS = [
     "AVBayFiG",
     "BayFiG",
     "BayFiG",
-    "Flussbarsch",
     "Flussperlmuschel",
     "Forellenregion",
     "Frauennerfling",
     "Gänsesäger",
     "Gemeingebrauch",
-    "Giebel",
-    "Gründling",
     "Große Flussmuschel",
-    "Güster",
     "Handangel",
-    "Hasel",
-    "Hecht",
-    "Huchen",
     "Jugendfischereischein",
-    "Kaulbarsch",
-    "Karausche",
-    "Karpfen",
     "Karpfenartigen (Cypriniden)",
     "Kormoran",
     "Krebspest",
     "Kreisverwaltungsbehörde",
-    "Laube (Ukelei)",
     "Lachsartigen (Salmoniden)",
     "Laichausschlag",
-    "Mairenke (Seelaube)",
     "Malermuschel",
-    "Maifisch",
     "Mink",
-    "Moderlieschen",
-    "Mühlkoppe",
-    "Nase",
-    "Nerfling (Aland)",
-    "Nerfling",
-    "Neunauge",
-    "Neunaugen",
     "Perciden",
-    "Perlfisch",
-    "Quappe",
-    "Rapfen",
-    "Regenbogenforelle",
-    "Regenbogenforellen",
     "Reiher",
-    "Renke (Felchen)",
-    "Rotauge",
-    "Rotfeder",
     "Rundmäulern",
-    "Rutte (Quappe, Trüsche)",
-    "Rutte",
     "Salmoniden",
-    "Schied (Rapfen)",
-    "Schied",
-    "Schlammpeitzger",
-    "Schmerle (Bartgrundel)",
-    "Schneider",
     "Schonmaß",
     "Schonmaße",
     "Schonzeit",
     "Schonzeiten",
     "Schrätzer",
-    "Seeforelle",
-    "Seelaube",
-    "Seesaibling",
     "Seerüßling",
     "Setzkescher",
     "Sichling",
     "Silagesickersaft",
-    "Steinbeißer (Dorngrundel)",
-    "Steinbeißer",
     "Steingressling",
     "Steinkrebs",
-    "Sterlet",
-    "Stichling",
     "Strömer",
     "Streber",
     "Sumpfkrebs",
-    "Trüsche",
-    "Ukelei",
-    "Waller (Wels)",
-    "Waller",
-    "Wels",
     "Zährte (Seerüßling)",
     "Zährte",
-    "Zander",
-    "Zingel",
     "Zobel",
-    "Zope",
     "Zwergstichling",
-    "Zwergwels",
 ];
 
 function buildProtectedTerms(question) {
     const findMatchingTerms = (text) => {
         const matches = QUESTION_PROTECTED_TERMS
-            .filter((term) => text?.includes(term))
+            .filter((term) => !FISH_GLOSSARY_TERMS.has(term) && text?.includes(term))
             .sort((left, right) => right.length - left.length);
 
         const filteredMatches = [];
@@ -167,8 +152,17 @@ function buildProtectedTermsList(guards) {
     );
 }
 
-function buildMessages(question, guards, violations) {
-    const protectedTerms = buildProtectedTermsList(guards);
+function buildFishTranslationHints(question) {
+    const searchableText = [question.question || "", ...Object.values(question.options || {})].join("\n");
+
+    return FISH_TRANSLATIONS.filter((entry) =>
+        (entry.terms || [entry.de]).some((term) => searchableText.includes(term))
+    ).sort((left, right) => right.de.length - left.de.length);
+}
+
+function buildMessages(question, guards) {
+    const hintedTerms = buildProtectedTermsList(guards);
+    const fishHints = buildFishTranslationHints(question);
 
     return [
         {
@@ -176,17 +170,26 @@ function buildMessages(question, guards, violations) {
             content: [
                 "Ti si pomocnik za ucenje za bavarski ribolovacki ispit. Odgovaras iskljucivo na srpskom jeziku.",
                 "Vrati iskljucivo validan JSON objekat bez markdown-a i bez dodatnog teksta.",
-                'Zasticene termine prevedi na srpski, ali odmah iza prevoda u zagradi zadrzi originalni nemacki termin. Primer: "pastrmka (Forelle)".',
+                "Sam prepoznaj strucne termine u pitanju i opcijama.",
+                "Strucnim terminima smatraj nazive riba, drugih zivotinja i biljaka, bolesti, parazita, pravne termine, nazive propisa, vodne i hemijske termine, bioloske klasifikacije i druge strucne izraze relevantne za ribolovacki ispit.",
+                "Kada prevodis nazive riba, prvo proveri da li za njih postoji eksplicitan prevod u dostavljenom fish glossary hint-u. Ako postoji, obavezno koristi bas taj srpski naziv i taj latinski naziv, a ne svoju varijantu.",
+                "Samo ako riba nije pokrivena fish glossary hint-om, prvo identifikuj tacan latinski naziv vrste, a zatim na osnovu tog latinskog naziva odredi najprikladniji srpski naziv. Nemoj nagadjati srpski naziv samo iz nemackog naziva ako nisi siguran u vrstu.",
+                'Za takve termine koristi format "srpski prevod (originalni nemacki termin)". Primer: "pastrmka (Forelle)".',
+                "Nemoj stavljati zagrade uz obicne svakodnevne reci koje nisu strucni termini.",
                 '{ "translation": { "question": "...", "options": [{"key":"A","text":"..."}] }, "correctAnswerReason": "...", "wrongAnswers": [{"key":"A","reason":"..."}] }',
             ].join("\n"),
         },
         {
             role: "user",
             content: [
-                protectedTerms.length > 0
-                    ? `Za ove termine koristi format "srpski prevod (originalni nemacki termin)": ${protectedTerms.join(", ")}`
-                    : 'Ako prepoznas strucne nazive, koristi format "srpski prevod (originalni nemacki termin)".',
-                violations.length > 0 ? `Ispravi ove prekrsaje: ${violations.join(" | ")}` : "",
+                hintedTerms.length > 0
+                    ? `Hint: u ovom pitanju se pojavljuju sledeci termini iz nase interne liste primera. Koristi ih samo kao pomoc, lista nije potpuna niti obavezujuca: ${hintedTerms.join(", ")}`
+                    : "Hint: ako prepoznas strucne termine, sam odluci koji treba da budu u formatu prevod (original).",
+                fishHints.length > 0
+                    ? `Fish glossary hint (autoritativan za ribe koje su ovde navedene): ${fishHints
+                          .map((entry) => `${entry.de} -> ${entry.sr} [${entry.lat}] | varijante: ${(entry.terms || [entry.de]).join(", ")}`)
+                          .join("; ")}`
+                    : "Fish glossary hint: ako neka riba nije navedena, sam odredi latinski naziv pa srpski prevod.",
                 `Pitanje: ${question.question || ""}`,
                 `Tacan odgovor: ${question.answer || ""}`,
                 ...Object.entries(question.options || {}).map(([key, value]) => `Opcija ${key}: ${value}`),
@@ -212,36 +215,6 @@ function parseJsonFromContent(content) {
 
         return JSON.parse(trimmedContent.slice(firstBraceIndex, lastBraceIndex + 1));
     }
-}
-
-function containsParenthesizedTerm(text, term) {
-    return text.includes(`(${term})`);
-}
-
-function validateProtectedTerms(question, responseData, guards) {
-    const violations = [];
-    const translatedQuestion = responseData?.translation?.question ?? "";
-    const translatedOptions = new Map(
-        (responseData?.translation?.options || []).map((option) => [option.key, option.text ?? ""])
-    );
-
-    guards.questionTerms.forEach((term) => {
-        if (question.question.includes(term) && !containsParenthesizedTerm(translatedQuestion, term)) {
-            violations.push(`Pitanje mora koristiti format prevod (${term})`);
-        }
-    });
-
-    Object.entries(guards.optionTermsByKey).forEach(([key, terms]) => {
-        const translatedOption = translatedOptions.get(key) ?? "";
-
-        terms.forEach((term) => {
-            if ((question.options?.[key] || "").includes(term) && !containsParenthesizedTerm(translatedOption, term)) {
-                violations.push(`Opcija ${key} mora koristiti format prevod (${term})`);
-            }
-        });
-    });
-
-    return violations;
 }
 
 async function requestQuestionExplanation(messages) {
@@ -287,18 +260,7 @@ async function explainQuestion(question) {
     }
 
     const guards = buildProtectedTerms(question);
-    let violations = [];
-
-    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt += 1) {
-        const responseData = await requestQuestionExplanation(buildMessages(question, guards, violations));
-        violations = validateProtectedTerms(question, responseData, guards);
-
-        if (violations.length === 0) {
-            return responseData;
-        }
-    }
-
-    throw new Error(`OpenRouter response violated protected-term rules: ${violations.join(", ")}`);
+    return requestQuestionExplanation(buildMessages(question, guards));
 }
 
 module.exports = {
