@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { useQuestionExplanation } from "./useQuestionExplanation";
 import "./QuestionExplanation.css";
 import "../remember-button-component/MarkQuestionButton.css";
 
 const QuestionExplanationButton = ({ question }) => {
+    const modalHistoryActiveRef = useRef(false);
     const {
         close,
         data,
@@ -13,23 +14,60 @@ const QuestionExplanationButton = ({ question }) => {
         open,
     } = useQuestionExplanation(question);
 
+    const closeModal = useCallback(() => {
+        if (
+            modalHistoryActiveRef.current &&
+            typeof window !== "undefined" &&
+            window.history.state?.questionExplanationModal
+        ) {
+            window.history.back();
+            return;
+        }
+
+        modalHistoryActiveRef.current = false;
+        close();
+    }, [close]);
+
     useEffect(() => {
         if (!isOpen) {
             return undefined;
         }
 
+        if (!modalHistoryActiveRef.current) {
+            window.history.pushState(
+                {
+                    ...window.history.state,
+                    questionExplanationModal: true,
+                    questionNumber: question.number,
+                },
+                ""
+            );
+            modalHistoryActiveRef.current = true;
+        }
+
         const handleKeyDown = (event) => {
             if (event.key === "Escape") {
-                close();
+                closeModal();
             }
         };
 
+        const handlePopState = () => {
+            if (!modalHistoryActiveRef.current) {
+                return;
+            }
+
+            modalHistoryActiveRef.current = false;
+            close();
+        };
+
         window.addEventListener("keydown", handleKeyDown);
+        window.addEventListener("popstate", handlePopState);
 
         return () => {
             window.removeEventListener("keydown", handleKeyDown);
+            window.removeEventListener("popstate", handlePopState);
         };
-    }, [close, isOpen]);
+    }, [close, closeModal, isOpen, question.number]);
 
     return (
         <>
@@ -62,7 +100,7 @@ const QuestionExplanationButton = ({ question }) => {
                     aria-modal="true"
                     onClick={(event) => {
                         if (event.target === event.currentTarget) {
-                            close();
+                            closeModal();
                         }
                     }}
                 >
@@ -72,7 +110,7 @@ const QuestionExplanationButton = ({ question }) => {
                                 <h3>Prevod i objašnjenje</h3>
                                 <p>{question.category} [{question.number}]</p>
                             </div>
-                            <button type="button" onClick={close}>Zatvori</button>
+                            <button type="button" onClick={closeModal}>Zatvori</button>
                         </div>
 
                         {isLoading && <p className="question-explanation-loading">Učitavam objašnjenje...</p>}
