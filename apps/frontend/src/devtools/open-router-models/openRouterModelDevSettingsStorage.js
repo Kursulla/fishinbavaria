@@ -37,6 +37,15 @@ const DEFAULT_MODELS = [
     speed: "",
     notes: "",
   },
+  {
+    id: "openai/gpt-5-chat",
+    label: "gpt-5-chat",
+    modelId: "openai/gpt-5-chat",
+    isDefault: false,
+    price: "1.25, 10",
+    speed: "",
+    notes: "",
+  },
 ];
 
 function getDefaultModel(models = DEFAULT_MODELS) {
@@ -68,6 +77,21 @@ function normalizeModels(models) {
     }));
 }
 
+function mergeModelsWithDefaults(models) {
+    const normalizedDefaults = normalizeModels(DEFAULT_MODELS);
+    const normalizedStoredModels = normalizeModels(models);
+    const mergedModels = [...normalizedStoredModels];
+    const existingIds = new Set(normalizedStoredModels.map((model) => model.id));
+
+    normalizedDefaults.forEach((model) => {
+        if (!existingIds.has(model.id)) {
+            mergedModels.push(model);
+        }
+    });
+
+    return mergedModels;
+}
+
 function readSettings() {
     const storage = getStorage();
     if (!storage) {
@@ -81,11 +105,15 @@ function readSettings() {
         }
 
         const parsed = JSON.parse(rawValue);
-        const models = normalizeModels(parsed.models);
+        const models = mergeModelsWithDefaults(parsed.models);
         const defaultModel = getDefaultModel(models.length > 0 ? models : DEFAULT_MODELS);
+        const activeModelExists = models.some((model) => model.id === parsed.activeModelId);
 
         return {
-            activeModelId: parsed.activeModelId || defaultModel?.id || DEFAULT_SETTINGS.activeModelId,
+            activeModelId:
+                activeModelExists && parsed.activeModelId
+                    ? parsed.activeModelId
+                    : defaultModel?.id || DEFAULT_SETTINGS.activeModelId,
             models: models.length > 0 ? models : DEFAULT_MODELS,
         };
     } catch (_error) {
