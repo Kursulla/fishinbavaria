@@ -176,6 +176,15 @@ function buildMessages(question, guards) {
                 "Samo ako riba nije pokrivena fish glossary hint-om, prvo identifikuj tacan latinski naziv vrste, a zatim na osnovu tog latinskog naziva odredi najprikladniji srpski naziv. Nemoj nagadjati srpski naziv samo iz nemackog naziva ako nisi siguran u vrstu.",
                 'Za takve termine koristi format "srpski prevod (originalni nemacki termin)". Primer: "pastrmka (Forelle)".',
                 "Nemoj stavljati zagrade uz obicne svakodnevne reci koje nisu strucni termini.",
+                "Polje correctAnswerReason mora da bude detaljno i edukativno objasnjenje zasto je tacan odgovor zaista tacan.",
+                "U correctAnswerReason ne prepricavaj samo tekst pitanja i ne oslanjaj se samo na tragove iz ponudjenih odgovora.",
+                "Objasnjenje zasnuj na opstem znanju: definicijama, biologiji, ekologiji, pravu, pravilima ribolova, tehnickim principima ili drugim relevantnim cinjenicama iz sireg konteksta teme.",
+                "Ako je pitanje o vrsti ribe, objasni po cemu se ta vrsta prepoznaje, koje su njene bitne osobine, kojoj grupi pripada ili po cemu se razlikuje od slicnih vrsta.",
+                "Ako je pitanje o propisima ili pravilima, objasni svrhu tog pravila i siri pravni ili prakticni kontekst, a ne samo da je to 'tacan odgovor iz pitanja'.",
+                "Ako je pitanje o ekologiji, anatomiji, bolestima, alatima ili metodama, objasni uzrocno-posledicne veze i osnovni princip zbog kog je odgovor tacan.",
+                "Cilj je da korisnik moze nesto da nauci iz correctAnswerReason i da razume temu i van konkretnog pitanja.",
+                "Kada nisi potpuno siguran u neku tvrdnju, budi oprezan, nemoj izmisljati detalje i drzi se onoga sto je siroko poznato i verovatno tacno.",
+                "Wrong answer reasons mogu biti kraci, ali i oni treba da objasne zasto odgovor nije tacan, po mogucstvu kroz opsti princip.",
                 '{ "translation": { "question": "...", "options": [{"key":"A","text":"..."}] }, "correctAnswerReason": "...", "wrongAnswers": [{"key":"A","reason":"..."}] }',
             ].join("\n"),
         },
@@ -190,6 +199,7 @@ function buildMessages(question, guards) {
                           .map((entry) => `${entry.de} -> ${entry.sr} [${entry.lat}] | varijante: ${(entry.terms || [entry.de]).join(", ")}`)
                           .join("; ")}`
                     : "Fish glossary hint: ako neka riba nije navedena, sam odredi latinski naziv pa srpski prevod.",
+                "Za correctAnswerReason daj detaljno objasnjenje zasnovano na opstem znanju o temi, tako da korisnik moze da nauci zasto je odgovor tacan i van ovog konkretnog pitanja.",
                 `Pitanje: ${question.question || ""}`,
                 `Tacan odgovor: ${question.answer || ""}`,
                 ...Object.entries(question.options || {}).map(([key, value]) => `Opcija ${key}: ${value}`),
