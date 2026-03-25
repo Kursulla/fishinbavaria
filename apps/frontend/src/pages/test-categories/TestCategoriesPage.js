@@ -5,7 +5,7 @@ import AnswerStatsBar from "../../common/components/answer-stats-bar/AnswerStats
 import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
 
 const TestCategoriesPage = () => {
-    const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(20);
+    const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(12);
     const [questions, setQuestions] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("Fischkunde");
     const [answered, setAnswered] = useState(0);
@@ -59,6 +59,7 @@ const TestCategoriesPage = () => {
                     onChange={handleNumberOfQuestionsChange}
                     autoFocus={false}
                 >
+                    <option key="12" value={12}>12</option>
                     <option key="10" value={10}>10</option>
                     <option key="20" value={20}>20</option>
                     <option key="30" value={30}>30</option>
