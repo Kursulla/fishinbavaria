@@ -1,5 +1,5 @@
 const STORAGE_KEY = "QUESTION_DISPLAY_TTL_V1";
-const ONE_HOUR_IN_MS = 60 * 60 * 1000;
+const QUESTION_TTL_IN_MS = 6 * 60 * 60 * 1000;
 
 function getStorage() {
     if (typeof window === "undefined" || !window.sessionStorage) {
@@ -34,7 +34,7 @@ function writeEntries(entries) {
 
 function pruneExpiredEntries(entries, now = Date.now()) {
     return Object.fromEntries(
-        Object.entries(entries).filter(([, shownAt]) => now - shownAt < ONE_HOUR_IN_MS)
+        Object.entries(entries).filter(([, shownAt]) => now - shownAt < QUESTION_TTL_IN_MS)
     );
 }
 
@@ -52,8 +52,8 @@ function getDebugEntries(now = Date.now()) {
         .map(([key, storedAt]) => ({
             key,
             storedAt,
-            expiresAt: storedAt + ONE_HOUR_IN_MS,
-            ttlLeftInMs: Math.max((storedAt + ONE_HOUR_IN_MS) - now, 0),
+            expiresAt: storedAt + QUESTION_TTL_IN_MS,
+            ttlLeftInMs: Math.max((storedAt + QUESTION_TTL_IN_MS) - now, 0),
         }))
         .sort((left, right) => left.expiresAt - right.expiresAt);
 }
@@ -84,8 +84,6 @@ function clear() {
 }
 
 export const questionDisplayTtlStorage = {
-    ONE_HOUR_IN_MS,
-    STORAGE_KEY,
     clear,
     getDebugEntries,
     getRecentlyShownQuestionNumbers,

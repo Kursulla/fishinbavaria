@@ -7,6 +7,7 @@ const source = [
     { number: "3", category: "Fischkunde", question: "Q3" },
     { number: "4", category: "Fischkunde", question: "Q4" },
 ];
+const SIX_HOURS_IN_MS = 6 * 60 * 60 * 1000;
 
 describe("generationQuestionsUtil", () => {
     beforeEach(() => {
@@ -42,7 +43,7 @@ describe("generationQuestionsUtil", () => {
 
         questionDisplayTtlStorage.markQuestionsAsShown(source.slice(0, 2));
 
-        Date.now.mockReturnValue(now + questionDisplayTtlStorage.ONE_HOUR_IN_MS + 1);
+        Date.now.mockReturnValue(now + SIX_HOURS_IN_MS + 1);
         expect(questionDisplayTtlStorage.getRecentlyShownQuestionNumbers().size).toBe(0);
 
         const nextSet = generationQuestionsUtil.setOfQuestionsForCategory("Fischkunde", 2, source);
