@@ -3,6 +3,7 @@ import "./SessionStorageDevTool.css";
 import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
 import { questionExplanationCacheStorage } from "../../common/components/question-item/question-explanation/questionExplanationCacheStorage";
 import OpenRouterModelDevToolSection from "../open-router-models/OpenRouterModelDevToolSection";
+import AppVersionDevToolSection from "../app-version/AppVersionDevToolSection";
 import { useAuth } from "../../features/auth/context/AuthContext";
 
 const formatDateTime = (timestamp) => {
@@ -140,6 +141,7 @@ const SessionStorageDevTool = () => {
                             </div>
                         </div>
 
+                        <AppVersionDevToolSection />
                         <OpenRouterModelDevToolSection />
 
                         {inspectorSnapshots.map((inspector) => (

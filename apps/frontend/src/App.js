@@ -12,11 +12,13 @@ import LoginPage from "./features/auth/pages/LoginPage";
 import AdminGuard from "./features/admin/guards/AdminGuard";
 import AdminUsersPage from "./features/admin/pages/AdminUsersPage";
 import AnalyticsInitializer from "./features/analytics/AnalyticsInitializer";
+import AppVersionInitializer from "./features/app-version/AppVersionInitializer";
 
 function App() {
   return (
     <>
       <AnalyticsInitializer />
+      <AppVersionInitializer />
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />

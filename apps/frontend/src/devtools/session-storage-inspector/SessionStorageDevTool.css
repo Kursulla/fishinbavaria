@@ -87,6 +87,32 @@
     text-align: left;
 }
 
+.devtool-metadata-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.devtool-metadata-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.devtool-metadata-label {
+    color: var(--app-text-muted);
+    font-size: 14px;
+}
+
+.devtool-metadata-value {
+    max-width: 60%;
+    overflow-wrap: anywhere;
+    font-size: 13px;
+}
+
 .devtool-empty-state {
     margin: 12px 0 0;
     color: var(--app-text-muted);
