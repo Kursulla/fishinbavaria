@@ -3,6 +3,7 @@ import { questionsFromTestsRepository } from "./data/QuestionsFromTestsRepositor
 import QuestionComponent from "../../common/components/question-item/QuestionComponent";
 import AnswerStatsBar from "../../common/components/answer-stats-bar/AnswerStatsBar";
 import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
+import { trackPracticeAnswer } from "../../features/analytics/analyticsEvents";
 
 function createCategoryStats(categories) {
     return categories.map((category) => ({
@@ -32,6 +33,11 @@ const TestsPage = () => {
         questionDisplayTtlStorage.markQuestionsAsShown([question]);
         setAnswered((a) => a + 1);
         if (!isCorrect) setWrong((w) => w + 1);
+        trackPracticeAnswer({
+            practiceMode: "mock_test",
+            questionCategory: question.category,
+            isCorrect,
+        });
 
         setCategoryStats((currentStats) =>
             currentStats.map((item) => {

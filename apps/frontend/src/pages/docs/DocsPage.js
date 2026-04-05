@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { docsConfig } from "./data/docsConfig";
+import { trackStudyDocumentSelection } from "../../features/analytics/analyticsEvents";
 import "./DocsPage.css";
 
 const DocsPage = () => {
@@ -62,8 +63,14 @@ const DocsPage = () => {
   }, [content]);
 
   const handleSelectDoc = (docId) => {
+    const selectedDocument = documents.find((document) => document.id === docId);
+
     setSelectedDocId(docId);
     setSearchParams({ doc: docId });
+    trackStudyDocumentSelection({
+      documentId: docId,
+      documentLabel: selectedDocument?.label || docId,
+    });
   };
 
   return (

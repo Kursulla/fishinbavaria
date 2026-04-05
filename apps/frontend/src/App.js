@@ -11,37 +11,41 @@ import AuthGuard from "./features/auth/guards/AuthGuard";
 import LoginPage from "./features/auth/pages/LoginPage";
 import AdminGuard from "./features/admin/guards/AdminGuard";
 import AdminUsersPage from "./features/admin/pages/AdminUsersPage";
+import AnalyticsInitializer from "./features/analytics/AnalyticsInitializer";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route
-          element={(
-            <AuthGuard>
-              <Layout />
-            </AuthGuard>
-          )}
-        >
-          <Route path="/" element={<Home />} />
-          <Route path="/categories" element={<CategoryPage />} />
-          <Route path="/test-categories" element={<TestCategoriesPage />} />
-          <Route path="/tests" element={<TestsPage />} />
-          <Route path="/marked" element={<MarkedPage />} />
-          <Route path="/docs" element={<DocsPage />} />
+    <>
+      <AnalyticsInitializer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
           <Route
-            path="/admin/users"
             element={(
-              <AdminGuard>
-                <AdminUsersPage />
-              </AdminGuard>
+              <AuthGuard>
+                <Layout />
+              </AuthGuard>
             )}
-          />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+          >
+            <Route path="/" element={<Home />} />
+            <Route path="/categories" element={<CategoryPage />} />
+            <Route path="/test-categories" element={<TestCategoriesPage />} />
+            <Route path="/tests" element={<TestsPage />} />
+            <Route path="/marked" element={<MarkedPage />} />
+            <Route path="/docs" element={<DocsPage />} />
+            <Route
+              path="/admin/users"
+              element={(
+                <AdminGuard>
+                  <AdminUsersPage />
+                </AdminGuard>
+              )}
+            />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

@@ -3,6 +3,10 @@ import { categoryQuestionsRepository } from "./data/CategoryQuestionsRepository"
 import QuestionComponent from "../../common/components/question-item/QuestionComponent";
 import AnswerStatsBar from "../../common/components/answer-stats-bar/AnswerStatsBar";
 import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
+import {
+    trackPracticeAnswer,
+    trackPracticeConfigurationChange,
+} from "../../features/analytics/analyticsEvents";
 
 const CategoryPage = () => {
     const [numberOfQuestions, setSelectedNumberOfQuestions] = useState(12);
@@ -27,17 +31,33 @@ const CategoryPage = () => {
     const handleCategorySelection = (event) => {
         setSelectedCategory(event.target.value);
         refreshQuestions(event.target.value, numberOfQuestions);
+        trackPracticeConfigurationChange({
+            practiceMode: "category_practice",
+            category: event.target.value,
+            questionCount: numberOfQuestions,
+        });
     };
 
     const handleNumberOfQuestionsChange = (event) => {
-        setSelectedNumberOfQuestions(Number(event.target.value));
-        refreshQuestions(selectedCategory, Number(event.target.value));
+        const nextQuestionCount = Number(event.target.value);
+        setSelectedNumberOfQuestions(nextQuestionCount);
+        refreshQuestions(selectedCategory, nextQuestionCount);
+        trackPracticeConfigurationChange({
+            practiceMode: "category_practice",
+            category: selectedCategory,
+            questionCount: nextQuestionCount,
+        });
     };
 
     const handleAnswer = (_question, isCorrect) => {
         questionDisplayTtlStorage.markQuestionsAsShown([_question]);
         setAnswered((a) => a + 1);
         if (!isCorrect) setWrong((w) => w + 1);
+        trackPracticeAnswer({
+            practiceMode: "category_practice",
+            questionCategory: _question.category,
+            isCorrect,
+        });
     };
 
     return (

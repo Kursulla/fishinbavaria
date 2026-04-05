@@ -1,5 +1,6 @@
 import React from "react";
 import { markedQuestionsRepository } from "./marked-questions/data/MarkedQuestionsRepository";
+import { trackMarkedQuestionsCleared } from "../features/analytics/analyticsEvents";
 
 const Home = () => {
   const URLParams = new URLSearchParams(window.location.search);
@@ -7,6 +8,7 @@ const Home = () => {
 
   function handleCleaningMarketQuestionsClick() {
     markedQuestionsRepository.purgeSavedQuestions();
+    trackMarkedQuestionsCleared();
   }
 
   return (

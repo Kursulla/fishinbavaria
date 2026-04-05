@@ -3,6 +3,7 @@ import QuestionComponent from "../../common/components/question-item/QuestionCom
 import AnswerStatsBar from "../../common/components/answer-stats-bar/AnswerStatsBar";
 import { markedQuestionsRepository } from "./data/MarkedQuestionsRepository";
 import { questionDisplayTtlStorage } from "../../common/data/questionDisplayTtlStorage";
+import { trackPracticeAnswer } from "../../features/analytics/analyticsEvents";
 
 const MarkedPage = () => {
     const [questions, setQuestions] = useState([]);
@@ -31,6 +32,11 @@ const MarkedPage = () => {
         questionDisplayTtlStorage.markQuestionsAsShown([_question]);
         setAnswered((a) => a + 1);
         if (!isCorrect) setWrong((w) => w + 1);
+        trackPracticeAnswer({
+            practiceMode: "marked_questions",
+            questionCategory: _question.category,
+            isCorrect,
+        });
     };
 
     return (

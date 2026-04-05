@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useTheme } from "../../../theme/ThemeContext";
+import {
+    trackLoginFailure,
+    trackLoginSuccess,
+} from "../../analytics/analyticsEvents";
 import "./LoginPage.css";
 
 export default function LoginPage() {
@@ -30,8 +34,10 @@ export default function LoginPage() {
 
         try {
             const user = await login({ username, password });
+            trackLoginSuccess(user.role);
             navigate(user.role === "ADMIN" ? "/admin/users" : "/", { replace: true });
         } catch (submitError) {
+            trackLoginFailure();
             setError(submitError.message || "Prijava nije uspela.");
         } finally {
             setIsSubmitting(false);

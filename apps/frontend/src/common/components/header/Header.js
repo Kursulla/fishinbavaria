@@ -2,6 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "../../../features/auth/context/AuthContext";
 import { useTheme } from "../../../theme/ThemeContext";
+import {
+  trackLogout,
+  trackNavigationClick,
+  trackThemeToggle,
+} from "../../../features/analytics/analyticsEvents";
 import "./Header.css";
 
 const Header = () => {
@@ -57,7 +62,10 @@ const Header = () => {
           <Link
             to={path}
             className={`header-nav-link ${location.pathname === path ? "header-nav-link--active" : ""}`}
-            onClick={closeDrawer}
+            onClick={() => {
+              trackNavigationClick({ label, path, surface: "primary_navigation" });
+              closeDrawer();
+            }}
           >
             {label}
           </Link>
@@ -68,7 +76,14 @@ const Header = () => {
           <Link
             to="/admin/users"
             className={`header-nav-link ${location.pathname === "/admin/users" ? "header-nav-link--active" : ""}`}
-            onClick={closeDrawer}
+            onClick={() => {
+              trackNavigationClick({
+                label: "Admin",
+                path: "/admin/users",
+                surface: "primary_navigation",
+              });
+              closeDrawer();
+            }}
           >
             Admin
           </Link>
@@ -96,6 +111,7 @@ const Header = () => {
             role="menuitem"
             aria-label={theme === "light" ? "Uključi dark mode" : "Uključi light mode"}
             onClick={() => {
+              trackThemeToggle(theme === "light" ? "dark" : "light");
               toggleTheme();
               setUserMenuOpen(false);
             }}
@@ -123,6 +139,7 @@ const Header = () => {
             className="header-user-menu-action"
             role="menuitem"
             onClick={async () => {
+              trackLogout();
               await logout();
               closeDrawer();
             }}
@@ -136,7 +153,14 @@ const Header = () => {
 
   return (
     <header className="app-header">
-      <Link to="/" className="header-logo-link" onClick={closeDrawer}>
+      <Link
+        to="/"
+        className="header-logo-link"
+        onClick={() => {
+          trackNavigationClick({ label: "Home", path: "/", surface: "logo" });
+          closeDrawer();
+        }}
+      >
         <span className="header-logo-wrap">
           <img className="header-logo" src={theme === "dark" ? "/logo_500_dark.png" : "/logo_500.png"} alt="Catch the License" />
         </span>
