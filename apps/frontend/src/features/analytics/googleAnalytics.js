@@ -1,6 +1,7 @@
 const GA_MEASUREMENT_ID = (process.env.REACT_APP_GA_MEASUREMENT_ID || "").trim();
 
 let isInitialized = false;
+let lastTrackedPageKey = "";
 
 function isBrowser() {
   return typeof window !== "undefined" && typeof document !== "undefined";
@@ -42,8 +43,31 @@ export function initializeGoogleAnalytics() {
   };
 
   window.gtag("js", new Date());
-  window.gtag("config", GA_MEASUREMENT_ID);
+  window.gtag("config", GA_MEASUREMENT_ID, { send_page_view: false });
   isInitialized = true;
+}
+
+export function trackPageView({ pagePath, pageTitle }) {
+  if (!isBrowser() || !isGoogleAnalyticsEnabled()) {
+    return;
+  }
+
+  initializeGoogleAnalytics();
+
+  const pageLocation = `${window.location.origin}${pagePath}`;
+  const pageKey = `${pageLocation}::${pageTitle}`;
+
+  if (pageKey === lastTrackedPageKey) {
+    return;
+  }
+
+  window.gtag("event", "page_view", {
+    page_title: pageTitle,
+    page_path: pagePath,
+    page_location: pageLocation,
+  });
+
+  lastTrackedPageKey = pageKey;
 }
 
 export function trackAnalyticsEvent(eventName, eventParams = {}) {

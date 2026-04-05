@@ -62,3 +62,34 @@ export function trackStudyDocumentSelection({ documentId, documentLabel }) {
 export function trackMarkedQuestionsCleared() {
   trackAnalyticsEvent("marked_questions_cleared");
 }
+
+export function trackQuestionSavedForLater({ questionNumber, questionCategory, action }) {
+  trackAnalyticsEvent("question_saved_for_later", {
+    question_number: String(questionNumber),
+    question_category: questionCategory,
+    action,
+  });
+}
+
+export function trackAiExplanationRequested({ questionNumber, questionCategory, source }) {
+  trackAnalyticsEvent("ai_explanation_requested", {
+    question_number: String(questionNumber),
+    question_category: questionCategory,
+    explanation_source: source,
+  });
+}
+
+export function trackAiExplanationLoaded({ questionNumber, questionCategory, source }) {
+  trackAnalyticsEvent("ai_explanation_loaded", {
+    question_number: String(questionNumber),
+    question_category: questionCategory,
+    explanation_source: source,
+  });
+}
+
+export function trackAiExplanationFailed({ questionNumber, questionCategory }) {
+  trackAnalyticsEvent("ai_explanation_failed", {
+    question_number: String(questionNumber),
+    question_category: questionCategory,
+  });
+}

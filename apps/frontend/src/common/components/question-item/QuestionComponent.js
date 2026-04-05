@@ -3,6 +3,7 @@ import './QuestionsComponent.css';
 import MarkQuestionButton from "./remember-button-component/MarkQuestionButton";
 import { markedQuestionsRepository } from "../../../pages/marked-questions/data/MarkedQuestionsRepository";
 import QuestionExplanationButton from "./question-explanation/QuestionExplanationButton";
+import { trackQuestionSavedForLater } from "../../../features/analytics/analyticsEvents";
 
 function shuffleElementsInArray(array) {
     return array.sort(() => Math.random() - 0.5);
@@ -39,6 +40,12 @@ const QuestionComponent = ({ orderNumber, question, rightAnswer, onAnswer }) => 
         } else {
             markedQuestionsRepository.deleteQuestion(question)
         }
+
+        trackQuestionSavedForLater({
+            questionNumber: question.number,
+            questionCategory: question.category,
+            action: state ? "save" : "remove",
+        });
     }
 
     const isQuestionMarked = (questionNumber) => {

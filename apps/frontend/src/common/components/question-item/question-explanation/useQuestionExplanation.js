@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { fetchQuestionExplanation } from "./openRouterQuestionExplanationClient";
 import { questionExplanationCacheStorage } from "./questionExplanationCacheStorage";
+import {
+    trackAiExplanationFailed,
+    trackAiExplanationLoaded,
+    trackAiExplanationRequested,
+} from "../../../../features/analytics/analyticsEvents";
 
 export function useQuestionExplanation(question) {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,17 +19,41 @@ export function useQuestionExplanation(question) {
 
         const cachedExplanation = questionExplanationCacheStorage.get(question.number);
         if (cachedExplanation) {
+            trackAiExplanationRequested({
+                questionNumber: question.number,
+                questionCategory: question.category,
+                source: "cache",
+            });
+            trackAiExplanationLoaded({
+                questionNumber: question.number,
+                questionCategory: question.category,
+                source: "cache",
+            });
             setData(cachedExplanation);
             return;
         }
 
+        trackAiExplanationRequested({
+            questionNumber: question.number,
+            questionCategory: question.category,
+            source: "api",
+        });
         setIsLoading(true);
 
         try {
             const explanation = await fetchQuestionExplanation(question);
             questionExplanationCacheStorage.set(question.number, explanation);
             setData(explanation);
+            trackAiExplanationLoaded({
+                questionNumber: question.number,
+                questionCategory: question.category,
+                source: "api",
+            });
         } catch (fetchError) {
+            trackAiExplanationFailed({
+                questionNumber: question.number,
+                questionCategory: question.category,
+            });
             setError(fetchError.message || "Unable to fetch explanation.");
         } finally {
             setIsLoading(false);
